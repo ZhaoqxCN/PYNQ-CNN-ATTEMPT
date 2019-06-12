@@ -2,7 +2,7 @@
 
 These are some attempts I made during my undergraduate graduation project.
 The hardware platform I use is PYNQ-Z2.
-The PS part is an Arm CPU, running Ubuntu 16.04 LTS, and supports Python.
+The PS part is an Arm CPU running Ubuntu 16.04 LTS, which supports Python.
 The PL part is the Zynq XC7Z020 FPGA.
 The version of Vivado and Vivado HLS is 2018.2.
 
