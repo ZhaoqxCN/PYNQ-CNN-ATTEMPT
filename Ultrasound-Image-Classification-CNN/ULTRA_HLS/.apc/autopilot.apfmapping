@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axi_dma_master.h" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\axi_dma_master.h"/>
+    <originFiles name="axi_dma_slave.h" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\axi_dma_slave.h"/>
+    <originFiles name="config.h" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\config.h"/>
+    <originFiles name="convolution.h" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\convolution.h"/>
+    <originFiles name="fully_connected.h" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\fully_connected.h"/>
+    <originFiles name="pool.h" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\pool.h"/>
+    <originFiles name="ultra.cpp" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\ultra.cpp"/>
+    <originFiles name="ultra.h" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\ultra.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="E:\PYNQ-CNN-ATTEMPT\Ultrasound-Image-Classification-CNN\ULTRA_HLS\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

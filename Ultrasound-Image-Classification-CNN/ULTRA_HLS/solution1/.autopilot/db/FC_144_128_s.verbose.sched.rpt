@@ -1,0 +1,957 @@
+
+
+================================================================
+== Vivado HLS Report for 'FC_144_128_s'
+================================================================
+* Date:           Wed Jun 12 19:03:21 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        ULTRA_HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|     4.714|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+---------+-----+---------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    | min |   max   | min |   max   |   Type  |
+    +-----+---------+-----+---------+---------+
+    |  433|  2362209|  433|  2362209|   none  |
+    +-----+---------+-----+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-------+---------+----------+-----------+-----------+-------------+----------+
+        |             |     Latency     | Iteration|  Initiation Interval  |     Trip    |          |
+        |  Loop Name  |  min  |   max   |  Latency |  achieved |   target  |    Count    | Pipelined|
+        +-------------+-------+---------+----------+-----------+-----------+-------------+----------+
+        |- Loop 1     |  18433|    18433|         3|          1|          1|        18432|    yes   |
+        |- Loop 2     |    129|      129|         3|          1|          1|          128|    yes   |
+        |- Loop 3     |  18600|  2362200|     18600|          -|          -|   1 ~ 127   |    no    |
+        | + Loop 3.1  |    145|      145|         3|          1|          1|          144|    yes   |
+        | + Loop 3.2  |  18450|    18450|        20|          1|          1|        18432|    yes   |
+        |- Loop 4     |    416|    18560|         2|          1|          1| 416 ~ 18560 |    yes   |
+        +-------------+-------+---------+----------+-----------+-----------+-------------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+  * Pipeline-1: initiation interval (II) = 1, depth = 3
+  * Pipeline-2: initiation interval (II) = 1, depth = 20
+  * Pipeline-3: initiation interval (II) = 1, depth = 3
+  * Pipeline-4: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 53
+* Pipeline : 5
+  Pipeline-0 : II = 1, D = 2, States = { 17 18 }
+  Pipeline-1 : II = 1, D = 3, States = { 21 22 23 }
+  Pipeline-2 : II = 1, D = 20, States = { 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 }
+  Pipeline-3 : II = 1, D = 3, States = { 46 47 48 }
+  Pipeline-4 : II = 1, D = 3, States = { 50 51 52 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / (!tmp_s & !tmp_21)
+	20  / (!tmp_s & tmp_21)
+	46  / (tmp_s)
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	19  / (!tmp_24)
+	18  / (tmp_24)
+18 --> 
+	17  / true
+19 --> 
+20 --> 
+	21  / (tmp_23)
+	19  / (!tmp_23)
+21 --> 
+	24  / (exitcond8)
+	22  / (!exitcond8)
+22 --> 
+	23  / true
+23 --> 
+	21  / true
+24 --> 
+	25  / true
+25 --> 
+	45  / (exitcond_flatten8)
+	26  / (!exitcond_flatten8)
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	25  / true
+45 --> 
+	20  / true
+46 --> 
+	49  / (exitcond_flatten)
+	47  / (!exitcond_flatten)
+47 --> 
+	48  / true
+48 --> 
+	46  / true
+49 --> 
+	50  / true
+50 --> 
+	53  / (exitcond6)
+	51  / (!exitcond6)
+51 --> 
+	52  / true
+52 --> 
+	50  / true
+53 --> 
+	19  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.37>
+ST_1 : Operation 54 [1/1] (2.18ns)   --->   "%tmp_V = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:22]   --->   Operation 54 'read' 'tmp_V' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_1 : Operation 55 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V)" [ULTRA_HLS/fully_connected.h:24]   --->   Operation 55 'write' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 2 <SV = 1> <Delay = 4.37>
+ST_2 : Operation 56 [1/1] (2.18ns)   --->   "%tmp_V_21 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:26]   --->   Operation 56 'read' 'tmp_V_21' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_2 : Operation 57 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_21)" [ULTRA_HLS/fully_connected.h:28]   --->   Operation 57 'write' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 3 <SV = 2> <Delay = 4.37>
+ST_3 : Operation 58 [1/1] (2.18ns)   --->   "%tmp_V_23 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:30]   --->   Operation 58 'read' 'tmp_V_23' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_3 : Operation 59 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_23)" [ULTRA_HLS/fully_connected.h:32]   --->   Operation 59 'write' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 4 <SV = 3> <Delay = 4.37>
+ST_4 : Operation 60 [1/1] (2.18ns)   --->   "%tmp_V_25 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:34]   --->   Operation 60 'read' 'tmp_V_25' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_4 : Operation 61 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_25)" [ULTRA_HLS/fully_connected.h:36]   --->   Operation 61 'write' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 5 <SV = 4> <Delay = 4.37>
+ST_5 : Operation 62 [1/1] (2.18ns)   --->   "%tmp_V_27 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:38]   --->   Operation 62 'read' 'tmp_V_27' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_5 : Operation 63 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_27)" [ULTRA_HLS/fully_connected.h:40]   --->   Operation 63 'write' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 6 <SV = 5> <Delay = 4.37>
+ST_6 : Operation 64 [1/1] (2.18ns)   --->   "%tmp_V_29 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:42]   --->   Operation 64 'read' 'tmp_V_29' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_6 : Operation 65 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_29)" [ULTRA_HLS/fully_connected.h:44]   --->   Operation 65 'write' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 7 <SV = 6> <Delay = 4.37>
+ST_7 : Operation 66 [1/1] (2.18ns)   --->   "%tmp_V_31 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:46]   --->   Operation 66 'read' 'tmp_V_31' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_7 : Operation 67 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_31)" [ULTRA_HLS/fully_connected.h:48]   --->   Operation 67 'write' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 8 <SV = 7> <Delay = 4.38>
+ST_8 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %stream_out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str225, i32 0, i32 0, [1 x i8]* @p_str226, [1 x i8]* @p_str227, [1 x i8]* @p_str228, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str229, [1 x i8]* @p_str230)"   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %stream_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str218, i32 0, i32 0, [1 x i8]* @p_str219, [1 x i8]* @p_str220, [1 x i8]* @p_str221, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str222, [1 x i8]* @p_str223)"   --->   Operation 69 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 70 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([16 x i12]* @A_V_6_0, [16 x i12]* @A_V_6_1, [16 x i12]* @A_V_6_2, [16 x i12]* @A_V_6_3, [16 x i12]* @A_V_6_4, [16 x i12]* @A_V_6_5, [16 x i12]* @A_V_6_6, [16 x i12]* @A_V_6_7, [16 x i12]* @A_V_6_8, [1 x i8]* @p_str1, [12 x i8]* @p_str8, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [ULTRA_HLS/fully_connected.h:13]   --->   Operation 70 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([2048 x i12]* @B_V_6_0, [2048 x i12]* @B_V_6_1, [2048 x i12]* @B_V_6_2, [2048 x i12]* @B_V_6_3, [2048 x i12]* @B_V_6_4, [2048 x i12]* @B_V_6_5, [2048 x i12]* @B_V_6_6, [2048 x i12]* @B_V_6_7, [2048 x i12]* @B_V_6_8, [1 x i8]* @p_str1, [12 x i8]* @p_str8, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [ULTRA_HLS/fully_connected.h:14]   --->   Operation 71 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([128 x i12]* @bias_V_10, [1 x i8]* @p_str1, [14 x i8]* @p_str9, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [ULTRA_HLS/fully_connected.h:15]   --->   Operation 72 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 73 [1/1] (2.18ns)   --->   "%tmp_V_33 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:50]   --->   Operation 73 'read' 'tmp_V_33' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_8 : Operation 74 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_33)" [ULTRA_HLS/fully_connected.h:52]   --->   Operation 74 'write' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_8 : Operation 75 [1/1] (2.42ns)   --->   "%tmp_s = icmp eq i16 %tmp_V, 6" [ULTRA_HLS/fully_connected.h:54]   --->   Operation 75 'icmp' 'tmp_s' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 76 [1/1] (0.00ns)   --->   "br i1 %tmp_s, label %0, label %3" [ULTRA_HLS/fully_connected.h:54]   --->   Operation 76 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 77 [1/1] (2.42ns)   --->   "%tmp_21 = icmp eq i16 %tmp_V, 0" [ULTRA_HLS/fully_connected.h:73]   --->   Operation 77 'icmp' 'tmp_21' <Predicate = (!tmp_s)> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 78 [1/1] (0.00ns)   --->   "br i1 %tmp_21, label %.preheader474.preheader, label %9" [ULTRA_HLS/fully_connected.h:73]   --->   Operation 78 'br' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%lhs_V = sext i16 %tmp_V_29 to i32" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 79 'sext' 'lhs_V' <Predicate = (!tmp_s & !tmp_21)> <Delay = 0.00>
+ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%rhs_V = sext i16 %tmp_V_25 to i32" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 80 'sext' 'rhs_V' <Predicate = (!tmp_s & !tmp_21)> <Delay = 0.00>
+ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%tmp_22 = sext i16 %tmp_V_23 to i32" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 81 'sext' 'tmp_22' <Predicate = (!tmp_s & !tmp_21)> <Delay = 0.00>
+ST_8 : Operation 82 [3/3] (3.89ns)   --->   "%tmp1 = mul i32 %tmp_22, %tmp_22" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 82 'mul' 'tmp1' <Predicate = (!tmp_s & !tmp_21)> <Delay = 3.89> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 83 [3/3] (3.89ns)   --->   "%tmp2 = mul i32 %rhs_V, %lhs_V" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 83 'mul' 'tmp2' <Predicate = (!tmp_s & !tmp_21)> <Delay = 3.89> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 84 [1/1] (1.76ns)   --->   "br label %.preheader474" [ULTRA_HLS/fully_connected.h:75]   --->   Operation 84 'br' <Predicate = (!tmp_s & tmp_21)> <Delay = 1.76>
+ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_28 = trunc i16 %tmp_V_33 to i12" [ULTRA_HLS/fully_connected.h:56]   --->   Operation 85 'trunc' 'tmp_28' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_8 : Operation 86 [1/1] (0.00ns)   --->   "store i12 %tmp_28, i12* @multiple_V_10, align 2" [ULTRA_HLS/fully_connected.h:56]   --->   Operation 86 'store' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_8 : Operation 87 [1/1] (1.76ns)   --->   "br label %.preheader478" [ULTRA_HLS/fully_connected.h:57]   --->   Operation 87 'br' <Predicate = (tmp_s)> <Delay = 1.76>
+
+State 9 <SV = 8> <Delay = 3.89>
+ST_9 : Operation 88 [2/3] (3.89ns)   --->   "%tmp1 = mul i32 %tmp_22, %tmp_22" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 88 'mul' 'tmp1' <Predicate = true> <Delay = 3.89> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 89 [2/3] (3.89ns)   --->   "%tmp2 = mul i32 %rhs_V, %lhs_V" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 89 'mul' 'tmp2' <Predicate = true> <Delay = 3.89> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 90 [1/3] (0.00ns)   --->   "%tmp1 = mul i32 %tmp_22, %tmp_22" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 90 'mul' 'tmp1' <Predicate = true> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 91 [1/3] (0.00ns)   --->   "%tmp2 = mul i32 %rhs_V, %lhs_V" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 91 'mul' 'tmp2' <Predicate = true> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 11 <SV = 10> <Delay = 3.95>
+ST_11 : Operation 92 [5/5] (3.95ns)   --->   "%p_s = mul i32 %tmp2, %tmp1" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 92 'mul' 'p_s' <Predicate = true> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 3.95>
+ST_12 : Operation 93 [4/5] (3.95ns)   --->   "%p_s = mul i32 %tmp2, %tmp1" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 93 'mul' 'p_s' <Predicate = true> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 3.95>
+ST_13 : Operation 94 [3/5] (3.95ns)   --->   "%p_s = mul i32 %tmp2, %tmp1" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 94 'mul' 'p_s' <Predicate = true> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 3.95>
+ST_14 : Operation 95 [2/5] (3.95ns)   --->   "%p_s = mul i32 %tmp2, %tmp1" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 95 'mul' 'p_s' <Predicate = true> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 3.95>
+ST_15 : Operation 96 [1/5] (3.95ns)   --->   "%p_s = mul i32 %tmp2, %tmp1" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 96 'mul' 'p_s' <Predicate = true> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 2.55>
+ST_16 : Operation 97 [1/1] (2.55ns)   --->   "%KER_bound = add i32 %p_s, %lhs_V" [ULTRA_HLS/fully_connected.h:100]   --->   Operation 97 'add' 'KER_bound' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 98 [1/1] (1.76ns)   --->   "br label %10" [ULTRA_HLS/fully_connected.h:101]   --->   Operation 98 'br' <Predicate = true> <Delay = 1.76>
+
+State 17 <SV = 16> <Delay = 2.52>
+ST_17 : Operation 99 [1/1] (0.00ns)   --->   "%i5 = phi i31 [ 0, %9 ], [ %i_4, %11 ]" [ULTRA_HLS/fully_connected.h:101]   --->   Operation 99 'phi' 'i5' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 100 [1/1] (0.00ns)   --->   "%i5_cast = zext i31 %i5 to i32" [ULTRA_HLS/fully_connected.h:101]   --->   Operation 100 'zext' 'i5_cast' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 101 [1/1] (2.47ns)   --->   "%tmp_24 = icmp slt i32 %i5_cast, %KER_bound" [ULTRA_HLS/fully_connected.h:101]   --->   Operation 101 'icmp' 'tmp_24' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 102 [1/1] (2.52ns)   --->   "%i_4 = add i31 %i5, 1" [ULTRA_HLS/fully_connected.h:101]   --->   Operation 102 'add' 'i_4' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 103 [1/1] (0.00ns)   --->   "br i1 %tmp_24, label %11, label %.loopexit.loopexit" [ULTRA_HLS/fully_connected.h:101]   --->   Operation 103 'br' <Predicate = true> <Delay = 0.00>
+
+State 18 <SV = 17> <Delay = 4.37>
+ST_18 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_26 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str22)" [ULTRA_HLS/fully_connected.h:102]   --->   Operation 104 'specregionbegin' 'tmp_26' <Predicate = (tmp_24)> <Delay = 0.00>
+ST_18 : Operation 105 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 416, i32 18560, i32 10632, [1 x i8]* @p_str1) nounwind" [ULTRA_HLS/fully_connected.h:103]   --->   Operation 105 'speclooptripcount' <Predicate = (tmp_24)> <Delay = 0.00>
+ST_18 : Operation 106 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [ULTRA_HLS/fully_connected.h:104]   --->   Operation 106 'specpipeline' <Predicate = (tmp_24)> <Delay = 0.00>
+ST_18 : Operation 107 [1/1] (2.18ns)   --->   "%tmp_V_36 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:105]   --->   Operation 107 'read' 'tmp_V_36' <Predicate = (tmp_24)> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_18 : Operation 108 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_36)" [ULTRA_HLS/fully_connected.h:106]   --->   Operation 108 'write' <Predicate = (tmp_24)> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_18 : Operation 109 [1/1] (0.00ns)   --->   "%empty_106 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str22, i32 %tmp_26)" [ULTRA_HLS/fully_connected.h:107]   --->   Operation 109 'specregionend' 'empty_106' <Predicate = (tmp_24)> <Delay = 0.00>
+ST_18 : Operation 110 [1/1] (0.00ns)   --->   "br label %10" [ULTRA_HLS/fully_connected.h:101]   --->   Operation 110 'br' <Predicate = (tmp_24)> <Delay = 0.00>
+
+State 19 <SV = 17> <Delay = 0.00>
+ST_19 : Operation 111 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 111 'br' <Predicate = (!tmp_s & !tmp_21)> <Delay = 0.00>
+ST_19 : Operation 112 [1/1] (0.00ns)   --->   "br label %.loopexit477"   --->   Operation 112 'br' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_19 : Operation 113 [1/1] (0.00ns)   --->   "ret void" [ULTRA_HLS/fully_connected.h:109]   --->   Operation 113 'ret' <Predicate = true> <Delay = 0.00>
+
+State 20 <SV = 8> <Delay = 3.40>
+ST_20 : Operation 114 [1/1] (0.00ns)   --->   "%num_img = phi i15 [ %num_img_2, %8 ], [ 0, %.preheader474.preheader ]" [ULTRA_HLS/fully_connected.h:75]   --->   Operation 114 'phi' 'num_img' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 115 [1/1] (0.00ns)   --->   "%num_img_cast = zext i15 %num_img to i16" [ULTRA_HLS/fully_connected.h:75]   --->   Operation 115 'zext' 'num_img_cast' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 116 [1/1] (2.42ns)   --->   "%tmp_23 = icmp slt i16 %num_img_cast, %tmp_V_21" [ULTRA_HLS/fully_connected.h:75]   --->   Operation 116 'icmp' 'tmp_23' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 117 [1/1] (1.94ns)   --->   "%num_img_2 = add i15 %num_img, 1" [ULTRA_HLS/fully_connected.h:75]   --->   Operation 117 'add' 'num_img_2' <Predicate = true> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 118 [1/1] (0.00ns)   --->   "br i1 %tmp_23, label %4, label %.loopexit.loopexit243" [ULTRA_HLS/fully_connected.h:75]   --->   Operation 118 'br' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 119 [1/1] (0.00ns)   --->   "%tmp_25 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str19)" [ULTRA_HLS/fully_connected.h:76]   --->   Operation 119 'specregionbegin' 'tmp_25' <Predicate = (tmp_23)> <Delay = 0.00>
+ST_20 : Operation 120 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 1, i32 127, i32 64, [1 x i8]* @p_str1) nounwind" [ULTRA_HLS/fully_connected.h:77]   --->   Operation 120 'speclooptripcount' <Predicate = (tmp_23)> <Delay = 0.00>
+ST_20 : Operation 121 [1/1] (1.76ns)   --->   "br label %5" [ULTRA_HLS/fully_connected.h:78]   --->   Operation 121 'br' <Predicate = (tmp_23)> <Delay = 1.76>
+ST_20 : Operation 122 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 122 'br' <Predicate = (!tmp_23)> <Delay = 0.00>
+
+State 21 <SV = 9> <Delay = 1.91>
+ST_21 : Operation 123 [1/1] (0.00ns)   --->   "%i2 = phi i8 [ 0, %4 ], [ %i_6, %7 ]"   --->   Operation 123 'phi' 'i2' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 124 [1/1] (1.55ns)   --->   "%exitcond8 = icmp eq i8 %i2, -112" [ULTRA_HLS/fully_connected.h:78]   --->   Operation 124 'icmp' 'exitcond8' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 125 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 144, i64 144, i64 144)"   --->   Operation 125 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 126 [1/1] (1.91ns)   --->   "%i_6 = add i8 %i2, 1" [ULTRA_HLS/fully_connected.h:78]   --->   Operation 126 'add' 'i_6' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 127 [1/1] (0.00ns)   --->   "br i1 %exitcond8, label %.preheader.preheader, label %6" [ULTRA_HLS/fully_connected.h:78]   --->   Operation 127 'br' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 128 [1/1] (0.00ns)   --->   "%arrayNo_cast = call i4 @_ssdm_op_PartSelect.i4.i8.i32.i32(i8 %i2, i32 4, i32 7)" [ULTRA_HLS/fully_connected.h:78]   --->   Operation 128 'partselect' 'arrayNo_cast' <Predicate = (!exitcond8)> <Delay = 0.00>
+ST_21 : Operation 129 [1/1] (0.00ns)   --->   "%tmp_48 = trunc i8 %i2 to i4" [ULTRA_HLS/fully_connected.h:78]   --->   Operation 129 'trunc' 'tmp_48' <Predicate = (!exitcond8)> <Delay = 0.00>
+ST_21 : Operation 130 [1/1] (1.36ns)   --->   "switch i4 %arrayNo_cast, label %branch8 [
+    i4 0, label %branch0
+    i4 1, label %branch1
+    i4 2, label %branch2
+    i4 3, label %branch3
+    i4 4, label %branch4
+    i4 5, label %branch5
+    i4 6, label %branch6
+    i4 7, label %branch7
+  ]" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 130 'switch' <Predicate = (!exitcond8)> <Delay = 1.36>
+
+State 22 <SV = 10> <Delay = 2.18>
+ST_22 : Operation 131 [1/1] (2.18ns)   --->   "%tmp_V_42 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:81]   --->   Operation 131 'read' 'tmp_V_42' <Predicate = true> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_22 : Operation 132 [1/1] (0.00ns)   --->   "%tmp_47 = trunc i16 %tmp_V_42 to i12" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 132 'trunc' 'tmp_47' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 133 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 133 'br' <Predicate = (arrayNo_cast == 7)> <Delay = 0.00>
+ST_22 : Operation 134 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 134 'br' <Predicate = (arrayNo_cast == 6)> <Delay = 0.00>
+ST_22 : Operation 135 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 135 'br' <Predicate = (arrayNo_cast == 5)> <Delay = 0.00>
+ST_22 : Operation 136 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 136 'br' <Predicate = (arrayNo_cast == 4)> <Delay = 0.00>
+ST_22 : Operation 137 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 137 'br' <Predicate = (arrayNo_cast == 3)> <Delay = 0.00>
+ST_22 : Operation 138 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 138 'br' <Predicate = (arrayNo_cast == 2)> <Delay = 0.00>
+ST_22 : Operation 139 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 139 'br' <Predicate = (arrayNo_cast == 1)> <Delay = 0.00>
+ST_22 : Operation 140 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 140 'br' <Predicate = (arrayNo_cast == 0)> <Delay = 0.00>
+ST_22 : Operation 141 [1/1] (0.00ns)   --->   "br label %7" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 141 'br' <Predicate = (arrayNo_cast != 0 & arrayNo_cast != 1 & arrayNo_cast != 2 & arrayNo_cast != 3 & arrayNo_cast != 4 & arrayNo_cast != 5 & arrayNo_cast != 6 & arrayNo_cast != 7)> <Delay = 0.00>
+
+State 23 <SV = 11> <Delay = 3.25>
+ST_23 : Operation 142 [1/1] (0.00ns)   --->   "%tmp_32 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str20)" [ULTRA_HLS/fully_connected.h:79]   --->   Operation 142 'specregionbegin' 'tmp_32' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 143 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [ULTRA_HLS/fully_connected.h:80]   --->   Operation 143 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 144 [1/1] (0.00ns)   --->   "%newIndex1 = zext i4 %tmp_48 to i64" [ULTRA_HLS/fully_connected.h:78]   --->   Operation 144 'zext' 'newIndex1' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 145 [1/1] (0.00ns)   --->   "%A_V_6_0_addr = getelementptr [16 x i12]* @A_V_6_0, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 145 'getelementptr' 'A_V_6_0_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 146 [1/1] (0.00ns)   --->   "%A_V_6_1_addr = getelementptr [16 x i12]* @A_V_6_1, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 146 'getelementptr' 'A_V_6_1_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 147 [1/1] (0.00ns)   --->   "%A_V_6_2_addr = getelementptr [16 x i12]* @A_V_6_2, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 147 'getelementptr' 'A_V_6_2_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 148 [1/1] (0.00ns)   --->   "%A_V_6_3_addr = getelementptr [16 x i12]* @A_V_6_3, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 148 'getelementptr' 'A_V_6_3_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 149 [1/1] (0.00ns)   --->   "%A_V_6_4_addr = getelementptr [16 x i12]* @A_V_6_4, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 149 'getelementptr' 'A_V_6_4_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 150 [1/1] (0.00ns)   --->   "%A_V_6_5_addr = getelementptr [16 x i12]* @A_V_6_5, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 150 'getelementptr' 'A_V_6_5_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 151 [1/1] (0.00ns)   --->   "%A_V_6_6_addr = getelementptr [16 x i12]* @A_V_6_6, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 151 'getelementptr' 'A_V_6_6_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 152 [1/1] (0.00ns)   --->   "%A_V_6_7_addr = getelementptr [16 x i12]* @A_V_6_7, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 152 'getelementptr' 'A_V_6_7_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 153 [1/1] (0.00ns)   --->   "%A_V_6_8_addr = getelementptr [16 x i12]* @A_V_6_8, i64 0, i64 %newIndex1" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 153 'getelementptr' 'A_V_6_8_addr' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 154 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_7_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 154 'store' <Predicate = (arrayNo_cast == 7)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 155 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_6_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 155 'store' <Predicate = (arrayNo_cast == 6)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 156 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_5_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 156 'store' <Predicate = (arrayNo_cast == 5)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 157 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_4_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 157 'store' <Predicate = (arrayNo_cast == 4)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 158 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_3_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 158 'store' <Predicate = (arrayNo_cast == 3)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 159 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_2_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 159 'store' <Predicate = (arrayNo_cast == 2)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 160 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_1_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 160 'store' <Predicate = (arrayNo_cast == 1)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 161 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_0_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 161 'store' <Predicate = (arrayNo_cast == 0)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 162 [1/1] (3.25ns)   --->   "store i12 %tmp_47, i12* %A_V_6_8_addr, align 2" [ULTRA_HLS/fully_connected.h:82]   --->   Operation 162 'store' <Predicate = (arrayNo_cast != 0 & arrayNo_cast != 1 & arrayNo_cast != 2 & arrayNo_cast != 3 & arrayNo_cast != 4 & arrayNo_cast != 5 & arrayNo_cast != 6 & arrayNo_cast != 7)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_23 : Operation 163 [1/1] (0.00ns)   --->   "%empty_103 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str20, i32 %tmp_32)" [ULTRA_HLS/fully_connected.h:83]   --->   Operation 163 'specregionend' 'empty_103' <Predicate = (!exitcond8)> <Delay = 0.00>
+ST_23 : Operation 164 [1/1] (0.00ns)   --->   "br label %5" [ULTRA_HLS/fully_connected.h:78]   --->   Operation 164 'br' <Predicate = (!exitcond8)> <Delay = 0.00>
+
+State 24 <SV = 10> <Delay = 1.76>
+ST_24 : Operation 165 [1/1] (1.76ns)   --->   "br label %.preheader"   --->   Operation 165 'br' <Predicate = true> <Delay = 1.76>
+
+State 25 <SV = 11> <Delay = 4.71>
+ST_25 : Operation 166 [1/1] (0.00ns)   --->   "%indvar_flatten6 = phi i15 [ %indvar_flatten_next7, %ifFalse ], [ 0, %.preheader.preheader ]"   --->   Operation 166 'phi' 'indvar_flatten6' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 167 [1/1] (0.00ns)   --->   "%i3 = phi i8 [ %tmp_34_mid2_v, %ifFalse ], [ 0, %.preheader.preheader ]" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 167 'phi' 'i3' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 168 [1/1] (0.00ns)   --->   "%p_2 = phi i31 [ %buf_V, %ifFalse ], [ 0, %.preheader.preheader ]"   --->   Operation 168 'phi' 'p_2' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 169 [1/1] (0.00ns)   --->   "%j4 = phi i8 [ %j_3, %ifFalse ], [ 0, %.preheader.preheader ]"   --->   Operation 169 'phi' 'j4' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 170 [1/1] (2.31ns)   --->   "%exitcond_flatten8 = icmp eq i15 %indvar_flatten6, -14336"   --->   Operation 170 'icmp' 'exitcond_flatten8' <Predicate = true> <Delay = 2.31> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 171 [1/1] (1.94ns)   --->   "%indvar_flatten_next7 = add i15 %indvar_flatten6, 1"   --->   Operation 171 'add' 'indvar_flatten_next7' <Predicate = true> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 172 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten8, label %8, label %.preheader473"   --->   Operation 172 'br' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 173 [1/1] (1.91ns)   --->   "%i_7 = add i8 1, %i3" [ULTRA_HLS/fully_connected.h:84]   --->   Operation 173 'add' 'i_7' <Predicate = (!exitcond_flatten8)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 174 [1/1] (1.55ns)   --->   "%exitcond3 = icmp eq i8 %j4, -112" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 174 'icmp' 'exitcond3' <Predicate = (!exitcond_flatten8)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 175 [1/1] (1.24ns)   --->   "%j4_mid2 = select i1 %exitcond3, i8 0, i8 %j4" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 175 'select' 'j4_mid2' <Predicate = (!exitcond_flatten8)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_25 : Operation 176 [1/1] (1.24ns)   --->   "%tmp_34_mid2_v = select i1 %exitcond3, i8 %i_7, i8 %i3" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 176 'select' 'tmp_34_mid2_v' <Predicate = (!exitcond_flatten8)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_25 : Operation 177 [1/1] (0.00ns)   --->   "%arrayNo2 = call i4 @_ssdm_op_PartSelect.i4.i8.i32.i32(i8 %j4_mid2, i32 4, i32 7)" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 177 'partselect' 'arrayNo2' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_25 : Operation 178 [1/1] (0.00ns)   --->   "%tmp_49 = trunc i8 %j4_mid2 to i4" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 178 'trunc' 'tmp_49' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_25 : Operation 179 [1/1] (1.91ns)   --->   "%j_3 = add i8 1, %j4_mid2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 179 'add' 'j_3' <Predicate = (!exitcond_flatten8)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 180 [1/1] (0.00ns)   --->   "br label %.preheader"   --->   Operation 180 'br' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+
+State 26 <SV = 12> <Delay = 3.25>
+ST_26 : Operation 181 [1/1] (0.00ns)   --->   "%newIndex2 = zext i4 %tmp_49 to i64" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 181 'zext' 'newIndex2' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 182 [1/1] (0.00ns)   --->   "%tmp_37 = call i12 @_ssdm_op_BitConcatenate.i12.i8.i4(i8 %tmp_34_mid2_v, i4 %tmp_49)" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 182 'bitconcatenate' 'tmp_37' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 183 [1/1] (0.00ns)   --->   "%tmp_40 = zext i12 %tmp_37 to i64" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 183 'zext' 'tmp_40' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 184 [1/1] (0.00ns)   --->   "%B_V_6_0_addr_1 = getelementptr [2048 x i12]* @B_V_6_0, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 184 'getelementptr' 'B_V_6_0_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 185 [1/1] (0.00ns)   --->   "%B_V_6_1_addr_1 = getelementptr [2048 x i12]* @B_V_6_1, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 185 'getelementptr' 'B_V_6_1_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 186 [1/1] (0.00ns)   --->   "%B_V_6_2_addr_1 = getelementptr [2048 x i12]* @B_V_6_2, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 186 'getelementptr' 'B_V_6_2_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 187 [1/1] (0.00ns)   --->   "%B_V_6_3_addr_1 = getelementptr [2048 x i12]* @B_V_6_3, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 187 'getelementptr' 'B_V_6_3_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 188 [1/1] (0.00ns)   --->   "%B_V_6_4_addr_1 = getelementptr [2048 x i12]* @B_V_6_4, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 188 'getelementptr' 'B_V_6_4_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 189 [1/1] (0.00ns)   --->   "%B_V_6_5_addr_1 = getelementptr [2048 x i12]* @B_V_6_5, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 189 'getelementptr' 'B_V_6_5_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 190 [1/1] (0.00ns)   --->   "%B_V_6_6_addr_1 = getelementptr [2048 x i12]* @B_V_6_6, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 190 'getelementptr' 'B_V_6_6_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 191 [1/1] (0.00ns)   --->   "%B_V_6_7_addr_1 = getelementptr [2048 x i12]* @B_V_6_7, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 191 'getelementptr' 'B_V_6_7_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 192 [1/1] (0.00ns)   --->   "%B_V_6_8_addr_1 = getelementptr [2048 x i12]* @B_V_6_8, i64 0, i64 %tmp_40" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 192 'getelementptr' 'B_V_6_8_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 193 [1/1] (0.00ns)   --->   "%A_V_6_0_addr_1 = getelementptr [16 x i12]* @A_V_6_0, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 193 'getelementptr' 'A_V_6_0_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 194 [2/2] (3.25ns)   --->   "%A_V_6_0_load = load i12* %A_V_6_0_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 194 'load' 'A_V_6_0_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 195 [1/1] (0.00ns)   --->   "%A_V_6_1_addr_1 = getelementptr [16 x i12]* @A_V_6_1, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 195 'getelementptr' 'A_V_6_1_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 196 [2/2] (3.25ns)   --->   "%A_V_6_1_load = load i12* %A_V_6_1_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 196 'load' 'A_V_6_1_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 197 [1/1] (0.00ns)   --->   "%A_V_6_2_addr_1 = getelementptr [16 x i12]* @A_V_6_2, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 197 'getelementptr' 'A_V_6_2_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 198 [2/2] (3.25ns)   --->   "%A_V_6_2_load = load i12* %A_V_6_2_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 198 'load' 'A_V_6_2_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 199 [1/1] (0.00ns)   --->   "%A_V_6_3_addr_1 = getelementptr [16 x i12]* @A_V_6_3, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 199 'getelementptr' 'A_V_6_3_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 200 [2/2] (3.25ns)   --->   "%A_V_6_3_load = load i12* %A_V_6_3_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 200 'load' 'A_V_6_3_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 201 [1/1] (0.00ns)   --->   "%A_V_6_4_addr_1 = getelementptr [16 x i12]* @A_V_6_4, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 201 'getelementptr' 'A_V_6_4_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 202 [2/2] (3.25ns)   --->   "%A_V_6_4_load = load i12* %A_V_6_4_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 202 'load' 'A_V_6_4_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 203 [1/1] (0.00ns)   --->   "%A_V_6_5_addr_1 = getelementptr [16 x i12]* @A_V_6_5, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 203 'getelementptr' 'A_V_6_5_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 204 [2/2] (3.25ns)   --->   "%A_V_6_5_load = load i12* %A_V_6_5_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 204 'load' 'A_V_6_5_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 205 [1/1] (0.00ns)   --->   "%A_V_6_6_addr_1 = getelementptr [16 x i12]* @A_V_6_6, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 205 'getelementptr' 'A_V_6_6_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 206 [2/2] (3.25ns)   --->   "%A_V_6_6_load = load i12* %A_V_6_6_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 206 'load' 'A_V_6_6_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 207 [1/1] (0.00ns)   --->   "%A_V_6_7_addr_1 = getelementptr [16 x i12]* @A_V_6_7, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 207 'getelementptr' 'A_V_6_7_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 208 [2/2] (3.25ns)   --->   "%A_V_6_7_load = load i12* %A_V_6_7_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 208 'load' 'A_V_6_7_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 209 [1/1] (0.00ns)   --->   "%A_V_6_8_addr_1 = getelementptr [16 x i12]* @A_V_6_8, i64 0, i64 %newIndex2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 209 'getelementptr' 'A_V_6_8_addr_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_26 : Operation 210 [2/2] (3.25ns)   --->   "%A_V_6_8_load = load i12* %A_V_6_8_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 210 'load' 'A_V_6_8_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 211 [2/2] (3.25ns)   --->   "%B_V_6_0_load = load i12* %B_V_6_0_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 211 'load' 'B_V_6_0_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 212 [2/2] (3.25ns)   --->   "%B_V_6_1_load = load i12* %B_V_6_1_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 212 'load' 'B_V_6_1_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 213 [2/2] (3.25ns)   --->   "%B_V_6_2_load = load i12* %B_V_6_2_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 213 'load' 'B_V_6_2_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 214 [2/2] (3.25ns)   --->   "%B_V_6_3_load = load i12* %B_V_6_3_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 214 'load' 'B_V_6_3_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 215 [2/2] (3.25ns)   --->   "%B_V_6_4_load = load i12* %B_V_6_4_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 215 'load' 'B_V_6_4_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 216 [2/2] (3.25ns)   --->   "%B_V_6_5_load = load i12* %B_V_6_5_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 216 'load' 'B_V_6_5_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 217 [2/2] (3.25ns)   --->   "%B_V_6_6_load = load i12* %B_V_6_6_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 217 'load' 'B_V_6_6_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 218 [2/2] (3.25ns)   --->   "%B_V_6_7_load = load i12* %B_V_6_7_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 218 'load' 'B_V_6_7_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 219 [2/2] (3.25ns)   --->   "%B_V_6_8_load = load i12* %B_V_6_8_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 219 'load' 'B_V_6_8_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_26 : Operation 220 [1/1] (1.55ns)   --->   "%ifzero = icmp eq i8 %j_3, -112" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 220 'icmp' 'ifzero' <Predicate = (!exitcond_flatten8)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 221 [1/1] (0.00ns)   --->   "br i1 %ifzero, label %ifTrue, label %ifFalse" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 221 'br' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+
+State 27 <SV = 13> <Delay = 3.25>
+ST_27 : Operation 222 [1/2] (3.25ns)   --->   "%A_V_6_0_load = load i12* %A_V_6_0_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 222 'load' 'A_V_6_0_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 223 [1/2] (3.25ns)   --->   "%A_V_6_1_load = load i12* %A_V_6_1_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 223 'load' 'A_V_6_1_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 224 [1/2] (3.25ns)   --->   "%A_V_6_2_load = load i12* %A_V_6_2_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 224 'load' 'A_V_6_2_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 225 [1/2] (3.25ns)   --->   "%A_V_6_3_load = load i12* %A_V_6_3_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 225 'load' 'A_V_6_3_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 226 [1/2] (3.25ns)   --->   "%A_V_6_4_load = load i12* %A_V_6_4_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 226 'load' 'A_V_6_4_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 227 [1/2] (3.25ns)   --->   "%A_V_6_5_load = load i12* %A_V_6_5_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 227 'load' 'A_V_6_5_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 228 [1/2] (3.25ns)   --->   "%A_V_6_6_load = load i12* %A_V_6_6_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 228 'load' 'A_V_6_6_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 229 [1/2] (3.25ns)   --->   "%A_V_6_7_load = load i12* %A_V_6_7_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 229 'load' 'A_V_6_7_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 230 [1/2] (3.25ns)   --->   "%A_V_6_8_load = load i12* %A_V_6_8_addr_1, align 2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 230 'load' 'A_V_6_8_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 231 [1/2] (3.25ns)   --->   "%B_V_6_0_load = load i12* %B_V_6_0_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 231 'load' 'B_V_6_0_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 232 [1/2] (3.25ns)   --->   "%B_V_6_1_load = load i12* %B_V_6_1_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 232 'load' 'B_V_6_1_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 233 [1/2] (3.25ns)   --->   "%B_V_6_2_load = load i12* %B_V_6_2_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 233 'load' 'B_V_6_2_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 234 [1/2] (3.25ns)   --->   "%B_V_6_3_load = load i12* %B_V_6_3_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 234 'load' 'B_V_6_3_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 235 [1/2] (3.25ns)   --->   "%B_V_6_4_load = load i12* %B_V_6_4_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 235 'load' 'B_V_6_4_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 236 [1/2] (3.25ns)   --->   "%B_V_6_5_load = load i12* %B_V_6_5_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 236 'load' 'B_V_6_5_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 237 [1/2] (3.25ns)   --->   "%B_V_6_6_load = load i12* %B_V_6_6_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 237 'load' 'B_V_6_6_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 238 [1/2] (3.25ns)   --->   "%B_V_6_7_load = load i12* %B_V_6_7_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 238 'load' 'B_V_6_7_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_27 : Operation 239 [1/2] (3.25ns)   --->   "%B_V_6_8_load = load i12* %B_V_6_8_addr_1, align 2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 239 'load' 'B_V_6_8_load' <Predicate = (!exitcond_flatten8)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+
+State 28 <SV = 14> <Delay = 3.60>
+ST_28 : Operation 240 [1/1] (0.00ns)   --->   "%arrayNo2_cast = zext i4 %arrayNo2 to i32" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 240 'zext' 'arrayNo2_cast' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_28 : Operation 241 [1/1] (2.55ns)   --->   "%tmp_41 = call i12 @_ssdm_op_Mux.ap_auto.9i12.i32(i12 %A_V_6_0_load, i12 %A_V_6_1_load, i12 %A_V_6_2_load, i12 %A_V_6_3_load, i12 %A_V_6_4_load, i12 %A_V_6_5_load, i12 %A_V_6_6_load, i12 %A_V_6_7_load, i12 %A_V_6_8_load, i32 %arrayNo2_cast)" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 241 'mux' 'tmp_41' <Predicate = (!exitcond_flatten8)> <Delay = 2.55> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 242 [1/1] (0.00ns)   --->   "%lhs_V_1 = sext i12 %tmp_41 to i24" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 242 'sext' 'lhs_V_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_28 : Operation 243 [1/1] (2.55ns)   --->   "%tmp_44 = call i12 @_ssdm_op_Mux.ap_auto.9i12.i32(i12 %B_V_6_0_load, i12 %B_V_6_1_load, i12 %B_V_6_2_load, i12 %B_V_6_3_load, i12 %B_V_6_4_load, i12 %B_V_6_5_load, i12 %B_V_6_6_load, i12 %B_V_6_7_load, i12 %B_V_6_8_load, i32 %arrayNo2_cast)" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 243 'mux' 'tmp_44' <Predicate = (!exitcond_flatten8)> <Delay = 2.55> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 244 [1/1] (0.00ns)   --->   "%rhs_V_1 = sext i12 %tmp_44 to i24" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 244 'sext' 'rhs_V_1' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_28 : Operation 245 [3/3] (1.05ns)   --->   "%r_V = mul i24 %lhs_V_1, %rhs_V_1" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 245 'mul' 'r_V' <Predicate = (!exitcond_flatten8)> <Delay = 1.05> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 29 <SV = 15> <Delay = 2.28>
+ST_29 : Operation 246 [1/1] (0.00ns)   --->   "%tmp_34_mid2 = zext i8 %tmp_34_mid2_v to i64" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 246 'zext' 'tmp_34_mid2' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_29 : Operation 247 [2/3] (1.05ns)   --->   "%r_V = mul i24 %lhs_V_1, %rhs_V_1" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 247 'mul' 'r_V' <Predicate = (!exitcond_flatten8)> <Delay = 1.05> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_29 : Operation 248 [1/1] (0.00ns)   --->   "%bias_V_10_addr_1 = getelementptr [128 x i12]* @bias_V_10, i64 0, i64 %tmp_34_mid2" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 248 'getelementptr' 'bias_V_10_addr_1' <Predicate = (ifzero)> <Delay = 0.00>
+ST_29 : Operation 249 [2/2] (2.28ns)   --->   "%bias_V_10_load = load i12* %bias_V_10_addr_1, align 2" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 249 'load' 'bias_V_10_load' <Predicate = (ifzero)> <Delay = 2.28> <Core = "RAM_1P_LUTRAM">   --->   Core 43 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.28> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 12> <Depth = 128> <RAM>
+
+State 30 <SV = 16> <Delay = 3.75>
+ST_30 : Operation 250 [1/1] (0.73ns)   --->   "%p_2_mid2 = select i1 %exitcond3, i31 0, i31 %p_2" [ULTRA_HLS/fully_connected.h:87]   --->   Operation 250 'select' 'p_2_mid2' <Predicate = (!exitcond_flatten8)> <Delay = 0.73> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_30 : Operation 251 [1/1] (0.00ns)   --->   "%tmp_35 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str21)" [ULTRA_HLS/fully_connected.h:88]   --->   Operation 251 'specregionbegin' 'tmp_35' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_30 : Operation 252 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [ULTRA_HLS/fully_connected.h:89]   --->   Operation 252 'specpipeline' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_30 : Operation 253 [1/3] (0.00ns)   --->   "%r_V = mul i24 %lhs_V_1, %rhs_V_1" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 253 'mul' 'r_V' <Predicate = (!exitcond_flatten8)> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_30 : Operation 254 [1/1] (0.00ns)   --->   "%tmp_49_cast = sext i24 %r_V to i31" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 254 'sext' 'tmp_49_cast' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_30 : Operation 255 [1/1] (3.02ns)   --->   "%buf_V = add i31 %tmp_49_cast, %p_2_mid2" [ULTRA_HLS/fully_connected.h:90]   --->   Operation 255 'add' 'buf_V' <Predicate = (!exitcond_flatten8)> <Delay = 3.02> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_30 : Operation 256 [1/1] (0.00ns)   --->   "%empty_104 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str21, i32 %tmp_35)" [ULTRA_HLS/fully_connected.h:91]   --->   Operation 256 'specregionend' 'empty_104' <Predicate = (!exitcond_flatten8)> <Delay = 0.00>
+ST_30 : Operation 257 [1/2] (2.28ns)   --->   "%bias_V_10_load = load i12* %bias_V_10_addr_1, align 2" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 257 'load' 'bias_V_10_load' <Predicate = (ifzero)> <Delay = 2.28> <Core = "RAM_1P_LUTRAM">   --->   Core 43 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.28> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 12> <Depth = 128> <RAM>
+
+State 31 <SV = 17> <Delay = 2.52>
+ST_31 : Operation 258 [1/1] (0.00ns)   --->   "%tmp_40_cast = sext i12 %bias_V_10_load to i31" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 258 'sext' 'tmp_40_cast' <Predicate = (ifzero)> <Delay = 0.00>
+ST_31 : Operation 259 [1/1] (2.52ns)   --->   "%r_V_1_tr = add i31 %tmp_40_cast, %buf_V" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 259 'add' 'r_V_1_tr' <Predicate = (ifzero)> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 260 [1/1] (0.00ns)   --->   "%tmp_50 = call i1 @_ssdm_op_BitSelect.i1.i31.i32(i31 %r_V_1_tr, i32 30)" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 260 'bitselect' 'tmp_50' <Predicate = (ifzero)> <Delay = 0.00>
+ST_31 : Operation 261 [1/1] (0.00ns)   --->   "%tmp_45 = call i19 @_ssdm_op_PartSelect.i19.i31.i32.i32(i31 %r_V_1_tr, i32 12, i32 30)" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 261 'partselect' 'tmp_45' <Predicate = (ifzero)> <Delay = 0.00>
+
+State 32 <SV = 18> <Delay = 2.52>
+ST_32 : Operation 262 [1/1] (2.52ns)   --->   "%p_neg = sub i31 0, %r_V_1_tr" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 262 'sub' 'p_neg' <Predicate = (ifzero & tmp_50)> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 263 [1/1] (0.00ns)   --->   "%tmp_42 = call i19 @_ssdm_op_PartSelect.i19.i31.i32.i32(i31 %p_neg, i32 12, i32 30)" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 263 'partselect' 'tmp_42' <Predicate = (ifzero & tmp_50)> <Delay = 0.00>
+
+State 33 <SV = 19> <Delay = 2.90>
+ST_33 : Operation 264 [1/1] (0.00ns)   --->   "%tmp_43 = sext i19 %tmp_42 to i20" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 264 'sext' 'tmp_43' <Predicate = (ifzero & tmp_50)> <Delay = 0.00>
+ST_33 : Operation 265 [1/1] (0.00ns)   --->   "%tmp_41_cast = zext i20 %tmp_43 to i21" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 265 'zext' 'tmp_41_cast' <Predicate = (ifzero & tmp_50)> <Delay = 0.00>
+ST_33 : Operation 266 [1/1] (0.00ns)   --->   "%tmp_46 = sext i19 %tmp_45 to i20" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 266 'sext' 'tmp_46' <Predicate = (ifzero & !tmp_50)> <Delay = 0.00>
+ST_33 : Operation 267 [1/1] (2.19ns)   --->   "%tmp_38 = sub i21 0, %tmp_41_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 267 'sub' 'tmp_38' <Predicate = (ifzero & tmp_50)> <Delay = 2.19> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 268 [1/1] (0.00ns)   --->   "%tmp_43_cast = zext i20 %tmp_46 to i21" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 268 'zext' 'tmp_43_cast' <Predicate = (ifzero & !tmp_50)> <Delay = 0.00>
+ST_33 : Operation 269 [1/1] (0.70ns)   --->   "%tmp_39 = select i1 %tmp_50, i21 %tmp_38, i21 %tmp_43_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 269 'select' 'tmp_39' <Predicate = (ifzero)> <Delay = 0.70> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 34 <SV = 20> <Delay = 3.89>
+ST_34 : Operation 270 [1/1] (0.00ns)   --->   "%tmp_44_cast = sext i21 %tmp_39 to i31" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 270 'sext' 'tmp_44_cast' <Predicate = (ifzero)> <Delay = 0.00>
+ST_34 : Operation 271 [1/1] (0.00ns)   --->   "%multiple_V_10_load = load i12* @multiple_V_10, align 2" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 271 'load' 'multiple_V_10_load' <Predicate = (ifzero)> <Delay = 0.00>
+ST_34 : Operation 272 [1/1] (0.00ns)   --->   "%rhs_V_2 = sext i12 %multiple_V_10_load to i31" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 272 'sext' 'rhs_V_2' <Predicate = (ifzero)> <Delay = 0.00>
+ST_34 : Operation 273 [3/3] (3.89ns)   --->   "%r_V_2 = mul i31 %rhs_V_2, %tmp_44_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 273 'mul' 'r_V_2' <Predicate = (ifzero)> <Delay = 3.89> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 35 <SV = 21> <Delay = 3.89>
+ST_35 : Operation 274 [2/3] (3.89ns)   --->   "%r_V_2 = mul i31 %rhs_V_2, %tmp_44_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 274 'mul' 'r_V_2' <Predicate = (ifzero)> <Delay = 3.89> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 36 <SV = 22> <Delay = 0.00>
+ST_36 : Operation 275 [1/3] (0.00ns)   --->   "%r_V_2 = mul i31 %rhs_V_2, %tmp_44_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 275 'mul' 'r_V_2' <Predicate = (ifzero)> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_36 : Operation 276 [1/1] (0.00ns)   --->   "%tmp_51 = call i1 @_ssdm_op_BitSelect.i1.i31.i32(i31 %r_V_2, i32 30)" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 276 'bitselect' 'tmp_51' <Predicate = (ifzero)> <Delay = 0.00>
+
+State 37 <SV = 23> <Delay = 3.95>
+ST_37 : Operation 277 [1/1] (0.00ns)   --->   "%sext_cast = sext i31 %r_V_2 to i63" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 277 'sext' 'sext_cast' <Predicate = (ifzero)> <Delay = 0.00>
+ST_37 : Operation 278 [5/5] (3.95ns)   --->   "%mul = mul i63 3435973837, %sext_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 278 'mul' 'mul' <Predicate = (ifzero)> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 279 [1/1] (2.47ns)   --->   "%tmp_i = icmp slt i31 %r_V_2, -19" [ULTRA_HLS/config.h:20->ULTRA_HLS/fully_connected.h:93]   --->   Operation 279 'icmp' 'tmp_i' <Predicate = (ifzero)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 24> <Delay = 3.95>
+ST_38 : Operation 280 [4/5] (3.95ns)   --->   "%mul = mul i63 3435973837, %sext_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 280 'mul' 'mul' <Predicate = (ifzero)> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 25> <Delay = 3.95>
+ST_39 : Operation 281 [3/5] (3.95ns)   --->   "%mul = mul i63 3435973837, %sext_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 281 'mul' 'mul' <Predicate = (ifzero)> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 26> <Delay = 3.95>
+ST_40 : Operation 282 [2/5] (3.95ns)   --->   "%mul = mul i63 3435973837, %sext_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 282 'mul' 'mul' <Predicate = (ifzero)> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 27> <Delay = 3.95>
+ST_41 : Operation 283 [1/5] (3.95ns)   --->   "%mul = mul i63 3435973837, %sext_cast" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 283 'mul' 'mul' <Predicate = (ifzero)> <Delay = 3.95> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.95> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 284 [1/1] (0.00ns)   --->   "%tmp_54 = call i27 @_ssdm_op_PartSelect.i27.i63.i32.i32(i63 %mul, i32 36, i32 62)" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 284 'partselect' 'tmp_54' <Predicate = (ifzero & !tmp_51 & !tmp_i)> <Delay = 0.00>
+
+State 42 <SV = 28> <Delay = 3.49>
+ST_42 : Operation 285 [1/1] (3.49ns)   --->   "%neg_mul = sub i63 0, %mul" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 285 'sub' 'neg_mul' <Predicate = (ifzero & tmp_51 & !tmp_i)> <Delay = 3.49> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 286 [1/1] (0.00ns)   --->   "%tmp_53 = call i27 @_ssdm_op_PartSelect.i27.i63.i32.i32(i63 %neg_mul, i32 36, i32 62)" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 286 'partselect' 'tmp_53' <Predicate = (ifzero & tmp_51 & !tmp_i)> <Delay = 0.00>
+
+State 43 <SV = 29> <Delay = 3.68>
+ST_43 : Operation 287 [1/1] (0.80ns)   --->   "%p_v_v = select i1 %tmp_51, i27 %tmp_53, i27 %tmp_54" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 287 'select' 'p_v_v' <Predicate = (ifzero & !tmp_i)> <Delay = 0.80> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_43 : Operation 288 [1/1] (0.00ns)   --->   "%tmp_55 = trunc i27 %p_v_v to i16" [ULTRA_HLS/fully_connected.h:93]   --->   Operation 288 'trunc' 'tmp_55' <Predicate = (ifzero & tmp_51 & !tmp_i)> <Delay = 0.00>
+ST_43 : Operation 289 [1/1] (2.07ns)   --->   "%neg_ti = sub i16 0, %tmp_55" [ULTRA_HLS/fully_connected.h:93]   --->   Operation 289 'sub' 'neg_ti' <Predicate = (ifzero & tmp_51 & !tmp_i)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 290 [1/1] (0.00ns) (grouped into LUT with out node Outbuf_V)   --->   "%tmp_56 = trunc i27 %p_v_v to i16" [ULTRA_HLS/fully_connected.h:93]   --->   Operation 290 'trunc' 'tmp_56' <Predicate = (ifzero & !tmp_51 & !tmp_i)> <Delay = 0.00>
+ST_43 : Operation 291 [1/1] (0.00ns) (grouped into LUT with out node Outbuf_V)   --->   "%tmp_52 = select i1 %tmp_51, i16 %neg_ti, i16 %tmp_56" [ULTRA_HLS/fully_connected.h:92]   --->   Operation 291 'select' 'tmp_52' <Predicate = (ifzero & !tmp_i)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_43 : Operation 292 [1/1] (0.80ns) (out node of the LUT)   --->   "%Outbuf_V = select i1 %tmp_i, i16 0, i16 %tmp_52" [ULTRA_HLS/fully_connected.h:93]   --->   Operation 292 'select' 'Outbuf_V' <Predicate = (ifzero)> <Delay = 0.80> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 44 <SV = 30> <Delay = 2.18>
+ST_44 : Operation 293 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %Outbuf_V)" [ULTRA_HLS/fully_connected.h:94]   --->   Operation 293 'write' <Predicate = (ifzero)> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_44 : Operation 294 [1/1] (0.00ns)   --->   "br label %ifFalse"   --->   Operation 294 'br' <Predicate = (ifzero)> <Delay = 0.00>
+
+State 45 <SV = 12> <Delay = 0.00>
+ST_45 : Operation 295 [1/1] (0.00ns)   --->   "%empty_105 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str19, i32 %tmp_25)" [ULTRA_HLS/fully_connected.h:96]   --->   Operation 295 'specregionend' 'empty_105' <Predicate = true> <Delay = 0.00>
+ST_45 : Operation 296 [1/1] (0.00ns)   --->   "br label %.preheader474" [ULTRA_HLS/fully_connected.h:75]   --->   Operation 296 'br' <Predicate = true> <Delay = 0.00>
+
+State 46 <SV = 8> <Delay = 4.71>
+ST_46 : Operation 297 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i15 [ 0, %0 ], [ %indvar_flatten_next, %1 ]"   --->   Operation 297 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 298 [1/1] (0.00ns)   --->   "%j = phi i8 [ 0, %0 ], [ %arrayNo1_cast_mid2_v, %1 ]" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 298 'phi' 'j' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 299 [1/1] (0.00ns)   --->   "%i = phi i8 [ 0, %0 ], [ %i_5, %1 ]"   --->   Operation 299 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 300 [1/1] (2.31ns)   --->   "%exitcond_flatten = icmp eq i15 %indvar_flatten, -14336"   --->   Operation 300 'icmp' 'exitcond_flatten' <Predicate = true> <Delay = 2.31> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 301 [1/1] (1.94ns)   --->   "%indvar_flatten_next = add i15 %indvar_flatten, 1"   --->   Operation 301 'add' 'indvar_flatten_next' <Predicate = true> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 302 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten, label %.preheader476.preheader, label %.preheader478.preheader"   --->   Operation 302 'br' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 303 [1/1] (1.91ns)   --->   "%j_2 = add i8 1, %j" [ULTRA_HLS/fully_connected.h:57]   --->   Operation 303 'add' 'j_2' <Predicate = (!exitcond_flatten)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 304 [1/1] (1.55ns)   --->   "%exitcond = icmp eq i8 %i, -128" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 304 'icmp' 'exitcond' <Predicate = (!exitcond_flatten)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 305 [1/1] (1.24ns)   --->   "%i_mid2 = select i1 %exitcond, i8 0, i8 %i" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 305 'select' 'i_mid2' <Predicate = (!exitcond_flatten)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_46 : Operation 306 [1/1] (1.24ns)   --->   "%arrayNo1_cast_mid2_v = select i1 %exitcond, i8 %j_2, i8 %j" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 306 'select' 'arrayNo1_cast_mid2_v' <Predicate = (!exitcond_flatten)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_46 : Operation 307 [1/1] (0.00ns)   --->   "%arrayNo1_cast_mid2 = call i4 @_ssdm_op_PartSelect.i4.i8.i32.i32(i8 %arrayNo1_cast_mid2_v, i32 4, i32 7)" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 307 'partselect' 'arrayNo1_cast_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_46 : Operation 308 [1/1] (0.00ns)   --->   "%tmp_31 = trunc i8 %arrayNo1_cast_mid2_v to i4" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 308 'trunc' 'tmp_31' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_46 : Operation 309 [1/1] (1.91ns)   --->   "%i_5 = add i8 %i_mid2, 1" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 309 'add' 'i_5' <Predicate = (!exitcond_flatten)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 9> <Delay = 4.37>
+ST_47 : Operation 310 [1/1] (0.00ns)   --->   "%tmp_29 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str17)" [ULTRA_HLS/fully_connected.h:59]   --->   Operation 310 'specregionbegin' 'tmp_29' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_47 : Operation 311 [1/1] (2.18ns)   --->   "%tmp_V_39 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:61]   --->   Operation 311 'read' 'tmp_V_39' <Predicate = (!exitcond_flatten)> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_47 : Operation 312 [1/1] (0.00ns)   --->   "%tmp_34 = trunc i16 %tmp_V_39 to i12" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 312 'trunc' 'tmp_34' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_47 : Operation 313 [1/1] (1.36ns)   --->   "switch i4 %arrayNo1_cast_mid2, label %branch17 [
+    i4 0, label %branch9
+    i4 1, label %branch10
+    i4 2, label %branch11
+    i4 3, label %branch12
+    i4 4, label %branch13
+    i4 5, label %branch14
+    i4 6, label %branch15
+    i4 7, label %branch16
+  ]" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 313 'switch' <Predicate = (!exitcond_flatten)> <Delay = 1.36>
+ST_47 : Operation 314 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_39)" [ULTRA_HLS/fully_connected.h:63]   --->   Operation 314 'write' <Predicate = (!exitcond_flatten)> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_47 : Operation 315 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str17, i32 %tmp_29)" [ULTRA_HLS/fully_connected.h:64]   --->   Operation 315 'specregionend' 'empty' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_47 : Operation 316 [1/1] (0.00ns)   --->   "br label %.preheader478" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 316 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+
+State 48 <SV = 10> <Delay = 3.25>
+ST_48 : Operation 317 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [ULTRA_HLS/fully_connected.h:60]   --->   Operation 317 'specpipeline' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 318 [1/1] (0.00ns)   --->   "%tmp_30 = call i12 @_ssdm_op_BitConcatenate.i12.i8.i4(i8 %i_mid2, i4 %tmp_31)" [ULTRA_HLS/fully_connected.h:58]   --->   Operation 318 'bitconcatenate' 'tmp_30' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 319 [1/1] (0.00ns)   --->   "%tmp_33 = zext i12 %tmp_30 to i64" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 319 'zext' 'tmp_33' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 320 [1/1] (0.00ns)   --->   "%B_V_6_0_addr = getelementptr [2048 x i12]* @B_V_6_0, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 320 'getelementptr' 'B_V_6_0_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 321 [1/1] (0.00ns)   --->   "%B_V_6_1_addr = getelementptr [2048 x i12]* @B_V_6_1, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 321 'getelementptr' 'B_V_6_1_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 322 [1/1] (0.00ns)   --->   "%B_V_6_2_addr = getelementptr [2048 x i12]* @B_V_6_2, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 322 'getelementptr' 'B_V_6_2_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 323 [1/1] (0.00ns)   --->   "%B_V_6_3_addr = getelementptr [2048 x i12]* @B_V_6_3, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 323 'getelementptr' 'B_V_6_3_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 324 [1/1] (0.00ns)   --->   "%B_V_6_4_addr = getelementptr [2048 x i12]* @B_V_6_4, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 324 'getelementptr' 'B_V_6_4_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 325 [1/1] (0.00ns)   --->   "%B_V_6_5_addr = getelementptr [2048 x i12]* @B_V_6_5, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 325 'getelementptr' 'B_V_6_5_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 326 [1/1] (0.00ns)   --->   "%B_V_6_6_addr = getelementptr [2048 x i12]* @B_V_6_6, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 326 'getelementptr' 'B_V_6_6_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 327 [1/1] (0.00ns)   --->   "%B_V_6_7_addr = getelementptr [2048 x i12]* @B_V_6_7, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 327 'getelementptr' 'B_V_6_7_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 328 [1/1] (0.00ns)   --->   "%B_V_6_8_addr = getelementptr [2048 x i12]* @B_V_6_8, i64 0, i64 %tmp_33" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 328 'getelementptr' 'B_V_6_8_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_48 : Operation 329 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_7_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 329 'store' <Predicate = (arrayNo1_cast_mid2 == 7)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 330 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 330 'br' <Predicate = (arrayNo1_cast_mid2 == 7)> <Delay = 0.00>
+ST_48 : Operation 331 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_6_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 331 'store' <Predicate = (arrayNo1_cast_mid2 == 6)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 332 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 332 'br' <Predicate = (arrayNo1_cast_mid2 == 6)> <Delay = 0.00>
+ST_48 : Operation 333 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_5_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 333 'store' <Predicate = (arrayNo1_cast_mid2 == 5)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 334 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 334 'br' <Predicate = (arrayNo1_cast_mid2 == 5)> <Delay = 0.00>
+ST_48 : Operation 335 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_4_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 335 'store' <Predicate = (arrayNo1_cast_mid2 == 4)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 336 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 336 'br' <Predicate = (arrayNo1_cast_mid2 == 4)> <Delay = 0.00>
+ST_48 : Operation 337 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_3_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 337 'store' <Predicate = (arrayNo1_cast_mid2 == 3)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 338 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 338 'br' <Predicate = (arrayNo1_cast_mid2 == 3)> <Delay = 0.00>
+ST_48 : Operation 339 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_2_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 339 'store' <Predicate = (arrayNo1_cast_mid2 == 2)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 340 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 340 'br' <Predicate = (arrayNo1_cast_mid2 == 2)> <Delay = 0.00>
+ST_48 : Operation 341 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_1_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 341 'store' <Predicate = (arrayNo1_cast_mid2 == 1)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 342 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 342 'br' <Predicate = (arrayNo1_cast_mid2 == 1)> <Delay = 0.00>
+ST_48 : Operation 343 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_0_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 343 'store' <Predicate = (arrayNo1_cast_mid2 == 0)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 344 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 344 'br' <Predicate = (arrayNo1_cast_mid2 == 0)> <Delay = 0.00>
+ST_48 : Operation 345 [1/1] (3.25ns)   --->   "store i12 %tmp_34, i12* %B_V_6_8_addr, align 2" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 345 'store' <Predicate = (arrayNo1_cast_mid2 != 0 & arrayNo1_cast_mid2 != 1 & arrayNo1_cast_mid2 != 2 & arrayNo1_cast_mid2 != 3 & arrayNo1_cast_mid2 != 4 & arrayNo1_cast_mid2 != 5 & arrayNo1_cast_mid2 != 6 & arrayNo1_cast_mid2 != 7)> <Delay = 3.25> <Core = "RAM_2P_BRAM">   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 2048> <RAM>
+ST_48 : Operation 346 [1/1] (0.00ns)   --->   "br label %1" [ULTRA_HLS/fully_connected.h:62]   --->   Operation 346 'br' <Predicate = (arrayNo1_cast_mid2 != 0 & arrayNo1_cast_mid2 != 1 & arrayNo1_cast_mid2 != 2 & arrayNo1_cast_mid2 != 3 & arrayNo1_cast_mid2 != 4 & arrayNo1_cast_mid2 != 5 & arrayNo1_cast_mid2 != 6 & arrayNo1_cast_mid2 != 7)> <Delay = 0.00>
+
+State 49 <SV = 9> <Delay = 1.76>
+ST_49 : Operation 347 [1/1] (1.76ns)   --->   "br label %.preheader476" [ULTRA_HLS/fully_connected.h:65]   --->   Operation 347 'br' <Predicate = true> <Delay = 1.76>
+
+State 50 <SV = 10> <Delay = 1.91>
+ST_50 : Operation 348 [1/1] (0.00ns)   --->   "%i1 = phi i8 [ %i_3, %2 ], [ 0, %.preheader476.preheader ]"   --->   Operation 348 'phi' 'i1' <Predicate = true> <Delay = 0.00>
+ST_50 : Operation 349 [1/1] (1.55ns)   --->   "%exitcond6 = icmp eq i8 %i1, -128" [ULTRA_HLS/fully_connected.h:65]   --->   Operation 349 'icmp' 'exitcond6' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 350 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 128, i64 128, i64 128)"   --->   Operation 350 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_50 : Operation 351 [1/1] (1.91ns)   --->   "%i_3 = add i8 %i1, 1" [ULTRA_HLS/fully_connected.h:65]   --->   Operation 351 'add' 'i_3' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 352 [1/1] (0.00ns)   --->   "br i1 %exitcond6, label %.loopexit477.loopexit, label %2" [ULTRA_HLS/fully_connected.h:65]   --->   Operation 352 'br' <Predicate = true> <Delay = 0.00>
+
+State 51 <SV = 11> <Delay = 4.37>
+ST_51 : Operation 353 [1/1] (2.18ns)   --->   "%tmp_V_38 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %stream_in_V_V)" [ULTRA_HLS/fully_connected.h:68]   --->   Operation 353 'read' 'tmp_V_38' <Predicate = (!exitcond6)> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_51 : Operation 354 [1/1] (0.00ns)   --->   "%tmp_36 = trunc i16 %tmp_V_38 to i12" [ULTRA_HLS/fully_connected.h:69]   --->   Operation 354 'trunc' 'tmp_36' <Predicate = (!exitcond6)> <Delay = 0.00>
+ST_51 : Operation 355 [1/1] (2.18ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %stream_out_V_V, i16 %tmp_V_38)" [ULTRA_HLS/fully_connected.h:70]   --->   Operation 355 'write' <Predicate = (!exitcond6)> <Delay = 2.18> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 52 <SV = 12> <Delay = 2.28>
+ST_52 : Operation 356 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str18)" [ULTRA_HLS/fully_connected.h:66]   --->   Operation 356 'specregionbegin' 'tmp' <Predicate = (!exitcond6)> <Delay = 0.00>
+ST_52 : Operation 357 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [ULTRA_HLS/fully_connected.h:67]   --->   Operation 357 'specpipeline' <Predicate = (!exitcond6)> <Delay = 0.00>
+ST_52 : Operation 358 [1/1] (0.00ns)   --->   "%tmp_27 = zext i8 %i1 to i64" [ULTRA_HLS/fully_connected.h:69]   --->   Operation 358 'zext' 'tmp_27' <Predicate = (!exitcond6)> <Delay = 0.00>
+ST_52 : Operation 359 [1/1] (0.00ns)   --->   "%bias_V_10_addr = getelementptr [128 x i12]* @bias_V_10, i64 0, i64 %tmp_27" [ULTRA_HLS/fully_connected.h:69]   --->   Operation 359 'getelementptr' 'bias_V_10_addr' <Predicate = (!exitcond6)> <Delay = 0.00>
+ST_52 : Operation 360 [1/1] (2.28ns)   --->   "store i12 %tmp_36, i12* %bias_V_10_addr, align 2" [ULTRA_HLS/fully_connected.h:69]   --->   Operation 360 'store' <Predicate = (!exitcond6)> <Delay = 2.28> <Core = "RAM_1P_LUTRAM">   --->   Core 43 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.28> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 12> <Depth = 128> <RAM>
+ST_52 : Operation 361 [1/1] (0.00ns)   --->   "%empty_102 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str18, i32 %tmp)" [ULTRA_HLS/fully_connected.h:71]   --->   Operation 361 'specregionend' 'empty_102' <Predicate = (!exitcond6)> <Delay = 0.00>
+ST_52 : Operation 362 [1/1] (0.00ns)   --->   "br label %.preheader476" [ULTRA_HLS/fully_connected.h:65]   --->   Operation 362 'br' <Predicate = (!exitcond6)> <Delay = 0.00>
+
+State 53 <SV = 11> <Delay = 0.00>
+ST_53 : Operation 363 [1/1] (0.00ns)   --->   "br label %.loopexit477"   --->   Operation 363 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:22) [28]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:24) [29]  (2.19 ns)
+
+ <State 2>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:26) [30]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:28) [31]  (2.19 ns)
+
+ <State 3>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:30) [32]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:32) [33]  (2.19 ns)
+
+ <State 4>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:34) [34]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:36) [35]  (2.19 ns)
+
+ <State 5>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:38) [36]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:40) [37]  (2.19 ns)
+
+ <State 6>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:42) [38]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:44) [39]  (2.19 ns)
+
+ <State 7>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:46) [40]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:48) [41]  (2.19 ns)
+
+ <State 8>: 4.38ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_s', ULTRA_HLS/fully_connected.h:54) [44]  (2.43 ns)
+	blocking operation 1.96 ns on control path)
+
+ <State 9>: 3.89ns
+The critical path consists of the following:
+	'mul' operation ('tmp1', ULTRA_HLS/fully_connected.h:100) [53]  (3.89 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('p_s', ULTRA_HLS/fully_connected.h:100) [55]  (3.95 ns)
+
+ <State 12>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('p_s', ULTRA_HLS/fully_connected.h:100) [55]  (3.95 ns)
+
+ <State 13>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('p_s', ULTRA_HLS/fully_connected.h:100) [55]  (3.95 ns)
+
+ <State 14>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('p_s', ULTRA_HLS/fully_connected.h:100) [55]  (3.95 ns)
+
+ <State 15>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('p_s', ULTRA_HLS/fully_connected.h:100) [55]  (3.95 ns)
+
+ <State 16>: 2.55ns
+The critical path consists of the following:
+	'add' operation ('KER_bound', ULTRA_HLS/fully_connected.h:100) [56]  (2.55 ns)
+
+ <State 17>: 2.52ns
+The critical path consists of the following:
+	'phi' operation ('i5', ULTRA_HLS/fully_connected.h:101) with incoming values : ('i_4', ULTRA_HLS/fully_connected.h:101) [59]  (0 ns)
+	'add' operation ('i_4', ULTRA_HLS/fully_connected.h:101) [62]  (2.52 ns)
+
+ <State 18>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:105) [68]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:106) [69]  (2.19 ns)
+
+ <State 19>: 0ns
+The critical path consists of the following:
+
+ <State 20>: 3.41ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_23', ULTRA_HLS/fully_connected.h:75) [79]  (2.43 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 21>: 1.92ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ULTRA_HLS/fully_connected.h:78) [87]  (0 ns)
+	'add' operation ('i', ULTRA_HLS/fully_connected.h:78) [90]  (1.92 ns)
+
+ <State 22>: 2.19ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:81) [95]  (2.19 ns)
+
+ <State 23>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('A_V_6_7_addr', ULTRA_HLS/fully_connected.h:82) [107]  (0 ns)
+	'store' operation (ULTRA_HLS/fully_connected.h:82) of variable 'tmp_47', ULTRA_HLS/fully_connected.h:82 on array 'A_V_6_7' [111]  (3.25 ns)
+
+ <State 24>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('indvar_flatten6') with incoming values : ('indvar_flatten_next7') [143]  (1.77 ns)
+
+ <State 25>: 4.71ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', ULTRA_HLS/fully_connected.h:87) [146]  (0 ns)
+	'icmp' operation ('exitcond3', ULTRA_HLS/fully_connected.h:87) [152]  (1.55 ns)
+	'select' operation ('j4_mid2', ULTRA_HLS/fully_connected.h:87) [154]  (1.25 ns)
+	'add' operation ('j', ULTRA_HLS/fully_connected.h:87) [209]  (1.92 ns)
+
+ <State 26>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('A_V_6_0_addr_1', ULTRA_HLS/fully_connected.h:87) [174]  (0 ns)
+	'load' operation ('A_V_6_0_load', ULTRA_HLS/fully_connected.h:87) on array 'A_V_6_0' [175]  (3.25 ns)
+
+ <State 27>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('A_V_6_0_load', ULTRA_HLS/fully_connected.h:87) on array 'A_V_6_0' [175]  (3.25 ns)
+
+ <State 28>: 3.6ns
+The critical path consists of the following:
+	'mux' operation ('tmp_41', ULTRA_HLS/fully_connected.h:87) [192]  (2.55 ns)
+	'mul' operation ('r.V', ULTRA_HLS/fully_connected.h:90) [205]  (1.05 ns)
+
+ <State 29>: 2.29ns
+The critical path consists of the following:
+	'getelementptr' operation ('bias_V_10_addr_1', ULTRA_HLS/fully_connected.h:92) [213]  (0 ns)
+	'load' operation ('bias_V_10_load', ULTRA_HLS/fully_connected.h:92) on array 'bias_V_10' [214]  (2.29 ns)
+
+ <State 30>: 3.75ns
+The critical path consists of the following:
+	'select' operation ('p_2_mid2', ULTRA_HLS/fully_connected.h:87) [153]  (0.733 ns)
+	'add' operation ('buf.V', ULTRA_HLS/fully_connected.h:90) [207]  (3.02 ns)
+
+ <State 31>: 2.52ns
+The critical path consists of the following:
+	'add' operation ('r_V_1_tr', ULTRA_HLS/fully_connected.h:92) [216]  (2.52 ns)
+
+ <State 32>: 2.52ns
+The critical path consists of the following:
+	'sub' operation ('p_neg', ULTRA_HLS/fully_connected.h:92) [218]  (2.52 ns)
+
+ <State 33>: 2.9ns
+The critical path consists of the following:
+	'sub' operation ('tmp_38', ULTRA_HLS/fully_connected.h:92) [224]  (2.2 ns)
+	'select' operation ('tmp_39', ULTRA_HLS/fully_connected.h:92) [226]  (0.704 ns)
+
+ <State 34>: 3.89ns
+The critical path consists of the following:
+	'mul' operation ('r_V_2', ULTRA_HLS/fully_connected.h:92) [230]  (3.89 ns)
+
+ <State 35>: 3.89ns
+The critical path consists of the following:
+	'mul' operation ('r_V_2', ULTRA_HLS/fully_connected.h:92) [230]  (3.89 ns)
+
+ <State 36>: 0ns
+The critical path consists of the following:
+
+ <State 37>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('mul', ULTRA_HLS/fully_connected.h:92) [232]  (3.95 ns)
+
+ <State 38>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('mul', ULTRA_HLS/fully_connected.h:92) [232]  (3.95 ns)
+
+ <State 39>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('mul', ULTRA_HLS/fully_connected.h:92) [232]  (3.95 ns)
+
+ <State 40>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('mul', ULTRA_HLS/fully_connected.h:92) [232]  (3.95 ns)
+
+ <State 41>: 3.95ns
+The critical path consists of the following:
+	'mul' operation ('mul', ULTRA_HLS/fully_connected.h:92) [232]  (3.95 ns)
+
+ <State 42>: 3.49ns
+The critical path consists of the following:
+	'sub' operation ('neg_mul', ULTRA_HLS/fully_connected.h:92) [233]  (3.49 ns)
+
+ <State 43>: 3.68ns
+The critical path consists of the following:
+	'select' operation ('p_v_v', ULTRA_HLS/fully_connected.h:92) [237]  (0.803 ns)
+	'sub' operation ('neg_ti', ULTRA_HLS/fully_connected.h:93) [239]  (2.08 ns)
+	'select' operation ('tmp_52', ULTRA_HLS/fully_connected.h:92) [242]  (0 ns)
+	'select' operation ('Outbuf.V', ULTRA_HLS/fully_connected.h:93) [243]  (0.805 ns)
+
+ <State 44>: 2.19ns
+The critical path consists of the following:
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:94) [244]  (2.19 ns)
+
+ <State 45>: 0ns
+The critical path consists of the following:
+
+ <State 46>: 4.71ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ULTRA_HLS/fully_connected.h:58) [262]  (0 ns)
+	'icmp' operation ('exitcond', ULTRA_HLS/fully_connected.h:58) [268]  (1.55 ns)
+	'select' operation ('i_mid2', ULTRA_HLS/fully_connected.h:58) [269]  (1.25 ns)
+	'add' operation ('i', ULTRA_HLS/fully_connected.h:58) [319]  (1.92 ns)
+
+ <State 47>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:61) [275]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:63) [317]  (2.19 ns)
+
+ <State 48>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('B_V_6_2_addr', ULTRA_HLS/fully_connected.h:62) [280]  (0 ns)
+	'store' operation (ULTRA_HLS/fully_connected.h:62) of variable 'tmp_34', ULTRA_HLS/fully_connected.h:62 on array 'B_V_6_2' [305]  (3.25 ns)
+
+ <State 49>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', ULTRA_HLS/fully_connected.h:65) [324]  (1.77 ns)
+
+ <State 50>: 1.92ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ULTRA_HLS/fully_connected.h:65) [324]  (0 ns)
+	'add' operation ('i', ULTRA_HLS/fully_connected.h:65) [327]  (1.92 ns)
+
+ <State 51>: 4.38ns
+The critical path consists of the following:
+	fifo read on port 'stream_in_V_V' (ULTRA_HLS/fully_connected.h:68) [332]  (2.19 ns)
+	fifo write on port 'stream_out_V_V' (ULTRA_HLS/fully_connected.h:70) [337]  (2.19 ns)
+
+ <State 52>: 2.29ns
+The critical path consists of the following:
+	'getelementptr' operation ('bias_V_10_addr', ULTRA_HLS/fully_connected.h:69) [335]  (0 ns)
+	'store' operation (ULTRA_HLS/fully_connected.h:69) of variable 'tmp_36', ULTRA_HLS/fully_connected.h:69 on array 'bias_V_10' [336]  (2.29 ns)
+
+ <State 53>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
