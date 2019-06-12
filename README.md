@@ -1,10 +1,14 @@
 # PYNQ-CNN-ATTEMPT
 
 These are some attempts I made during my undergraduate graduation project.
+
 The hardware platform I use is PYNQ-Z2.
 The PS part is an Arm CPU running Ubuntu 16.04 LTS, which supports Python.
 The PL part is the Zynq XC7Z020 FPGA.
+
 The version of Vivado and Vivado HLS is 2018.2.
+
+Any problems，please contact me.
 
 ## Digilent Vivado IP Library
 This is the open source IP library provided by Digilent for video processing. I mainly use its rgb2dvi to implement my HDMI video output module.
