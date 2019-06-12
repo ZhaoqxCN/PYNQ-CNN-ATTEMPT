@@ -1,0 +1,1021 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 21 22:58:40 2019
+# Process ID: 10136
+# Current directory: E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1
+# Command line: vivado.exe -log ultra_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ultra_wrapper.tcl -notrace
+# Log file: E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1/ultra_wrapper.vdi
+# Journal file: E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ultra_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/MyPYNQ/HLS'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'digilentinc.com:interface:tmds:1.0' found within IP repository 'e:/MyPYNQ/vivado-library-master'.
+File in use: e:/MyPYNQ/vivado-library-master/if/tmds_v1_0/tmds.xml
+File ignored: e:/MyPYNQ/vivado-library-master/ip/if/tmds_v1_0/tmds.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'digilentinc.com:interface:tmds_rtl:1.0' found within IP repository 'e:/MyPYNQ/vivado-library-master'.
+File in use: e:/MyPYNQ/vivado-library-master/if/tmds_v1_0/tmds_rtl.xml
+File ignored: e:/MyPYNQ/vivado-library-master/ip/if/tmds_v1_0/tmds_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/MyPYNQ/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+add_files: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 420.414 ; gain = 112.852
+Command: link_design -top ultra_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_0/ultra_axi_smc_0.dcp' for cell 'ultra_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_1_0/ultra_axi_smc_1_0.dcp' for cell 'ultra_i/axi_smc_1'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_processing_system7_0_0/ultra_processing_system7_0_0.dcp' for cell 'ultra_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_100M_0/ultra_rst_ps7_0_100M_0.dcp' for cell 'ultra_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_200M_0/ultra_rst_ps7_0_200M_0.dcp' for cell 'ultra_i/rst_ps7_0_200M'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_dma_0_0/ultra_axi_dma_0_0.dcp' for cell 'ultra_i/cnn/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_ultra_0_0/ultra_ultra_0_0.dcp' for cell 'ultra_i/cnn/ultra_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_xbar_0/ultra_xbar_0.dcp' for cell 'ultra_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_auto_cc_0/ultra_auto_cc_0.dcp' for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_auto_pc_0/ultra_auto_pc_0.dcp' for cell 'ultra_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_intc_0_0/ultra_axi_intc_0_0.dcp' for cell 'ultra_i/video/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_vdma_0_0/ultra_axi_vdma_0_0.dcp' for cell 'ultra_i/video/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_color_swap_0_0/ultra_color_swap_0_0.dcp' for cell 'ultra_i/video/color_swap_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rgb2dvi_0_0/ultra_rgb2dvi_0_0.dcp' for cell 'ultra_i/video/rgb2dvi_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_v_axi4s_vid_out_0_0/ultra_v_axi4s_vid_out_0_0.dcp' for cell 'ultra_i/video/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_v_tc_0_0/ultra_v_tc_0_0.dcp' for cell 'ultra_i/video/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_xlconcat_0_0/ultra_xlconcat_0_0.dcp' for cell 'ultra_i/video/xlconcat_0'
+INFO: [Netlist 29-17] Analyzing 5201 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_processing_system7_0_0/ultra_processing_system7_0_0.xdc] for cell 'ultra_i/processing_system7_0/inst'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_processing_system7_0_0/ultra_processing_system7_0_0.xdc] for cell 'ultra_i/processing_system7_0/inst'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_0/bd_0/ip/ip_1/bd_ef9f_psr_aclk_0_board.xdc] for cell 'ultra_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_0/bd_0/ip/ip_1/bd_ef9f_psr_aclk_0_board.xdc] for cell 'ultra_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_0/bd_0/ip/ip_1/bd_ef9f_psr_aclk_0.xdc] for cell 'ultra_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_0/bd_0/ip/ip_1/bd_ef9f_psr_aclk_0.xdc] for cell 'ultra_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_100M_0/ultra_rst_ps7_0_100M_0_board.xdc] for cell 'ultra_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_100M_0/ultra_rst_ps7_0_100M_0_board.xdc] for cell 'ultra_i/rst_ps7_0_100M/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_100M_0/ultra_rst_ps7_0_100M_0.xdc] for cell 'ultra_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_100M_0/ultra_rst_ps7_0_100M_0.xdc] for cell 'ultra_i/rst_ps7_0_100M/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_1_0/bd_0/ip/ip_1/bd_5840_psr_aclk_0_board.xdc] for cell 'ultra_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_1_0/bd_0/ip/ip_1/bd_5840_psr_aclk_0_board.xdc] for cell 'ultra_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_1_0/bd_0/ip/ip_1/bd_5840_psr_aclk_0.xdc] for cell 'ultra_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_smc_1_0/bd_0/ip/ip_1/bd_5840_psr_aclk_0.xdc] for cell 'ultra_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_200M_0/ultra_rst_ps7_0_200M_0_board.xdc] for cell 'ultra_i/rst_ps7_0_200M/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_200M_0/ultra_rst_ps7_0_200M_0_board.xdc] for cell 'ultra_i/rst_ps7_0_200M/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_200M_0/ultra_rst_ps7_0_200M_0.xdc] for cell 'ultra_i/rst_ps7_0_200M/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rst_ps7_0_200M_0/ultra_rst_ps7_0_200M_0.xdc] for cell 'ultra_i/rst_ps7_0_200M/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_dma_0_0/ultra_axi_dma_0_0.xdc] for cell 'ultra_i/cnn/axi_dma_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_dma_0_0/ultra_axi_dma_0_0.xdc] for cell 'ultra_i/cnn/axi_dma_0/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_vdma_0_0/ultra_axi_vdma_0_0.xdc] for cell 'ultra_i/video/axi_vdma_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_vdma_0_0/ultra_axi_vdma_0_0.xdc] for cell 'ultra_i/video/axi_vdma_0/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_intc_0_0/ultra_axi_intc_0_0.xdc] for cell 'ultra_i/video/axi_intc_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_intc_0_0/ultra_axi_intc_0_0.xdc] for cell 'ultra_i/video/axi_intc_0/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'ultra_i/video/rgb2dvi_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'ultra_i/video/rgb2dvi_0/U0'
+Parsing XDC File [E:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [E:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/constrs_1/new/constr.xdc]
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_dma_0_0/ultra_axi_dma_0_0_clocks.xdc] for cell 'ultra_i/cnn/axi_dma_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_dma_0_0/ultra_axi_dma_0_0_clocks.xdc] for cell 'ultra_i/cnn/axi_dma_0/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_vdma_0_0/ultra_axi_vdma_0_0_clocks.xdc] for cell 'ultra_i/video/axi_vdma_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_vdma_0_0/ultra_axi_vdma_0_0_clocks.xdc] for cell 'ultra_i/video/axi_vdma_0/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_intc_0_0/ultra_axi_intc_0_0_clocks.xdc] for cell 'ultra_i/video/axi_intc_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_axi_intc_0_0/ultra_axi_intc_0_0_clocks.xdc] for cell 'ultra_i/video/axi_intc_0/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_v_axi4s_vid_out_0_0/ultra_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_v_axi4s_vid_out_0_0/ultra_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_v_tc_0_0/ultra_v_tc_0_0_clocks.xdc] for cell 'ultra_i/video/v_tc_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_v_tc_0_0/ultra_v_tc_0_0_clocks.xdc] for cell 'ultra_i/video/v_tc_0/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'ultra_i/video/rgb2dvi_0/U0'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'ultra_i/video/rgb2dvi_0/U0'
+Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_auto_cc_0/ultra_auto_cc_0_clocks.xdc] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst'
+Finished Parsing XDC File [e:/MyPYNQ/PL_ULTRA/PL_ULTRA.srcs/sources_1/bd/ultra/ip/ultra_auto_cc_0/ultra_auto_cc_0_clocks.xdc] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'ultra_i/axi_smc_1/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2628 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 24 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2032 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 526 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM32X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:48 . Memory (MB): peak = 1741.309 ; gain = 1320.895
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1741.309 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 23a5ea3a9
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1741.309 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 30 inverter(s) to 170 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 277090b8c
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1741.309 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1bcb39b5b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1741.309 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 100 cells and removed 1205 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1fb41fd68
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 1741.309 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3487 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG ultra_i/video/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/PixelClk_BUFG_inst to drive 8 load(s) on clock net ultra_i/video/rgb2dvi_0/U0/PixelClkIO
+INFO: [Opt 31-194] Inserted BUFG ultra_i/video/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/SerialClk_BUFG_inst to drive 8 load(s) on clock net ultra_i/video/rgb2dvi_0/U0/SerialClkIO
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 2099f84d2
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 1741.309 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 2cdf89ea2
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 1741.309 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 22a480616
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1741.309 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.316 . Memory (MB): peak = 1741.309 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 290210b6a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:44 . Memory (MB): peak = 1741.309 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.735 | TNS=-1720.821 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 150 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 9 WE to EN ports
+Number of BRAM Ports augmented: 72 newly gated: 9 Total Ports: 300
+Ending PowerOpt Patch Enables Task | Checksum: 1d2df87e9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1d2df87e9
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:26 . Memory (MB): peak = 2925.055 ; gain = 1183.746
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1d2df87e9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:03:59 ; elapsed = 00:02:24 . Memory (MB): peak = 2925.055 ; gain = 1183.746
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.335 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1/ultra_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file ultra_wrapper_drc_opted.rpt -pb ultra_wrapper_drc_opted.pb -rpx ultra_wrapper_drc_opted.rpx
+Command: report_drc -file ultra_wrapper_drc_opted.rpt -pb ultra_wrapper_drc_opted.pb -rpx ultra_wrapper_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1/ultra_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.235 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 15cfc2548
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.387 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.248 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1cc273791
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:39 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1d793a434
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:14 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1d793a434
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:15 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1d793a434
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:15 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1f4890869
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:26 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]. Replicated 7 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 7 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 7 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.250 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Physopt 32-117] Net ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_fwft.ram_regout_en could not be optimized because driver ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst_i_3 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_S_U0/B_V_4_3_U/Conv_S_B_V_4_0_ram_U/WEA[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_S_U0/B_V_4_3_U/Conv_S_B_V_4_0_ram_U/ram_reg_i_4 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[1] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_10__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/B_V_0_ce1 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_1__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[5] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_6__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[2] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_9__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[1] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_19__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[3] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_8__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[8] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_3__11 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_1_U0/A_V_2_0_U/Conv_1_A_V_2_2_ram_U/A_V_2_0_ce0 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_1_U0/A_V_2_0_U/Conv_1_A_V_2_2_ram_U/ram_reg_0_i_2 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[5] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_22__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[7] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_4__10 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_20__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_11__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[3] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_17__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[5] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_15__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_0 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_2__19 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/A_V_1164_ce0 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_2__3 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[8] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_12__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/A_V_1164_ce1 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_1__13 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[4] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_16__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/FC_128_8_U0/A_V_5_0_ce0 could not be optimized because driver ultra_i/cnn/ultra_0/inst/FC_128_8_U0/ram_reg_i_2__21 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[2] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_18__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[4] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_7__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_S_U0/B_V_4_2_U/Conv_S_B_V_4_0_ram_U/E[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_S_U0/B_V_4_2_U/Conv_S_B_V_4_0_ram_U/ram_reg_i_2__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_11_U/Pool_16_63_3_0_s_g8j_ram_U/WEA[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_11_U/Pool_16_63_3_0_s_g8j_ram_U/ram_reg_i_2__13 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRARDADDR[6] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_5__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_S_U0/B_V_4_1_U/Conv_S_B_V_4_0_ram_U/CEB2 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_S_U0/B_V_4_1_U/Conv_S_B_V_4_0_ram_U/ram_reg_i_3 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[7] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_13__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_1_U0/A_V_2_0_U/Conv_1_A_V_2_2_ram_U/A_V_2_0_ce1 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_1_U0/A_V_2_0_U/Conv_1_A_V_2_2_ram_U/ram_reg_i_1__95 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[9] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_5__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_14__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ADDRBWRADDR[6] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/A_V_17_U/Conv_3_A_V_4167_ram_U/ram_reg_i_14__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_1_U0/ce1 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_1_U0/ram_reg_0_i_1__1 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_U0/B_V_3_1_U/Conv_1_B_V_2_0_ram_U/B_V_3_1_we1 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_U0/B_V_3_1_U/Conv_1_B_V_2_0_ram_U/ram_reg_0_i_27__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[9] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_18__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[12] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_15__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[6] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_8__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[5] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_9__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[3] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_11__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_14_U/Pool_16_63_3_0_s_g8j_ram_U/WEA[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_14_U/Pool_16_63_3_0_s_g8j_ram_U/ram_reg_i_2__12 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[1] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_26__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[2] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_12__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[14] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_13__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[10] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_4__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_27__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_U0/B_V_3_2_U/Conv_1_B_V_2_0_ram_U/reg_11350 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_U0/B_V_3_2_U/Conv_1_B_V_2_0_ram_U/ram_reg_0_i_4__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[4] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_10__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[11] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_3__10 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_1_U0/CEB2 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_1_U0/ram_reg_0_i_3 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[4] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_23__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[7] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_7__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[1] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_13__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/FC_144_128_U0/B_V_6_0_ce1 could not be optimized because driver ultra_i/cnn/ultra_0/inst/FC_144_128_U0/ram_reg_i_2__22 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[3] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_24__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[5] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_21__9 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[7] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_19__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRARDADDR[8] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_6__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[11] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_15__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[1] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_25__2 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/FC_144_128_U0/A_V_6_8_U/FC_144_128_s_A_V_zec_ram_U/ram_reg_1 could not be optimized because driver ultra_i/cnn/ultra_0/inst/FC_144_128_U0/A_V_6_8_U/FC_144_128_s_A_V_zec_ram_U/ram_reg_i_3__14 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_1_U/Pool_16_63_3_0_s_g8j_ram_U/WEA[0] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_1_U/Pool_16_63_3_0_s_g8j_ram_U/ram_reg_i_2__17 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/tmp1_reg_294_reg_i_4_n_31 could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/tmp1_reg_294_reg_i_4 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_15_U/Pool_16_63_3_0_s_g8j_ram_U/ADDRBWRADDR[3] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_15_U/Pool_16_63_3_0_s_g8j_ram_U/ram_reg_i_12__10 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_2_U0/B_V_1_2_U/Conv_2_B_V_1_0_ram_U/B_V_1_0_ce1 could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_2_U0/B_V_1_2_U/Conv_2_B_V_1_0_ram_U/ram_reg_i_1__81 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/tmp1_reg_294_reg_i_1_n_31 could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/tmp1_reg_294_reg_i_1 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[13] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_14__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[9] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_17__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_15_U/Pool_16_63_3_0_s_g8j_ram_U/ADDRBWRADDR[1] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_15_U/Pool_16_63_3_0_s_g8j_ram_U/ram_reg_i_14__10 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[10] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_16__8 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[3] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_23__3 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[6] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_20__7 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[2] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_25__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[2] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_24__2 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_15_U/Pool_16_63_3_0_s_g8j_ram_U/ADDRBWRADDR[7] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/A_V_7_15_U/Pool_16_63_3_0_s_g8j_ram_U/ram_reg_i_8__10 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[4] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_22__2 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/DIADI[6] could not be optimized because driver ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/mem_reg_i_21__0 could not be replicated
+INFO: [Physopt 32-117] Net ultra_i/cnn/ultra_0/inst/Conv_3_U0/ADDRBWRADDR[8] could not be optimized because driver ultra_i/cnn/ultra_0/inst/Conv_3_U0/ram_reg_i_18__8 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.237 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  Fanout             |            7  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  Critical Cell      |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |            7  |              0  |                     1  |           0  |           3  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 16cef567b
+
+Time (s): cpu = 00:06:09 ; elapsed = 00:04:23 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 18e7fde62
+
+Time (s): cpu = 00:06:41 ; elapsed = 00:04:48 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18e7fde62
+
+Time (s): cpu = 00:06:42 ; elapsed = 00:04:49 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1746534ca
+
+Time (s): cpu = 00:08:12 ; elapsed = 00:06:07 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1050e9cdd
+
+Time (s): cpu = 00:08:14 ; elapsed = 00:06:08 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 118177fff
+
+Time (s): cpu = 00:08:15 ; elapsed = 00:06:09 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 118177fff
+
+Time (s): cpu = 00:08:15 ; elapsed = 00:06:09 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 120bf1ae1
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:06:17 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 12f384d1d
+
+Time (s): cpu = 00:08:57 ; elapsed = 00:06:50 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: f452427d
+
+Time (s): cpu = 00:09:02 ; elapsed = 00:06:56 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 13467f440
+
+Time (s): cpu = 00:09:03 ; elapsed = 00:06:57 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: e6e5c69a
+
+Time (s): cpu = 00:10:47 ; elapsed = 00:08:21 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: e6e5c69a
+
+Time (s): cpu = 00:10:48 ; elapsed = 00:08:22 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1a1218165
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_stream_rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-31] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1a1218165
+
+Time (s): cpu = 00:11:45 ; elapsed = 00:09:01 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.487. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1d68ae41f
+
+Time (s): cpu = 00:13:07 ; elapsed = 00:09:59 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1d68ae41f
+
+Time (s): cpu = 00:13:07 ; elapsed = 00:09:59 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1d68ae41f
+
+Time (s): cpu = 00:13:09 ; elapsed = 00:10:01 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1d68ae41f
+
+Time (s): cpu = 00:13:10 ; elapsed = 00:10:02 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 13a5e1cbb
+
+Time (s): cpu = 00:13:10 ; elapsed = 00:10:02 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 13a5e1cbb
+
+Time (s): cpu = 00:13:11 ; elapsed = 00:10:03 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Ending Placer Task | Checksum: 121050a3c
+
+Time (s): cpu = 00:13:11 ; elapsed = 00:10:03 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+162 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:13:24 ; elapsed = 00:10:14 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:42 ; elapsed = 00:00:14 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1/ultra_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:52 ; elapsed = 00:00:26 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file ultra_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file ultra_wrapper_utilization_placed.rpt -pb ultra_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file ultra_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.901 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: e90f723c ConstDB: 0 ShapeSum: 37f59800 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 34b9c42e
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:49 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 2cc0cfb NumContArr: 31edb733 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 34b9c42e
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:54 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 34b9c42e
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:55 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 34b9c42e
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:55 . Memory (MB): peak = 2925.055 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1c390d677
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:43 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.507 | TNS=-6265.720| WHS=-2.645 | THS=-1275.664|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1863e718e
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:06 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.507 | TNS=-5565.813| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 150ea88c1
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:07 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 1b888133e
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:07 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: a2f3bf37
+
+Time (s): cpu = 00:04:59 ; elapsed = 00:02:58 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 10111
+ Number of Nodes with overlaps = 1543
+ Number of Nodes with overlaps = 516
+ Number of Nodes with overlaps = 243
+ Number of Nodes with overlaps = 115
+ Number of Nodes with overlaps = 60
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.626 | TNS=-22610.570| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: f502103f
+
+Time (s): cpu = 00:09:24 ; elapsed = 00:05:39 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 86
+ Number of Nodes with overlaps = 583
+ Number of Nodes with overlaps = 242
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.657 | TNS=-20449.225| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 22f501c24
+
+Time (s): cpu = 00:10:45 ; elapsed = 00:06:33 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 22f501c24
+
+Time (s): cpu = 00:10:45 ; elapsed = 00:06:33 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1e00e4fdc
+
+Time (s): cpu = 00:10:58 ; elapsed = 00:06:40 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.495 | TNS=-20715.857| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 16b04814e
+
+Time (s): cpu = 00:11:16 ; elapsed = 00:06:50 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 16b04814e
+
+Time (s): cpu = 00:11:17 ; elapsed = 00:06:51 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 16b04814e
+
+Time (s): cpu = 00:11:17 ; elapsed = 00:06:51 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 233047be5
+
+Time (s): cpu = 00:11:28 ; elapsed = 00:06:58 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.484 | TNS=-20248.893| WHS=-0.037 | THS=-0.114 |
+
+Phase 6.1 Hold Fix Iter | Checksum: cdbb3dc4
+
+Time (s): cpu = 00:11:29 ; elapsed = 00:06:59 . Memory (MB): peak = 2925.055 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 14ccc1fec
+
+Time (s): cpu = 00:11:30 ; elapsed = 00:06:59 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 25.3245 %
+  Global Horizontal Routing Utilization  = 30.3507 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 90.991%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X68Y105 -> INT_L_X68Y105
+   INT_R_X69Y105 -> INT_R_X69Y105
+South Dir 2x2 Area, Max Cong = 86.036%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X18Y48 -> INT_R_X19Y49
+East Dir 2x2 Area, Max Cong = 90.8088%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X50Y92 -> INT_R_X51Y93
+   INT_L_X52Y92 -> INT_R_X53Y93
+West Dir 1x1 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X39Y60 -> INT_R_X39Y60
+   INT_R_X39Y53 -> INT_R_X39Y53
+   INT_R_X35Y47 -> INT_R_X35Y47
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 1 Sparse Ratio: 1.25
+Direction: East
+----------------
+Congested clusters found at Level 1
+Effective congestion level: 2 Aspect Ratio: 0.666667 Sparse Ratio: 1.25
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+
+Phase 7 Route finalize | Checksum: ee724180
+
+Time (s): cpu = 00:11:31 ; elapsed = 00:07:00 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: ee724180
+
+Time (s): cpu = 00:11:32 ; elapsed = 00:07:01 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 14766a266
+
+Time (s): cpu = 00:11:41 ; elapsed = 00:07:11 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 152b47b10
+
+Time (s): cpu = 00:11:52 ; elapsed = 00:07:18 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.484 | TNS=-20248.893| WHS=0.050  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 152b47b10
+
+Time (s): cpu = 00:11:52 ; elapsed = 00:07:19 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:11:53 ; elapsed = 00:07:19 . Memory (MB): peak = 2925.055 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+181 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:12:13 ; elapsed = 00:07:30 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:47 ; elapsed = 00:00:18 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1/ultra_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:55 ; elapsed = 00:00:27 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file ultra_wrapper_drc_routed.rpt -pb ultra_wrapper_drc_routed.pb -rpx ultra_wrapper_drc_routed.rpx
+Command: report_drc -file ultra_wrapper_drc_routed.rpt -pb ultra_wrapper_drc_routed.pb -rpx ultra_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1/ultra_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 2925.055 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file ultra_wrapper_methodology_drc_routed.rpt -pb ultra_wrapper_methodology_drc_routed.pb -rpx ultra_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file ultra_wrapper_methodology_drc_routed.rpt -pb ultra_wrapper_methodology_drc_routed.pb -rpx ultra_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1/ultra_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:52 ; elapsed = 00:01:04 . Memory (MB): peak = 3014.004 ; gain = 88.949
+INFO: [runtcl-4] Executing : report_power -file ultra_wrapper_power_routed.rpt -pb ultra_wrapper_power_summary_routed.pb -rpx ultra_wrapper_power_routed.rpx
+Command: report_power -file ultra_wrapper_power_routed.rpt -pb ultra_wrapper_power_summary_routed.pb -rpx ultra_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+193 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:58 ; elapsed = 00:00:34 . Memory (MB): peak = 3093.285 ; gain = 79.281
+INFO: [runtcl-4] Executing : report_route_status -file ultra_wrapper_route_status.rpt -pb ultra_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file ultra_wrapper_timing_summary_routed.rpt -pb ultra_wrapper_timing_summary_routed.pb -rpx ultra_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 3122.879 ; gain = 19.566
+INFO: [runtcl-4] Executing : report_incremental_reuse -file ultra_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file ultra_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3122.879 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file ultra_wrapper_bus_skew_routed.rpt -pb ultra_wrapper_bus_skew_routed.pb -rpx ultra_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-208] The XPM instance: <ultra_i/video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ultra_i/video/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ultra_i/video/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ultra_i/video/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ultra_i/cnn/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <ultra_i/cnn/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ultra_i/cnn/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc_1/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc_1/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block ultra_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the ultra_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+Command: write_bitstream -force ultra_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP ultra_i/cnn/ultra_0/inst/FC_128_8_U0/buf_V_reg_1654_reg input ultra_i/cnn/ultra_0/inst/FC_128_8_U0/buf_V_reg_1654_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP ultra_i/cnn/ultra_0/inst/FC_144_128_U0/buf_V_reg_1729_reg input ultra_i/cnn/ultra_0/inst/FC_144_128_U0/buf_V_reg_1729_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/AXI_DMA_MASTER_U0/ultra_mul_32s_32sbkb_U112/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/AXI_DMA_MASTER_U0/ultra_mul_32s_32sbkb_U112/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/AXI_DMA_MASTER_U0/ultra_mul_32s_32sbkb_U113/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/AXI_DMA_MASTER_U0/ultra_mul_32s_32sbkb_U113/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/ultra_mul_32s_32sbkb_U1/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/ultra_mul_32s_32sbkb_U1/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/ultra_mul_32s_32sbkb_U2/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/AXI_DMA_SLAVE_U0/ultra_mul_32s_32sbkb_U2/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_1_U0/ultra_mul_32s_32sbkb_U50/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_1_U0/ultra_mul_32s_32sbkb_U50/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_1_U0/ultra_mul_35ns_33eOg_U52/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_1_U0/ultra_mul_35ns_33eOg_U52/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_1_U0/ultra_mul_8s_26s_dEe_U51/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0 multiplier stage ultra_i/cnn/ultra_0/inst/Conv_1_U0/ultra_mul_8s_26s_dEe_U51/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_2_U0/ultra_mul_32s_32sbkb_U70/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_2_U0/ultra_mul_32s_32sbkb_U70/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_2_U0/ultra_mul_35ns_33eOg_U72/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_2_U0/ultra_mul_35ns_33eOg_U72/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_2_U0/ultra_mul_8s_26s_dEe_U71/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0 multiplier stage ultra_i/cnn/ultra_0/inst/Conv_2_U0/ultra_mul_8s_26s_dEe_U71/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_3_U0/ultra_mul_32s_32sbkb_U37/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_3_U0/ultra_mul_32s_32sbkb_U37/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_3_U0/ultra_mul_35ns_33eOg_U39/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_3_U0/ultra_mul_35ns_33eOg_U39/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_3_U0/ultra_mul_8s_26s_dEe_U38/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0 multiplier stage ultra_i/cnn/ultra_0/inst/Conv_3_U0/ultra_mul_8s_26s_dEe_U38/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_S_U0/ultra_mul_32s_32sbkb_U12/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_S_U0/ultra_mul_32s_32sbkb_U12/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_S_U0/ultra_mul_35ns_33eOg_U14/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_S_U0/ultra_mul_35ns_33eOg_U14/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_S_U0/ultra_mul_8s_26s_dEe_U13/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0 multiplier stage ultra_i/cnn/ultra_0/inst/Conv_S_U0/ultra_mul_8s_26s_dEe_U13/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_U0/ultra_mul_32s_32sbkb_U61/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_U0/ultra_mul_32s_32sbkb_U61/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_U0/ultra_mul_35ns_33eOg_U63/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Conv_U0/ultra_mul_35ns_33eOg_U63/ultra_mul_35ns_33eOg_MulnS_2_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Conv_U0/ultra_mul_8s_26s_dEe_U62/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0 multiplier stage ultra_i/cnn/ultra_0/inst/Conv_U0/ultra_mul_8s_26s_dEe_U62/ultra_mul_8s_26s_dEe_MulnS_1_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/FC_128_8_U0/ultra_mul_24ns_22VhK_U100/ultra_mul_24ns_22VhK_MulnS_4_U/buff0_reg__0 multiplier stage ultra_i/cnn/ultra_0/inst/FC_128_8_U0/ultra_mul_24ns_22VhK_U100/ultra_mul_24ns_22VhK_MulnS_4_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/FC_128_8_U0/ultra_mul_32s_32sbkb_U97/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/FC_128_8_U0/ultra_mul_32s_32sbkb_U97/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/FC_128_8_U0/ultra_mul_mul_8s_WhU_U104/ultra_mul_mul_8s_WhU_DSP48_5_U/p_reg_reg multiplier stage ultra_i/cnn/ultra_0/inst/FC_128_8_U0/ultra_mul_mul_8s_WhU_U104/ultra_mul_mul_8s_WhU_DSP48_5_U/p_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/FC_144_128_U0/ultra_mul_25ns_23Rg6_U83/ultra_mul_25ns_23Rg6_MulnS_3_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/FC_144_128_U0/ultra_mul_25ns_23Rg6_U83/ultra_mul_25ns_23Rg6_MulnS_3_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/FC_144_128_U0/ultra_mul_32s_32sbkb_U80/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/FC_144_128_U0/ultra_mul_32s_32sbkb_U80/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/FC_144_128_U0/ultra_mul_mul_8s_Thq_U87/ultra_mul_mul_8s_Thq_DSP48_4_U/p_reg_reg multiplier stage ultra_i/cnn/ultra_0/inst/FC_144_128_U0/ultra_mul_mul_8s_Thq_U87/ultra_mul_mul_8s_Thq_DSP48_4_U/p_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/ultra_mul_32s_32sbkb_U28/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg multiplier stage ultra_i/cnn/ultra_0/inst/Pool_16_63_3_0_U0/ultra_mul_32s_32sbkb_U28/ultra_mul_32s_32sbkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC RTSTAT-10] No routable loads: 10 net(s) have no routable loads. The problem bus(es) and/or net(s) are ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, and ultra_i/video/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid.
+INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (ultra_i/video/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 29 Warnings, 3 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./ultra_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'E:/MyPYNQ/PL_ULTRA/PL_ULTRA.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 21 23:26:25 2019. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+254 Infos, 34 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:05 ; elapsed = 00:01:27 . Memory (MB): peak = 3613.137 ; gain = 490.258
+INFO: [Common 17-206] Exiting Vivado at Tue May 21 23:26:26 2019...

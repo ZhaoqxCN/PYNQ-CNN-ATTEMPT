@@ -1,0 +1,1725 @@
+INFO-FLOW: Workspace E:/MyPYNQ/HLS/ULTRA_HLS/solution1 opened at Tue Jun 11 19:32:39 +0800 2019
+Execute     config_clock -quiet -name default -period 5.0 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Command       ap_source done; 0.103 sec.
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.292 sec.
+Execute     source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source done; 0.101 sec.
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.157 sec.
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.468 sec.
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.493 sec.
+Command     ap_source done; 0.494 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Command     import_lib done; 0.114 sec.
+Execute     source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 0.116 sec.
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.123 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Command     set_part done; 0.225 sec.
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.251 sec.
+Execute   set_part xc7z020clg400-1 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 200MHz -name default 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'ULTRA_HLS/ultra.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling ULTRA_HLS/ultra.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted ULTRA_HLS/ultra.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "ULTRA_HLS/ultra.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E ULTRA_HLS/ultra.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.2/common/technology/autopilot -I D:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp
+Command       clang done; 3.898 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2018.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp"  -o "E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.2/common/technology/autopilot -I D:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/useless.bc
+Command       clang done; 3.252 sec.
+INFO-FLOW: GCC PP time: 7 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp std=gnu++98 -directive=E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.953 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp std=gnu++98 -directive=E:/MyPYNQ/HLS/ULTRA_HLS/solution1/solution1.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/MyPYNQ/HLS/ULTRA_HLS/solution1/solution1.json -quiet -fix-errors E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.822 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.ultra.pp.0.cpp.diag.yml E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.ultra.pp.0.cpp.out.log 2> E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.ultra.pp.0.cpp.err.log 
+Command       ap_eval done; 1.301 sec.
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: ULTRA_HLS/ultra.cpp:10:23
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.383 sec.
+INFO-FLOW: tidy-3.1 time 4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.271 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.2.cpp" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.2/common/technology/autopilot -I D:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.2.cpp
+Command       clang done; 1.794 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.2/common/technology/autopilot -I D:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.bc
+Command       clang done; 2.596 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.g.bc -hls-opt -except-internalize ultra -LD:/Xilinx/Vivado/2018.2/win64/lib -lhlsm -lhlsmc++ -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 29.023 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:54 . Memory (MB): peak = 104.293 ; gain = 46.941
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:54 . Memory (MB): peak = 104.293 ; gain = 46.941
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.pp.bc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.237 sec.
+Execute         llvm-ld E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Xilinx/Vivado/2018.2/win64/lib -lfloatconversion -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.16 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top ultra -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g.0.bc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 1.335 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:57 . Memory (MB): peak = 123.797 ; gain = 66.445
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g.1.bc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv_S<256, 16, 5, 4>' (ULTRA_HLS/convolution.h:227) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Pool<16, 63, 3, 0>' (ULTRA_HLS/pool.h:86) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv<16, 21, 32, 5, 2>' (ULTRA_HLS/convolution.h:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv<32, 9, 64, 3, 1>' (ULTRA_HLS/convolution.h:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv<64, 7, 32, 3, 1>' (ULTRA_HLS/convolution.h:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv<32, 5, 16, 3, 1>' (ULTRA_HLS/convolution.h:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'FC<144, 128>' (ULTRA_HLS/fully_connected.h:93) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'FC<128, 8>' (ULTRA_HLS/fully_connected.h:93) automatically.
+Command         transform done; 1.445 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.104 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:59 . Memory (MB): peak = 130.230 ; gain = 72.879
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.g.1.bc to E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.o.1.bc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.2.1.1.1' (ULTRA_HLS/convolution.h:220) in function 'Conv_S<256, 16, 5, 4>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.2.1.1.1' (ULTRA_HLS/convolution.h:98) in function 'Conv<64, 7, 32, 3, 1>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.2.1.1.1' (ULTRA_HLS/convolution.h:98) in function 'Conv<32, 9, 64, 3, 1>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.2.1.1.1' (ULTRA_HLS/convolution.h:98) in function 'Conv<32, 5, 16, 3, 1>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.2.1.1.1' (ULTRA_HLS/convolution.h:98) in function 'Conv<16, 21, 32, 5, 2>' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1' (ULTRA_HLS/convolution.h:223) in function 'Conv_S<256, 16, 5, 4>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1' (ULTRA_HLS/convolution.h:101) in function 'Conv<64, 7, 32, 3, 1>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1.1' (ULTRA_HLS/convolution.h:102) in function 'Conv<64, 7, 32, 3, 1>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1' (ULTRA_HLS/convolution.h:101) in function 'Conv<32, 9, 64, 3, 1>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1.1' (ULTRA_HLS/convolution.h:102) in function 'Conv<32, 9, 64, 3, 1>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1' (ULTRA_HLS/convolution.h:101) in function 'Conv<32, 5, 16, 3, 1>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1.1' (ULTRA_HLS/convolution.h:102) in function 'Conv<32, 5, 16, 3, 1>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1' (ULTRA_HLS/convolution.h:101) in function 'Conv<16, 21, 32, 5, 2>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.2.1.1.1.1.1' (ULTRA_HLS/convolution.h:102) in function 'Conv<16, 21, 32, 5, 2>' completely.
+INFO: [XFORM 203-101] Partitioning array 'A.V.7'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.V.6'  in dimension 1 with a block factor 9.
+INFO: [XFORM 203-101] Partitioning array 'B.V.6'  in dimension 2 with a block factor 9.
+INFO: [XFORM 203-101] Partitioning array 'A.V.5'  in dimension 1 with a block factor 8.
+INFO: [XFORM 203-101] Partitioning array 'B.V.5'  in dimension 2 with a block factor 8.
+WARNING: [XFORM 203-104] Completely partitioning array 'A.V.4'  accessed through non-constant indices on dimension 2 (ULTRA_HLS/convolution.h:224:40), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'A.V.4'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'B.V.4'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.V.3'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'B.V.3'  in dimension 4 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.V.2'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'B.V.2'  in dimension 4 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.V.1'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'B.V.1'  in dimension 4 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.V'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'B.V'  in dimension 4 completely.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv_S<256, 16, 5, 4>' (ULTRA_HLS/convolution.h:227) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Pool<16, 63, 3, 0>' (ULTRA_HLS/pool.h:86) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv<16, 21, 32, 5, 2>' (ULTRA_HLS/convolution.h:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv<32, 9, 64, 3, 1>' (ULTRA_HLS/convolution.h:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv<64, 7, 32, 3, 1>' (ULTRA_HLS/convolution.h:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'Conv<32, 5, 16, 3, 1>' (ULTRA_HLS/convolution.h:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'FC<144, 128>' (ULTRA_HLS/fully_connected.h:93) automatically.
+INFO: [XFORM 203-602] Inlining function 'MAX' into 'FC<128, 8>' (ULTRA_HLS/fully_connected.h:93) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'ultra', detected/extracted 10 process function(s): 
+	 'AXI_DMA_SLAVE'
+	 'Conv_S<256, 16, 5, 4>'
+	 'Pool<16, 63, 3, 0>'
+	 'Conv<16, 21, 32, 5, 2>'
+	 'Conv<32, 9, 64, 3, 1>'
+	 'Conv<64, 7, 32, 3, 1>'
+	 'Conv<32, 5, 16, 3, 1>'
+	 'FC<144, 128>'
+	 'FC<128, 8>'
+	 'AXI_DMA_MASTER'.
+Command         transform done; 13.298 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'Pool<16, 63, 3, 0>' (ULTRA_HLS/pool.h:7)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'FC<144, 128>' (ULTRA_HLS/fully_connected.h:5)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'FC<128, 8>' (ULTRA_HLS/fully_connected.h:5)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv_S<256, 16, 5, 4>' (ULTRA_HLS/convolution.h:132)...8 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv<64, 7, 32, 3, 1>' (ULTRA_HLS/convolution.h:8)...12 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv<32, 9, 64, 3, 1>' (ULTRA_HLS/convolution.h:8)...12 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv<32, 5, 16, 3, 1>' (ULTRA_HLS/convolution.h:8)...12 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv<16, 21, 32, 5, 2>' (ULTRA_HLS/convolution.h:8)...28 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'AXI_DMA_SLAVE' (ULTRA_HLS/axi_dma_slave.h:2)...6 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'AXI_DMA_MASTER' (ULTRA_HLS/axi_dma_master.h:2)...6 expression(s) balanced.
+Command         transform done; 14.517 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:31 ; elapsed = 00:01:26 . Memory (MB): peak = 182.105 ; gain = 124.754
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.o.2.bc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (ULTRA_HLS/pool.h:57:19) in function 'Pool<16, 63, 3, 0>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (ULTRA_HLS/pool.h:56:16) in function 'Pool<16, 63, 3, 0>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.2.1.1' (ULTRA_HLS/pool.h:68:20) in function 'Pool<16, 63, 3, 0>' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.2.1' (ULTRA_HLS/pool.h:66:20) in function 'Pool<16, 63, 3, 0>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.2' (ULTRA_HLS/pool.h:64:19) in function 'Pool<16, 63, 3, 0>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (ULTRA_HLS/pool.h:53:35) in function 'Pool<16, 63, 3, 0>' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (ULTRA_HLS/fully_connected.h:57:17) in function 'FC<144, 128>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2' (ULTRA_HLS/fully_connected.h:84:18) in function 'FC<144, 128>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (ULTRA_HLS/fully_connected.h:75:35) in function 'FC<144, 128>' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (ULTRA_HLS/fully_connected.h:57:17) in function 'FC<128, 8>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2' (ULTRA_HLS/fully_connected.h:84:18) in function 'FC<128, 8>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (ULTRA_HLS/fully_connected.h:75:35) in function 'FC<128, 8>' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (ULTRA_HLS/convolution.h:185:37) in function 'Conv_S<256, 16, 5, 4>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (ULTRA_HLS/convolution.h:184:33) in function 'Conv_S<256, 16, 5, 4>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (ULTRA_HLS/convolution.h:206:16) in function 'Conv_S<256, 16, 5, 4>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1.1' (ULTRA_HLS/convolution.h:217:35) in function 'Conv_S<256, 16, 5, 4>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1' (ULTRA_HLS/convolution.h:215:41) in function 'Conv_S<256, 16, 5, 4>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2' (ULTRA_HLS/convolution.h:213:37) in function 'Conv_S<256, 16, 5, 4>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (ULTRA_HLS/convolution.h:203:41) in function 'Conv_S<256, 16, 5, 4>' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (ULTRA_HLS/convolution.h:62:31) in function 'Conv<64, 7, 32, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (ULTRA_HLS/convolution.h:61:37) in function 'Conv<64, 7, 32, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (ULTRA_HLS/convolution.h:60:33) in function 'Conv<64, 7, 32, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (ULTRA_HLS/convolution.h:84:31) in function 'Conv<64, 7, 32, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (ULTRA_HLS/convolution.h:83:16) in function 'Conv<64, 7, 32, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1.1' (ULTRA_HLS/convolution.h:95:35) in function 'Conv<64, 7, 32, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1' (ULTRA_HLS/convolution.h:93:41) in function 'Conv<64, 7, 32, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2' (ULTRA_HLS/convolution.h:91:37) in function 'Conv<64, 7, 32, 3, 1>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (ULTRA_HLS/convolution.h:80:41) in function 'Conv<64, 7, 32, 3, 1>' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (ULTRA_HLS/convolution.h:62:31) in function 'Conv<32, 9, 64, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (ULTRA_HLS/convolution.h:61:37) in function 'Conv<32, 9, 64, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (ULTRA_HLS/convolution.h:60:33) in function 'Conv<32, 9, 64, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (ULTRA_HLS/convolution.h:84:31) in function 'Conv<32, 9, 64, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (ULTRA_HLS/convolution.h:83:16) in function 'Conv<32, 9, 64, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1.1' (ULTRA_HLS/convolution.h:95:35) in function 'Conv<32, 9, 64, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1' (ULTRA_HLS/convolution.h:93:41) in function 'Conv<32, 9, 64, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2' (ULTRA_HLS/convolution.h:91:37) in function 'Conv<32, 9, 64, 3, 1>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (ULTRA_HLS/convolution.h:80:41) in function 'Conv<32, 9, 64, 3, 1>' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (ULTRA_HLS/convolution.h:62:31) in function 'Conv<32, 5, 16, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (ULTRA_HLS/convolution.h:61:37) in function 'Conv<32, 5, 16, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (ULTRA_HLS/convolution.h:60:33) in function 'Conv<32, 5, 16, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (ULTRA_HLS/convolution.h:84:31) in function 'Conv<32, 5, 16, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (ULTRA_HLS/convolution.h:83:16) in function 'Conv<32, 5, 16, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1.1' (ULTRA_HLS/convolution.h:95:35) in function 'Conv<32, 5, 16, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1' (ULTRA_HLS/convolution.h:93:41) in function 'Conv<32, 5, 16, 3, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2' (ULTRA_HLS/convolution.h:91:37) in function 'Conv<32, 5, 16, 3, 1>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (ULTRA_HLS/convolution.h:80:41) in function 'Conv<32, 5, 16, 3, 1>' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (ULTRA_HLS/convolution.h:62:31) in function 'Conv<16, 21, 32, 5, 2>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (ULTRA_HLS/convolution.h:61:37) in function 'Conv<16, 21, 32, 5, 2>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (ULTRA_HLS/convolution.h:60:33) in function 'Conv<16, 21, 32, 5, 2>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (ULTRA_HLS/convolution.h:84:31) in function 'Conv<16, 21, 32, 5, 2>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (ULTRA_HLS/convolution.h:83:16) in function 'Conv<16, 21, 32, 5, 2>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1.1' (ULTRA_HLS/convolution.h:95:35) in function 'Conv<16, 21, 32, 5, 2>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2.1' (ULTRA_HLS/convolution.h:93:41) in function 'Conv<16, 21, 32, 5, 2>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.2' (ULTRA_HLS/convolution.h:91:37) in function 'Conv<16, 21, 32, 5, 2>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (ULTRA_HLS/convolution.h:80:41) in function 'Conv<16, 21, 32, 5, 2>' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'Conv_S<256, 16, 5, 4>' to 'Conv_S' (ULTRA_HLS/convolution.h:140:40)
+WARNING: [XFORM 203-631] Renaming function 'Conv<64, 7, 32, 3, 1>' to 'Conv' (ULTRA_HLS/convolution.h:16:25)
+WARNING: [XFORM 203-631] Renaming function 'Conv<32, 9, 64, 3, 1>' to 'Conv.1' (ULTRA_HLS/convolution.h:16:25)
+WARNING: [XFORM 203-631] Renaming function 'Conv<32, 5, 16, 3, 1>' to 'Conv.2' (ULTRA_HLS/convolution.h:16:25)
+WARNING: [XFORM 203-631] Renaming function 'Conv<16, 21, 32, 5, 2>' to 'Conv.3' (ULTRA_HLS/convolution.h:16:25)
+Command         transform done; 40.766 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:10 ; elapsed = 00:02:07 . Memory (MB): peak = 346.188 ; gain = 288.836
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 72.95 sec.
+Command     elaborate done; 122.543 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'ultra' ...
+Execute       ap_set_top_model ultra 
+WARNING: [SYN 201-103] Legalizing function name 'Pool<16, 63, 3, 0>' to 'Pool_16_63_3_0_s'.
+WARNING: [SYN 201-103] Legalizing function name 'Conv.3' to 'Conv_3'.
+WARNING: [SYN 201-103] Legalizing function name 'Conv.1' to 'Conv_1'.
+WARNING: [SYN 201-103] Legalizing function name 'Conv.2' to 'Conv_2'.
+WARNING: [SYN 201-103] Legalizing function name 'FC<144, 128>' to 'FC_144_128_s'.
+WARNING: [SYN 201-103] Legalizing function name 'FC<128, 8>' to 'FC_128_8_s'.
+Command       ap_set_top_model done; 0.147 sec.
+Execute       get_model_list ultra -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model ultra 
+Execute       preproc_iomode -model AXI_DMA_MASTER 
+Execute       preproc_iomode -model FC<128, 8> 
+Execute       preproc_iomode -model FC<144, 128> 
+Execute       preproc_iomode -model Conv.2 
+Execute       preproc_iomode -model Conv 
+Execute       preproc_iomode -model Conv.1 
+Execute       preproc_iomode -model Conv.3 
+Execute       preproc_iomode -model Pool<16, 63, 3, 0> 
+Execute       preproc_iomode -model Conv_S 
+Execute       preproc_iomode -model AXI_DMA_SLAVE 
+Execute       get_model_list ultra -filter all-wo-channel 
+INFO-FLOW: Model list for configure: AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra
+INFO-FLOW: Configuring Module : AXI_DMA_SLAVE ...
+Execute       set_default_model AXI_DMA_SLAVE 
+Execute       apply_spec_resource_limit AXI_DMA_SLAVE 
+INFO-FLOW: Configuring Module : Conv_S ...
+Execute       set_default_model Conv_S 
+Execute       apply_spec_resource_limit Conv_S 
+INFO-FLOW: Configuring Module : Pool<16, 63, 3, 0> ...
+Execute       set_default_model Pool<16, 63, 3, 0> 
+Execute       apply_spec_resource_limit Pool<16, 63, 3, 0> 
+INFO-FLOW: Configuring Module : Conv.3 ...
+Execute       set_default_model Conv.3 
+Execute       apply_spec_resource_limit Conv.3 
+INFO-FLOW: Configuring Module : Conv.1 ...
+Execute       set_default_model Conv.1 
+Execute       apply_spec_resource_limit Conv.1 
+INFO-FLOW: Configuring Module : Conv ...
+Execute       set_default_model Conv 
+Execute       apply_spec_resource_limit Conv 
+INFO-FLOW: Configuring Module : Conv.2 ...
+Execute       set_default_model Conv.2 
+Execute       apply_spec_resource_limit Conv.2 
+INFO-FLOW: Configuring Module : FC<144, 128> ...
+Execute       set_default_model FC<144, 128> 
+Execute       apply_spec_resource_limit FC<144, 128> 
+INFO-FLOW: Configuring Module : FC<128, 8> ...
+Execute       set_default_model FC<128, 8> 
+Execute       apply_spec_resource_limit FC<128, 8> 
+INFO-FLOW: Configuring Module : AXI_DMA_MASTER ...
+Execute       set_default_model AXI_DMA_MASTER 
+Execute       apply_spec_resource_limit AXI_DMA_MASTER 
+INFO-FLOW: Configuring Module : ultra ...
+Execute       set_default_model ultra 
+Execute       apply_spec_resource_limit ultra 
+INFO-FLOW: Model list for preprocess: AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra
+INFO-FLOW: Preprocessing Module: AXI_DMA_SLAVE ...
+Execute       set_default_model AXI_DMA_SLAVE 
+Execute       cdfg_preprocess -model AXI_DMA_SLAVE 
+Execute       rtl_gen_preprocess AXI_DMA_SLAVE 
+INFO-FLOW: Preprocessing Module: Conv_S ...
+Execute       set_default_model Conv_S 
+Execute       cdfg_preprocess -model Conv_S 
+Command       cdfg_preprocess done; 0.329 sec.
+Execute       rtl_gen_preprocess Conv_S 
+INFO-FLOW: Preprocessing Module: Pool<16, 63, 3, 0> ...
+Execute       set_default_model Pool<16, 63, 3, 0> 
+Execute       cdfg_preprocess -model Pool<16, 63, 3, 0> 
+Execute       rtl_gen_preprocess Pool<16, 63, 3, 0> 
+INFO-FLOW: Preprocessing Module: Conv.3 ...
+Execute       set_default_model Conv.3 
+Execute       cdfg_preprocess -model Conv.3 
+Command       cdfg_preprocess done; 0.19 sec.
+Execute       rtl_gen_preprocess Conv.3 
+INFO-FLOW: Preprocessing Module: Conv.1 ...
+Execute       set_default_model Conv.1 
+Execute       cdfg_preprocess -model Conv.1 
+Execute       rtl_gen_preprocess Conv.1 
+INFO-FLOW: Preprocessing Module: Conv ...
+Execute       set_default_model Conv 
+Execute       cdfg_preprocess -model Conv 
+Execute       rtl_gen_preprocess Conv 
+INFO-FLOW: Preprocessing Module: Conv.2 ...
+Execute       set_default_model Conv.2 
+Execute       cdfg_preprocess -model Conv.2 
+Execute       rtl_gen_preprocess Conv.2 
+INFO-FLOW: Preprocessing Module: FC<144, 128> ...
+Execute       set_default_model FC<144, 128> 
+Execute       cdfg_preprocess -model FC<144, 128> 
+Execute       rtl_gen_preprocess FC<144, 128> 
+INFO-FLOW: Preprocessing Module: FC<128, 8> ...
+Execute       set_default_model FC<128, 8> 
+Execute       cdfg_preprocess -model FC<128, 8> 
+Execute       rtl_gen_preprocess FC<128, 8> 
+INFO-FLOW: Preprocessing Module: AXI_DMA_MASTER ...
+Execute       set_default_model AXI_DMA_MASTER 
+Execute       cdfg_preprocess -model AXI_DMA_MASTER 
+Execute       rtl_gen_preprocess AXI_DMA_MASTER 
+INFO-FLOW: Preprocessing Module: ultra ...
+Execute       set_default_model ultra 
+Execute       cdfg_preprocess -model ultra 
+Execute       rtl_gen_preprocess ultra 
+INFO-FLOW: Model list for synthesis: AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXI_DMA_SLAVE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXI_DMA_SLAVE 
+Execute       schedule -model AXI_DMA_SLAVE 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.102 sec.
+INFO: [HLS 200-111]  Elapsed time: 129.29 seconds; current allocated memory: 288.518 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.verbose.sched.rpt -verbose -f 
+Command       report done; 0.197 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.sched.adb -f 
+Command       db_write done; 0.127 sec.
+INFO-FLOW: Finish scheduling AXI_DMA_SLAVE.
+Execute       set_default_model AXI_DMA_SLAVE 
+Execute       bind -model AXI_DMA_SLAVE 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=AXI_DMA_SLAVE
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.129 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.523 seconds; current allocated memory: 288.827 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.verbose.bind.rpt -verbose -f 
+Command       report done; 0.103 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.bind.adb -f 
+INFO-FLOW: Finish binding AXI_DMA_SLAVE.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv_S' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv_S 
+Execute       schedule -model Conv_S 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond7') to 'add' operation ('k') (combination delay: 4.45125 ns) to honor II or Latency constraint in region 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.2'.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 30.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond8') to 'add' operation ('ka') (combination delay: 5.7165 ns) to honor II or Latency constraint in region 'Loop 3.2'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond') to 'add' operation ('i') (combination delay: 5.33725 ns) to honor II or Latency constraint in region 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (5.7165ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'icmp' operation ('exitcond8', ULTRA_HLS/convolution.h:220) (1.13 ns)
+	'and' operation ('exitcond1_mid', ULTRA_HLS/convolution.h:220) (0 ns)
+	'and' operation ('exitcond1_mid1', ULTRA_HLS/convolution.h:220) (0.978 ns)
+	'or' operation ('tmp_73', ULTRA_HLS/convolution.h:220) (0 ns)
+	'or' operation ('tmp_97', ULTRA_HLS/convolution.h:220) (0.978 ns)
+	'select' operation ('ka3_mid2', ULTRA_HLS/convolution.h:220) (0.98 ns)
+	'add' operation ('ka', ULTRA_HLS/convolution.h:220) (1.65 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 7.411 sec.
+INFO: [HLS 200-111]  Elapsed time: 7.687 seconds; current allocated memory: 297.452 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 5 loops out of a total 6 loops have been pipelined in this design.
+Command       report done; 1.71 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.sched.adb -f 
+Command       db_write done; 1.225 sec.
+INFO-FLOW: Finish scheduling Conv_S.
+Execute       set_default_model Conv_S 
+Execute       bind -model Conv_S 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv_S
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 4.545 sec.
+INFO: [HLS 200-111]  Elapsed time: 7.569 seconds; current allocated memory: 303.430 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.verbose.bind.rpt -verbose -f 
+Command       report done; 1.836 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.bind.adb -f 
+Command       db_write done; 1.336 sec.
+INFO-FLOW: Finish binding Conv_S.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Pool_16_63_3_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Pool<16, 63, 3, 0> 
+Execute       schedule -model Pool<16, 63, 3, 0> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond1') to 'add' operation ('i') (combination delay: 5.33725 ns) to honor II or Latency constraint in region 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.2.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 13.
+WARNING: [SCHED 204-21] Estimated clock period (5.33725ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'icmp' operation ('exitcond1', ULTRA_HLS/pool.h:58) (1.36 ns)
+	'and' operation ('exitcond3_mid', ULTRA_HLS/pool.h:58) (0.978 ns)
+	'or' operation ('tmp_8', ULTRA_HLS/pool.h:58) (0 ns)
+	'select' operation ('i1_mid2', ULTRA_HLS/pool.h:58) (1.22 ns)
+	'add' operation ('i', ULTRA_HLS/pool.h:58) (1.78 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.026 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.341 seconds; current allocated memory: 304.585 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.verbose.sched.rpt -verbose -f 
+Command       report done; 0.389 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.sched.adb -f 
+Command       db_write done; 0.163 sec.
+INFO-FLOW: Finish scheduling Pool<16, 63, 3, 0>.
+Execute       set_default_model Pool<16, 63, 3, 0> 
+Execute       bind -model Pool<16, 63, 3, 0> 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Pool<16, 63, 3, 0>
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.14 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.795 seconds; current allocated memory: 305.552 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.verbose.bind.rpt -verbose -f 
+Command       report done; 0.422 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.bind.adb -f 
+Command       db_write done; 0.181 sec.
+INFO-FLOW: Finish binding Pool<16, 63, 3, 0>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv.3 
+Execute       schedule -model Conv.3 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond10') to 'add' operation ('i') (combination delay: 5.33725 ns) to honor II or Latency constraint in region 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_V_15_load_2', ULTRA_HLS/convolution.h:103) on array 'A_V_15' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A_V_15'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 5, Depth = 35.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond9') to 'add' operation ('i') (combination delay: 5.4175 ns) to honor II or Latency constraint in region 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (5.4175ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'icmp' operation ('exitcond9', ULTRA_HLS/convolution.h:63) (1.43 ns)
+	'and' operation ('exitcond14_mid', ULTRA_HLS/convolution.h:63) (0 ns)
+	'and' operation ('exitcond14_mid1', ULTRA_HLS/convolution.h:63) (0.978 ns)
+	'or' operation ('tmp_97', ULTRA_HLS/convolution.h:63) (0 ns)
+	'or' operation ('tmp_113', ULTRA_HLS/convolution.h:63) (0 ns)
+	'select' operation ('i33_mid2', ULTRA_HLS/convolution.h:63) (1.19 ns)
+	'add' operation ('i', ULTRA_HLS/convolution.h:63) (1.83 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 5.143 sec.
+INFO: [HLS 200-111]  Elapsed time: 5.867 seconds; current allocated memory: 312.047 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.verbose.sched.rpt -verbose -f 
+Command       report done; 1.33 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.sched.adb -f 
+Command       db_write done; 0.731 sec.
+INFO-FLOW: Finish scheduling Conv.3.
+Execute       set_default_model Conv.3 
+Execute       bind -model Conv.3 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv.3
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.489 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.674 seconds; current allocated memory: 315.834 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.verbose.bind.rpt -verbose -f 
+Command       report done; 1.344 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.bind.adb -f 
+Command       db_write done; 0.803 sec.
+INFO-FLOW: Finish binding Conv.3.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv.1 
+Execute       schedule -model Conv.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond16') to 'add' operation ('i') (combination delay: 5.4175 ns) to honor II or Latency constraint in region 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_V_2_6_load_4', ULTRA_HLS/convolution.h:103) on array 'A_V_2_6' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A_V_2_6'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 30.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond15') to 'add' operation ('i') (combination delay: 5.32975 ns) to honor II or Latency constraint in region 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (5.4175ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'icmp' operation ('exitcond16', ULTRA_HLS/convolution.h:85) (1.43 ns)
+	'and' operation ('exitcond8_mid', ULTRA_HLS/convolution.h:85) (0.978 ns)
+	'or' operation ('tmp_191', ULTRA_HLS/convolution.h:85) (0 ns)
+	'select' operation ('i3_mid2', ULTRA_HLS/convolution.h:85) (1.19 ns)
+	'add' operation ('i', ULTRA_HLS/convolution.h:85) (1.83 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.913 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.235 seconds; current allocated memory: 318.670 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.verbose.sched.rpt -verbose -f 
+Command       report done; 0.573 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.sched.adb -f 
+Command       db_write done; 0.347 sec.
+INFO-FLOW: Finish scheduling Conv.1.
+Execute       set_default_model Conv.1 
+Execute       bind -model Conv.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.269 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.302 seconds; current allocated memory: 320.533 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.verbose.bind.rpt -verbose -f 
+Command       report done; 0.694 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.bind.adb -f 
+Command       db_write done; 0.378 sec.
+INFO-FLOW: Finish binding Conv.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv 
+Execute       schedule -model Conv 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond19') to 'add' operation ('i') (combination delay: 5.32975 ns) to honor II or Latency constraint in region 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_V_3_4_load_4', ULTRA_HLS/convolution.h:103) on array 'A_V_3_4' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A_V_3_4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 30.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond18') to 'add' operation ('i') (combination delay: 5.4175 ns) to honor II or Latency constraint in region 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (5.4175ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'icmp' operation ('exitcond18', ULTRA_HLS/convolution.h:63) (1.43 ns)
+	'and' operation ('exitcond5_mid', ULTRA_HLS/convolution.h:63) (0 ns)
+	'and' operation ('exitcond5_mid1', ULTRA_HLS/convolution.h:63) (0.978 ns)
+	'or' operation ('tmp_215', ULTRA_HLS/convolution.h:63) (0 ns)
+	'or' operation ('tmp_253', ULTRA_HLS/convolution.h:63) (0 ns)
+	'select' operation ('i18_mid2', ULTRA_HLS/convolution.h:63) (1.19 ns)
+	'add' operation ('i', ULTRA_HLS/convolution.h:63) (1.83 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 2.032 sec.
+INFO: [HLS 200-111]  Elapsed time: 3.274 seconds; current allocated memory: 323.015 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.verbose.sched.rpt -verbose -f 
+Command       report done; 0.527 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.sched.adb -f 
+Command       db_write done; 0.38 sec.
+INFO-FLOW: Finish scheduling Conv.
+Execute       set_default_model Conv 
+Execute       bind -model Conv 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.254 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.28 seconds; current allocated memory: 324.764 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.verbose.bind.rpt -verbose -f 
+Command       report done; 0.71 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.bind.adb -f 
+Command       db_write done; 0.332 sec.
+INFO-FLOW: Finish binding Conv.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv.2 
+Execute       schedule -model Conv.2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond13') to 'add' operation ('i') (combination delay: 5.4175 ns) to honor II or Latency constraint in region 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_V_1_2_load_4', ULTRA_HLS/convolution.h:103) on array 'A_V_1_2' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A_V_1_2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 30.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond12') to 'add' operation ('i') (combination delay: 5.33725 ns) to honor II or Latency constraint in region 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (5.4175ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'icmp' operation ('exitcond13', ULTRA_HLS/convolution.h:85) (1.43 ns)
+	'and' operation ('exitcond8_mid', ULTRA_HLS/convolution.h:85) (0.978 ns)
+	'or' operation ('tmp_150', ULTRA_HLS/convolution.h:85) (0 ns)
+	'select' operation ('i3_mid2', ULTRA_HLS/convolution.h:85) (1.19 ns)
+	'add' operation ('i', ULTRA_HLS/convolution.h:85) (1.83 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.75 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.983 seconds; current allocated memory: 326.948 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.verbose.sched.rpt -verbose -f 
+Command       report done; 0.474 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.sched.adb -f 
+Command       db_write done; 0.295 sec.
+INFO-FLOW: Finish scheduling Conv.2.
+Execute       set_default_model Conv.2 
+Execute       bind -model Conv.2 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv.2
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.24 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.13 seconds; current allocated memory: 328.513 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.verbose.bind.rpt -verbose -f 
+Command       report done; 0.601 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.bind.adb -f 
+Command       db_write done; 0.298 sec.
+INFO-FLOW: Finish binding Conv.2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_144_128_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FC<144, 128> 
+Execute       schedule -model FC<144, 128> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 19.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond3') to 'add' operation ('j') (combination delay: 4.714 ns) to honor II or Latency constraint in region 'Loop 3.2'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond') to 'add' operation ('i') (combination delay: 4.714 ns) to honor II or Latency constraint in region 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (4.714ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', ULTRA_HLS/fully_connected.h:87) (0 ns)
+	'icmp' operation ('exitcond3', ULTRA_HLS/fully_connected.h:87) (1.55 ns)
+	'select' operation ('j4_mid2', ULTRA_HLS/fully_connected.h:87) (1.25 ns)
+	'add' operation ('j', ULTRA_HLS/fully_connected.h:87) (1.92 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.259 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.373 seconds; current allocated memory: 329.850 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.verbose.sched.rpt -verbose -f 
+Command       report done; 0.344 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.sched.adb -f 
+Command       db_write done; 0.164 sec.
+INFO-FLOW: Finish scheduling FC<144, 128>.
+Execute       set_default_model FC<144, 128> 
+Execute       bind -model FC<144, 128> 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=FC<144, 128>
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.167 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.791 seconds; current allocated memory: 330.822 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.verbose.bind.rpt -verbose -f 
+Command       report done; 0.308 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.bind.adb -f 
+Command       db_write done; 0.254 sec.
+INFO-FLOW: Finish binding FC<144, 128>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_128_8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FC<128, 8> 
+Execute       schedule -model FC<128, 8> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 19.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'icmp' operation ('exitcond5') to 'add' operation ('j') (combination delay: 4.714 ns) to honor II or Latency constraint in region 'Loop 3.2'.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (4.714ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', ULTRA_HLS/fully_connected.h:87) (0 ns)
+	'icmp' operation ('exitcond5', ULTRA_HLS/fully_connected.h:87) (1.55 ns)
+	'select' operation ('j4_mid2', ULTRA_HLS/fully_connected.h:87) (1.25 ns)
+	'add' operation ('j', ULTRA_HLS/fully_connected.h:87) (1.92 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.267 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.027 seconds; current allocated memory: 331.991 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.verbose.sched.rpt -verbose -f 
+Command       report done; 0.312 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.sched.adb -f 
+Command       db_write done; 0.166 sec.
+INFO-FLOW: Finish scheduling FC<128, 8>.
+Execute       set_default_model FC<128, 8> 
+Execute       bind -model FC<128, 8> 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=FC<128, 8>
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.209 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.803 seconds; current allocated memory: 332.936 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.verbose.bind.rpt -verbose -f 
+Command       report done; 0.357 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.bind.adb -f 
+Command       db_write done; 0.186 sec.
+INFO-FLOW: Finish binding FC<128, 8>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXI_DMA_MASTER' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXI_DMA_MASTER 
+Execute       schedule -model AXI_DMA_MASTER 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.477 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.188 seconds; current allocated memory: 333.381 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.verbose.sched.rpt -verbose -f 
+Command       report done; 0.135 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.sched.adb -f 
+INFO-FLOW: Finish scheduling AXI_DMA_MASTER.
+Execute       set_default_model AXI_DMA_MASTER 
+Execute       bind -model AXI_DMA_MASTER 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=AXI_DMA_MASTER
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.106 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.426 seconds; current allocated memory: 333.687 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.verbose.bind.rpt -verbose -f 
+Command       report done; 0.101 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.bind.adb -f 
+INFO-FLOW: Finish binding AXI_DMA_MASTER.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ultra' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model ultra 
+Execute       schedule -model ultra 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.107 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 333.905 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.verbose.sched.rpt -verbose -f 
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.sched.adb -f 
+INFO-FLOW: Finish scheduling ultra.
+Execute       set_default_model ultra 
+Execute       bind -model ultra 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=ultra
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 4.893 sec.
+INFO: [HLS 200-111]  Elapsed time: 5.12 seconds; current allocated memory: 336.740 MB.
+Execute       report -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.verbose.bind.rpt -verbose -f 
+Command       report done; 2.108 sec.
+Execute       db_write -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.bind.adb -f 
+INFO-FLOW: Finish binding ultra.
+Execute       get_model_list ultra -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess AXI_DMA_SLAVE 
+Execute       rtl_gen_preprocess Conv_S 
+Execute       rtl_gen_preprocess Pool<16, 63, 3, 0> 
+Execute       rtl_gen_preprocess Conv.3 
+Execute       rtl_gen_preprocess Conv.1 
+Execute       rtl_gen_preprocess Conv 
+Execute       rtl_gen_preprocess Conv.2 
+Execute       rtl_gen_preprocess FC<144, 128> 
+Execute       rtl_gen_preprocess FC<128, 8> 
+Execute       rtl_gen_preprocess AXI_DMA_MASTER 
+Execute       rtl_gen_preprocess ultra 
+INFO-FLOW: Model list for RTL generation: AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXI_DMA_SLAVE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model AXI_DMA_SLAVE -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'ultra_mul_32s_32s_32_5_1' to 'ultra_mul_32s_32sbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_mul_mul_16s_16s_32_3_1' to 'ultra_mul_mul_16scud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXI_DMA_SLAVE'.
+Command       create_rtl_model done; 0.336 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.707 seconds; current allocated memory: 338.373 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXI_DMA_SLAVE -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/AXI_DMA_SLAVE -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl AXI_DMA_SLAVE -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/AXI_DMA_SLAVE 
+Execute       gen_rtl AXI_DMA_SLAVE -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/AXI_DMA_SLAVE 
+Execute       gen_tb_info AXI_DMA_SLAVE -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Execute       report -model AXI_DMA_SLAVE -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/AXI_DMA_SLAVE_csynth.rpt -f 
+Execute       report -model AXI_DMA_SLAVE -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/AXI_DMA_SLAVE_csynth.xml -f -x 
+Execute       report -model AXI_DMA_SLAVE -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.verbose.rpt -verbose -f 
+Command       report done; 0.123 sec.
+Execute       db_write -model AXI_DMA_SLAVE -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.adb -f 
+Command       db_write done; 0.125 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv_S' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv_S -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'multiple_V_6' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'ultra_mul_8s_26s_33_7_1' to 'ultra_mul_8s_26s_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_mul_35ns_33s_67_6_1' to 'ultra_mul_35ns_33eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_mac_muladd_8s_8s_16s_17_3_1' to 'ultra_mac_muladd_fYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'ultra_mac_muladd_fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_35ns_33eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_8s_26s_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv_S'.
+Command       create_rtl_model done; 5.523 sec.
+INFO: [HLS 200-111]  Elapsed time: 6.168 seconds; current allocated memory: 352.647 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv_S -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/Conv_S -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl Conv_S -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/Conv_S 
+Execute       gen_rtl Conv_S -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/Conv_S 
+Command       gen_rtl done; 0.171 sec.
+Execute       gen_tb_info Conv_S -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Command       gen_tb_info done; 0.345 sec.
+Execute       report -model Conv_S -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_S_csynth.rpt -f 
+Command       report done; 0.345 sec.
+Execute       report -model Conv_S -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_S_csynth.xml -f -x 
+Command       report done; 0.399 sec.
+Execute       report -model Conv_S -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.verbose.rpt -verbose -f 
+Command       report done; 2.295 sec.
+Execute       db_write -model Conv_S -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.adb -f 
+Command       db_write done; 1.73 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Pool_16_63_3_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Pool<16, 63, 3, 0> -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_0' to 'Pool_16_63_3_0_s_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_1' to 'Pool_16_63_3_0_s_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_2' to 'Pool_16_63_3_0_s_ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_3' to 'Pool_16_63_3_0_s_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_4' to 'Pool_16_63_3_0_s_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_5' to 'Pool_16_63_3_0_s_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_6' to 'Pool_16_63_3_0_s_mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_7' to 'Pool_16_63_3_0_s_ncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_8' to 'Pool_16_63_3_0_s_ocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_9' to 'Pool_16_63_3_0_s_pcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_10' to 'Pool_16_63_3_0_s_qcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_11' to 'Pool_16_63_3_0_s_rcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_12' to 'Pool_16_63_3_0_s_sc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_13' to 'Pool_16_63_3_0_s_tde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_14' to 'Pool_16_63_3_0_s_udo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_16_63_3_0_s_A_V_7_15' to 'Pool_16_63_3_0_s_vdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_urem_4ns_3ns_4_8_1' to 'ultra_urem_4ns_3nwdI' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mux_164_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_urem_4ns_3nwdI': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Pool_16_63_3_0_s'.
+Command       create_rtl_model done; 0.839 sec.
+INFO: [HLS 200-111]  Elapsed time: 8.278 seconds; current allocated memory: 356.627 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Pool<16, 63, 3, 0> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/Pool_16_63_3_0_s -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl Pool<16, 63, 3, 0> -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/Pool_16_63_3_0_s 
+Execute       gen_rtl Pool<16, 63, 3, 0> -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/Pool_16_63_3_0_s 
+Execute       gen_tb_info Pool<16, 63, 3, 0> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Execute       report -model Pool<16, 63, 3, 0> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Pool_16_63_3_0_s_csynth.rpt -f 
+Execute       report -model Pool<16, 63, 3, 0> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Pool_16_63_3_0_s_csynth.xml -f -x 
+Execute       report -model Pool<16, 63, 3, 0> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.verbose.rpt -verbose -f 
+Command       report done; 0.431 sec.
+Execute       db_write -model Pool<16, 63, 3, 0> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.adb -f 
+Command       db_write done; 0.337 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv.3 -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'multiple_V' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'ultra_mac_muladd_6ns_5ns_5ns_10_3_1' to 'ultra_mac_muladd_xdS' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'ultra_mac_muladd_fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mac_muladd_xdS': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_35ns_33eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_8s_26s_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv_3'.
+Command       create_rtl_model done; 1.656 sec.
+INFO: [HLS 200-111]  Elapsed time: 3.203 seconds; current allocated memory: 363.023 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv.3 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/Conv_3 -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl Conv.3 -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/Conv_3 
+Execute       gen_rtl Conv.3 -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/Conv_3 
+Command       gen_rtl done; 0.124 sec.
+Execute       gen_tb_info Conv.3 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3 -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Command       gen_tb_info done; 0.196 sec.
+Execute       report -model Conv.3 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_3_csynth.rpt -f 
+Command       report done; 0.245 sec.
+Execute       report -model Conv.3 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_3_csynth.xml -f -x 
+Command       report done; 0.188 sec.
+Execute       report -model Conv.3 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.verbose.rpt -verbose -f 
+Command       report done; 1.661 sec.
+Execute       db_write -model Conv.3 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.adb -f 
+Command       db_write done; 1.134 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv.1 -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'multiple_V_8' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'ultra_mac_muladd_fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_35ns_33eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_8s_26s_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv_1'.
+Command       create_rtl_model done; 0.76 sec.
+INFO: [HLS 200-111]  Elapsed time: 5.735 seconds; current allocated memory: 367.879 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/Conv_1 -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl Conv.1 -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/Conv_1 
+Execute       gen_rtl Conv.1 -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/Conv_1 
+Execute       gen_tb_info Conv.1 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1 -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Command       gen_tb_info done; 0.137 sec.
+Execute       report -model Conv.1 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_1_csynth.rpt -f 
+Command       report done; 0.14 sec.
+Execute       report -model Conv.1 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_1_csynth.xml -f -x 
+Command       report done; 0.121 sec.
+Execute       report -model Conv.1 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.verbose.rpt -verbose -f 
+Command       report done; 0.976 sec.
+Execute       db_write -model Conv.1 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.adb -f 
+Command       db_write done; 0.651 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'multiple_V_7' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'ultra_mac_muladd_fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_35ns_33eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_8s_26s_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv'.
+Command       create_rtl_model done; 0.833 sec.
+INFO: [HLS 200-111]  Elapsed time: 3.702 seconds; current allocated memory: 372.758 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/Conv -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl Conv -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/Conv 
+Execute       gen_rtl Conv -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/Conv 
+Execute       gen_tb_info Conv -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Command       gen_tb_info done; 0.15 sec.
+Execute       report -model Conv -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_csynth.rpt -f 
+Command       report done; 0.141 sec.
+Execute       report -model Conv -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_csynth.xml -f -x 
+Command       report done; 0.135 sec.
+Execute       report -model Conv -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.verbose.rpt -verbose -f 
+Command       report done; 0.862 sec.
+Execute       db_write -model Conv -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.adb -f 
+Command       db_write done; 0.636 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv.2 -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'multiple_V_9' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'ultra_mac_muladd_fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_35ns_33eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_8s_26s_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv_2'.
+Command       create_rtl_model done; 0.674 sec.
+INFO: [HLS 200-111]  Elapsed time: 3.373 seconds; current allocated memory: 376.650 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/Conv_2 -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl Conv.2 -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/Conv_2 
+Execute       gen_rtl Conv.2 -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/Conv_2 
+Execute       gen_tb_info Conv.2 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2 -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Command       gen_tb_info done; 0.142 sec.
+Execute       report -model Conv.2 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_2_csynth.rpt -f 
+Command       report done; 0.153 sec.
+Execute       report -model Conv.2 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/Conv_2_csynth.xml -f -x 
+Command       report done; 0.126 sec.
+Execute       report -model Conv.2 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.verbose.rpt -verbose -f 
+Command       report done; 0.742 sec.
+Execute       db_write -model Conv.2 -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.adb -f 
+Command       db_write done; 0.634 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_144_128_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model FC<144, 128> -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'multiple_V_10' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_bias_V_10' to 'FC_144_128_s_biasyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_0' to 'FC_144_128_s_A_V_zec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_1' to 'FC_144_128_s_A_V_Aem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_2' to 'FC_144_128_s_A_V_Bew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_3' to 'FC_144_128_s_A_V_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_4' to 'FC_144_128_s_A_V_DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_5' to 'FC_144_128_s_A_V_Ee0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_6' to 'FC_144_128_s_A_V_Ffa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_7' to 'FC_144_128_s_A_V_Gfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_A_V_6_8' to 'FC_144_128_s_A_V_Hfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_0' to 'FC_144_128_s_B_V_IfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_1' to 'FC_144_128_s_B_V_JfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_2' to 'FC_144_128_s_B_V_KfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_3' to 'FC_144_128_s_B_V_Lf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_4' to 'FC_144_128_s_B_V_Mgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_5' to 'FC_144_128_s_B_V_Ngs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_6' to 'FC_144_128_s_B_V_OgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_7' to 'FC_144_128_s_B_V_PgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FC_144_128_s_B_V_6_8' to 'FC_144_128_s_B_V_QgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_mul_25ns_23s_48_4_1' to 'ultra_mul_25ns_23Rg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_mac_muladd_8s_8s_23ns_23_3_1' to 'ultra_mac_muladd_Shg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_mul_mul_8s_17s_23_3_1' to 'ultra_mul_mul_8s_Thq' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'ultra_mac_muladd_Shg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_25ns_23Rg6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_8s_Thq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mux_932_8_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_144_128_s'.
+Command       create_rtl_model done; 1.229 sec.
+INFO: [HLS 200-111]  Elapsed time: 3.77 seconds; current allocated memory: 379.937 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FC<144, 128> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/FC_144_128_s -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl FC<144, 128> -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/FC_144_128_s 
+Execute       gen_rtl FC<144, 128> -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/FC_144_128_s 
+Execute       gen_tb_info FC<144, 128> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Execute       report -model FC<144, 128> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/FC_144_128_s_csynth.rpt -f 
+Execute       report -model FC<144, 128> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/FC_144_128_s_csynth.xml -f -x 
+Execute       report -model FC<144, 128> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.verbose.rpt -verbose -f 
+Command       report done; 0.377 sec.
+Execute       db_write -model FC<144, 128> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.adb -f 
+Command       db_write done; 0.439 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_128_8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model FC<128, 8> -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'multiple_V_11' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'FC_128_8_s_bias_V_11' to 'FC_128_8_s_bias_VUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_mul_24ns_22s_46_4_1' to 'ultra_mul_24ns_22VhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ultra_mul_mul_8s_17s_22_3_1' to 'ultra_mul_mul_8s_WhU' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'ultra_mac_muladd_Shg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_24ns_22VhK': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_8s_WhU': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mux_832_8_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_128_8_s'.
+Command       create_rtl_model done; 0.787 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.362 seconds; current allocated memory: 382.570 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FC<128, 8> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/FC_128_8_s -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl FC<128, 8> -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/FC_128_8_s 
+Execute       gen_rtl FC<128, 8> -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/FC_128_8_s 
+Execute       gen_tb_info FC<128, 8> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Execute       report -model FC<128, 8> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/FC_128_8_s_csynth.rpt -f 
+Execute       report -model FC<128, 8> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/FC_128_8_s_csynth.xml -f -x 
+Execute       report -model FC<128, 8> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.verbose.rpt -verbose -f 
+Command       report done; 0.481 sec.
+Execute       db_write -model FC<128, 8> -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.adb -f 
+Command       db_write done; 0.478 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXI_DMA_MASTER' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model AXI_DMA_MASTER -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_32s_32sbkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ultra_mul_mul_16scud': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXI_DMA_MASTER'.
+Command       create_rtl_model done; 0.155 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.837 seconds; current allocated memory: 383.801 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXI_DMA_MASTER -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/AXI_DMA_MASTER -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl AXI_DMA_MASTER -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/AXI_DMA_MASTER 
+Execute       gen_rtl AXI_DMA_MASTER -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/AXI_DMA_MASTER 
+Execute       gen_tb_info AXI_DMA_MASTER -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Execute       report -model AXI_DMA_MASTER -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/AXI_DMA_MASTER_csynth.rpt -f 
+Execute       report -model AXI_DMA_MASTER -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/AXI_DMA_MASTER_csynth.xml -f -x 
+Execute       report -model AXI_DMA_MASTER -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.verbose.rpt -verbose -f 
+Command       report done; 0.133 sec.
+Execute       db_write -model AXI_DMA_MASTER -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.adb -f 
+Command       db_write done; 0.273 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ultra' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model ultra -vendor xilinx -mg_file E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'ultra/stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ultra/stream_in_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ultra/stream_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ultra/stream_out_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'ultra' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'start_for_Pool_16_63_3_0_U0' to 'start_for_Pool_16Xh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_FC_144_128_U0' to 'start_for_FC_144_Yie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_FC_128_8_U0' to 'start_for_FC_128_Zio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_AXI_DMA_MASTER_U0' to 'start_for_AXI_DMA0iy' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ultra'.
+Command       create_rtl_model done; 0.304 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.144 seconds; current allocated memory: 384.781 MB.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       gen_rtl ultra -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/systemc/ultra -synmodules AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra 
+Execute       gen_rtl ultra -istop -style xilinx -f -lang vhdl -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/vhdl/ultra 
+Execute       gen_rtl ultra -istop -style xilinx -f -lang vlog -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/verilog/ultra 
+Execute       export_constraint_db -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.constraint.tcl -f -tool general 
+Execute       report -model ultra -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.design.xml -verbose -f -dv 
+Command       report done; 2.086 sec.
+Execute       report -model ultra -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info ultra -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra -p E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db 
+Command       gen_tb_info done; 0.121 sec.
+Execute       report -model ultra -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/ultra_csynth.rpt -f 
+Execute       report -model ultra -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/syn/report/ultra_csynth.xml -f -x 
+Execute       report -model ultra -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.verbose.rpt -verbose -f 
+Command       report done; 1.983 sec.
+Execute       db_write -model ultra -o E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.adb -f 
+Command       db_write done; 0.267 sec.
+Execute       sc_get_clocks ultra 
+Execute       sc_get_portdomain ultra 
+INFO-FLOW: Model list for RTL component generation: AXI_DMA_SLAVE Conv_S {Pool<16, 63, 3, 0>} Conv.3 Conv.1 Conv Conv.2 {FC<144, 128>} {FC<128, 8>} AXI_DMA_MASTER ultra
+INFO-FLOW: Handling components in module [AXI_DMA_SLAVE] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.compgen.tcl 
+INFO-FLOW: Found component ultra_mul_32s_32sbkb.
+INFO-FLOW: Append model ultra_mul_32s_32sbkb
+INFO-FLOW: Found component ultra_mul_mul_16scud.
+INFO-FLOW: Append model ultra_mul_mul_16scud
+INFO-FLOW: Handling components in module [Conv_S] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.compgen.tcl 
+INFO-FLOW: Found component ultra_mul_8s_26s_dEe.
+INFO-FLOW: Append model ultra_mul_8s_26s_dEe
+INFO-FLOW: Found component ultra_mul_35ns_33eOg.
+INFO-FLOW: Append model ultra_mul_35ns_33eOg
+INFO-FLOW: Found component ultra_mac_muladd_fYi.
+INFO-FLOW: Append model ultra_mac_muladd_fYi
+INFO-FLOW: Found component Conv_S_bias_V_6.
+INFO-FLOW: Append model Conv_S_bias_V_6
+INFO-FLOW: Found component Conv_S_B_V_4_0.
+INFO-FLOW: Append model Conv_S_B_V_4_0
+INFO-FLOW: Found component Conv_S_A_V_4_4.
+INFO-FLOW: Append model Conv_S_A_V_4_4
+INFO-FLOW: Found component Conv_S_A_V_4_253.
+INFO-FLOW: Append model Conv_S_A_V_4_253
+INFO-FLOW: Handling components in module [Pool_16_63_3_0_s] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.compgen.tcl 
+INFO-FLOW: Found component ultra_mux_164_8_1_1.
+INFO-FLOW: Append model ultra_mux_164_8_1_1
+INFO-FLOW: Found component ultra_urem_4ns_3nwdI.
+INFO-FLOW: Append model ultra_urem_4ns_3nwdI
+INFO-FLOW: Found component Pool_16_63_3_0_s_g8j.
+INFO-FLOW: Append model Pool_16_63_3_0_s_g8j
+INFO-FLOW: Handling components in module [Conv_3] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.compgen.tcl 
+INFO-FLOW: Found component ultra_mac_muladd_xdS.
+INFO-FLOW: Append model ultra_mac_muladd_xdS
+INFO-FLOW: Found component Conv_3_bias_V.
+INFO-FLOW: Append model Conv_3_bias_V
+INFO-FLOW: Found component Conv_3_B_V_0.
+INFO-FLOW: Append model Conv_3_B_V_0
+INFO-FLOW: Found component Conv_3_A_V_4167.
+INFO-FLOW: Append model Conv_3_A_V_4167
+INFO-FLOW: Handling components in module [Conv_1] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.compgen.tcl 
+INFO-FLOW: Found component Conv_1_bias_V_8.
+INFO-FLOW: Append model Conv_1_bias_V_8
+INFO-FLOW: Found component Conv_1_B_V_2_0.
+INFO-FLOW: Append model Conv_1_B_V_2_0
+INFO-FLOW: Found component Conv_1_A_V_2_2.
+INFO-FLOW: Append model Conv_1_A_V_2_2
+INFO-FLOW: Handling components in module [Conv] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.compgen.tcl 
+INFO-FLOW: Found component Conv_A_V_3_2.
+INFO-FLOW: Append model Conv_A_V_3_2
+INFO-FLOW: Handling components in module [Conv_2] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.compgen.tcl 
+INFO-FLOW: Found component Conv_2_B_V_1_0.
+INFO-FLOW: Append model Conv_2_B_V_1_0
+INFO-FLOW: Found component Conv_2_A_V_1_2.
+INFO-FLOW: Append model Conv_2_A_V_1_2
+INFO-FLOW: Handling components in module [FC_144_128_s] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.compgen.tcl 
+INFO-FLOW: Found component ultra_mux_932_8_1_1.
+INFO-FLOW: Append model ultra_mux_932_8_1_1
+INFO-FLOW: Found component ultra_mul_25ns_23Rg6.
+INFO-FLOW: Append model ultra_mul_25ns_23Rg6
+INFO-FLOW: Found component ultra_mac_muladd_Shg.
+INFO-FLOW: Append model ultra_mac_muladd_Shg
+INFO-FLOW: Found component ultra_mul_mul_8s_Thq.
+INFO-FLOW: Append model ultra_mul_mul_8s_Thq
+INFO-FLOW: Found component FC_144_128_s_biasyd2.
+INFO-FLOW: Append model FC_144_128_s_biasyd2
+INFO-FLOW: Found component FC_144_128_s_A_V_zec.
+INFO-FLOW: Append model FC_144_128_s_A_V_zec
+INFO-FLOW: Found component FC_144_128_s_B_V_IfE.
+INFO-FLOW: Append model FC_144_128_s_B_V_IfE
+INFO-FLOW: Handling components in module [FC_128_8_s] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.compgen.tcl 
+INFO-FLOW: Found component ultra_mux_832_8_1_1.
+INFO-FLOW: Append model ultra_mux_832_8_1_1
+INFO-FLOW: Found component ultra_mul_24ns_22VhK.
+INFO-FLOW: Append model ultra_mul_24ns_22VhK
+INFO-FLOW: Found component ultra_mul_mul_8s_WhU.
+INFO-FLOW: Append model ultra_mul_mul_8s_WhU
+INFO-FLOW: Found component FC_128_8_s_bias_VUhA.
+INFO-FLOW: Append model FC_128_8_s_bias_VUhA
+INFO-FLOW: Found component FC_128_8_s_B_V_5_0.
+INFO-FLOW: Append model FC_128_8_s_B_V_5_0
+INFO-FLOW: Handling components in module [AXI_DMA_MASTER] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.compgen.tcl 
+INFO-FLOW: Handling components in module [ultra] ... 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.compgen.tcl 
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component fifo_w16_d2048_A.
+INFO-FLOW: Append model fifo_w16_d2048_A
+INFO-FLOW: Found component start_for_Conv_S_U0.
+INFO-FLOW: Append model start_for_Conv_S_U0
+INFO-FLOW: Found component start_for_Pool_16Xh4.
+INFO-FLOW: Append model start_for_Pool_16Xh4
+INFO-FLOW: Found component start_for_Conv_3_U0.
+INFO-FLOW: Append model start_for_Conv_3_U0
+INFO-FLOW: Found component start_for_Conv_1_U0.
+INFO-FLOW: Append model start_for_Conv_1_U0
+INFO-FLOW: Found component start_for_Conv_U0.
+INFO-FLOW: Append model start_for_Conv_U0
+INFO-FLOW: Found component start_for_Conv_2_U0.
+INFO-FLOW: Append model start_for_Conv_2_U0
+INFO-FLOW: Found component start_for_FC_144_Yie.
+INFO-FLOW: Append model start_for_FC_144_Yie
+INFO-FLOW: Found component start_for_FC_128_Zio.
+INFO-FLOW: Append model start_for_FC_128_Zio
+INFO-FLOW: Found component start_for_AXI_DMA0iy.
+INFO-FLOW: Append model start_for_AXI_DMA0iy
+INFO-FLOW: Append model AXI_DMA_SLAVE
+INFO-FLOW: Append model Conv_S
+INFO-FLOW: Append model Pool_16_63_3_0_s
+INFO-FLOW: Append model Conv_3
+INFO-FLOW: Append model Conv_1
+INFO-FLOW: Append model Conv
+INFO-FLOW: Append model Conv_2
+INFO-FLOW: Append model FC_144_128_s
+INFO-FLOW: Append model FC_128_8_s
+INFO-FLOW: Append model AXI_DMA_MASTER
+INFO-FLOW: Append model ultra
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: ultra_mul_32s_32sbkb ultra_mul_mul_16scud ultra_mul_8s_26s_dEe ultra_mul_35ns_33eOg ultra_mac_muladd_fYi Conv_S_bias_V_6 Conv_S_B_V_4_0 Conv_S_A_V_4_4 Conv_S_A_V_4_253 ultra_mux_164_8_1_1 ultra_urem_4ns_3nwdI Pool_16_63_3_0_s_g8j ultra_mac_muladd_xdS Conv_3_bias_V Conv_3_B_V_0 Conv_3_A_V_4167 Conv_1_bias_V_8 Conv_1_B_V_2_0 Conv_1_A_V_2_2 Conv_A_V_3_2 Conv_2_B_V_1_0 Conv_2_A_V_1_2 ultra_mux_932_8_1_1 ultra_mul_25ns_23Rg6 ultra_mac_muladd_Shg ultra_mul_mul_8s_Thq FC_144_128_s_biasyd2 FC_144_128_s_A_V_zec FC_144_128_s_B_V_IfE ultra_mux_832_8_1_1 ultra_mul_24ns_22VhK ultra_mul_mul_8s_WhU FC_128_8_s_bias_VUhA FC_128_8_s_B_V_5_0 fifo_w16_d2048_A fifo_w16_d2048_A fifo_w16_d2048_A fifo_w16_d2048_A fifo_w16_d2048_A fifo_w16_d2048_A fifo_w16_d2048_A fifo_w16_d2048_A fifo_w16_d2048_A start_for_Conv_S_U0 start_for_Pool_16Xh4 start_for_Conv_3_U0 start_for_Conv_1_U0 start_for_Conv_U0 start_for_Conv_2_U0 start_for_FC_144_Yie start_for_FC_128_Zio start_for_AXI_DMA0iy AXI_DMA_SLAVE Conv_S Pool_16_63_3_0_s Conv_3 Conv_1 Conv Conv_2 FC_144_128_s FC_128_8_s AXI_DMA_MASTER ultra
+INFO-FLOW: To file: write model ultra_mul_32s_32sbkb
+INFO-FLOW: To file: write model ultra_mul_mul_16scud
+INFO-FLOW: To file: write model ultra_mul_8s_26s_dEe
+INFO-FLOW: To file: write model ultra_mul_35ns_33eOg
+INFO-FLOW: To file: write model ultra_mac_muladd_fYi
+INFO-FLOW: To file: write model Conv_S_bias_V_6
+INFO-FLOW: To file: write model Conv_S_B_V_4_0
+INFO-FLOW: To file: write model Conv_S_A_V_4_4
+INFO-FLOW: To file: write model Conv_S_A_V_4_253
+INFO-FLOW: To file: write model ultra_mux_164_8_1_1
+INFO-FLOW: To file: write model ultra_urem_4ns_3nwdI
+INFO-FLOW: To file: write model Pool_16_63_3_0_s_g8j
+INFO-FLOW: To file: write model ultra_mac_muladd_xdS
+INFO-FLOW: To file: write model Conv_3_bias_V
+INFO-FLOW: To file: write model Conv_3_B_V_0
+INFO-FLOW: To file: write model Conv_3_A_V_4167
+INFO-FLOW: To file: write model Conv_1_bias_V_8
+INFO-FLOW: To file: write model Conv_1_B_V_2_0
+INFO-FLOW: To file: write model Conv_1_A_V_2_2
+INFO-FLOW: To file: write model Conv_A_V_3_2
+INFO-FLOW: To file: write model Conv_2_B_V_1_0
+INFO-FLOW: To file: write model Conv_2_A_V_1_2
+INFO-FLOW: To file: write model ultra_mux_932_8_1_1
+INFO-FLOW: To file: write model ultra_mul_25ns_23Rg6
+INFO-FLOW: To file: write model ultra_mac_muladd_Shg
+INFO-FLOW: To file: write model ultra_mul_mul_8s_Thq
+INFO-FLOW: To file: write model FC_144_128_s_biasyd2
+INFO-FLOW: To file: write model FC_144_128_s_A_V_zec
+INFO-FLOW: To file: write model FC_144_128_s_B_V_IfE
+INFO-FLOW: To file: write model ultra_mux_832_8_1_1
+INFO-FLOW: To file: write model ultra_mul_24ns_22VhK
+INFO-FLOW: To file: write model ultra_mul_mul_8s_WhU
+INFO-FLOW: To file: write model FC_128_8_s_bias_VUhA
+INFO-FLOW: To file: write model FC_128_8_s_B_V_5_0
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model fifo_w16_d2048_A
+INFO-FLOW: To file: write model start_for_Conv_S_U0
+INFO-FLOW: To file: write model start_for_Pool_16Xh4
+INFO-FLOW: To file: write model start_for_Conv_3_U0
+INFO-FLOW: To file: write model start_for_Conv_1_U0
+INFO-FLOW: To file: write model start_for_Conv_U0
+INFO-FLOW: To file: write model start_for_Conv_2_U0
+INFO-FLOW: To file: write model start_for_FC_144_Yie
+INFO-FLOW: To file: write model start_for_FC_128_Zio
+INFO-FLOW: To file: write model start_for_AXI_DMA0iy
+INFO-FLOW: To file: write model AXI_DMA_SLAVE
+INFO-FLOW: To file: write model Conv_S
+INFO-FLOW: To file: write model Pool_16_63_3_0_s
+INFO-FLOW: To file: write model Conv_3
+INFO-FLOW: To file: write model Conv_1
+INFO-FLOW: To file: write model Conv
+INFO-FLOW: To file: write model Conv_2
+INFO-FLOW: To file: write model FC_144_128_s
+INFO-FLOW: To file: write model FC_128_8_s
+INFO-FLOW: To file: write model AXI_DMA_MASTER
+INFO-FLOW: To file: write model ultra
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.115 sec.
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.167 sec.
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.171 sec.
+Command       ap_source done; 0.172 sec.
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.compgen.tcl 
+INFO: [RTMG 210-282] Generating pipelined core: 'ultra_mul_32s_32sbkb_MulnS_0'
+Command       ap_source done; 0.183 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.compgen.tcl 
+INFO: [RTMG 210-282] Generating pipelined core: 'ultra_mul_8s_26s_dEe_MulnS_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'ultra_mul_35ns_33eOg_MulnS_2'
+INFO: [RTMG 210-278] Implementing memory 'Conv_S_bias_V_6_ram (RAM_1P_LUTRAM)' using distributed RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'Conv_S_B_V_4_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'Conv_S_A_V_4_4_ram (RAM_1P_LUTRAM)' using distributed RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'Conv_S_A_V_4_253_ram (RAM_1P_LUTRAM)' using distributed RAMs with power-on initialization.
+Command       ap_source done; 0.457 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.compgen.tcl 
+INFO: [RTMG 210-282] Generating pipelined core: 'ultra_urem_4ns_3nwdI_div'
+INFO: [RTMG 210-278] Implementing memory 'Pool_16_63_3_0_s_g8j_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+Command       ap_source done; 0.632 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'Conv_3_bias_V_ram (RAM_1P_LUTRAM)' using distributed RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'Conv_3_B_V_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'Conv_3_A_V_4167_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+Command       ap_source done; 0.382 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'Conv_1_bias_V_8_ram (RAM_1P_LUTRAM)' using distributed RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'Conv_1_B_V_2_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'Conv_1_A_V_2_2_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+Command       ap_source done; 0.548 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'Conv_A_V_3_2_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+Command       ap_source done; 0.167 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'Conv_2_B_V_1_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'Conv_2_A_V_1_2_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+Command       ap_source done; 0.2 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.compgen.tcl 
+INFO: [RTMG 210-282] Generating pipelined core: 'ultra_mul_25ns_23Rg6_MulnS_3'
+INFO: [RTMG 210-278] Implementing memory 'FC_144_128_s_biasyd2_ram (RAM_1P_LUTRAM)' using distributed RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'FC_144_128_s_A_V_zec_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'FC_144_128_s_B_V_IfE_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+Command       ap_source done; 0.713 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.compgen.tcl 
+INFO: [RTMG 210-282] Generating pipelined core: 'ultra_mul_24ns_22VhK_MulnS_4'
+INFO: [RTMG 210-278] Implementing memory 'FC_128_8_s_bias_VUhA_ram (RAM_1P_LUTRAM)' using distributed RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'FC_128_8_s_B_V_5_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+Command       ap_source done; 0.549 sec.
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.compgen.tcl 
+INFO: [RTMG 210-285] Implementing FIFO 'connect_0_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'connect_1_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'connect_2_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'connect_3_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'connect_4_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'connect_5_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'connect_6_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'connect_7_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'connect_8_V_V_U(fifo_w16_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv_S_U0_U(start_for_Conv_S_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Pool_16Xh4_U(start_for_Pool_16Xh4)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv_3_U0_U(start_for_Conv_3_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv_1_U0_U(start_for_Conv_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv_U0_U(start_for_Conv_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv_2_U0_U(start_for_Conv_2_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_FC_144_Yie_U(start_for_FC_144_Yie)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_FC_128_Zio_U(start_for_FC_128_Zio)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_AXI_DMA0iy_U(start_for_AXI_DMA0iy)' using Shift Registers.
+Command       ap_source done; 1.438 sec.
+Execute       get_config_sdx -target 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source done; 0.206 sec.
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.196 sec.
+Execute             source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.659 sec.
+Execute           source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.719 sec.
+Command       ap_source done; 0.72 sec.
+Execute       source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.rtl_wrap.cfg.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.tbgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.tbgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_SLAVE.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_S.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Pool_16_63_3_0_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_3.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_1.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/Conv_2.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_144_128_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/FC_128_8_s.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/AXI_DMA_MASTER.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.compgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.constraint.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.tbgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.tbgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.tbgen.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/ultra.constraint.tcl 
+Execute       sc_get_clocks ultra 
+Execute       source E:/MyPYNQ/HLS/ULTRA_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:37 ; elapsed = 00:04:10 . Memory (MB): peak = 547.379 ; gain = 490.027
+INFO: [SYSC 207-301] Generating SystemC RTL for ultra.
+INFO: [VHDL 208-304] Generating VHDL RTL for ultra.
+INFO: [VLOG 209-307] Generating Verilog RTL for ultra.
+Command     autosyn done; 122.648 sec.
+Command   csynth_design done; 245.197 sec.
+Command ap_source done; 246.647 sec.
+Execute cleanup_all 
+Command cleanup_all done; 0.309 sec.

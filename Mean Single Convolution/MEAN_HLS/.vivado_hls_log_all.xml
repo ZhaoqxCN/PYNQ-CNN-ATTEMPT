@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path consists of the following:&#xD;&#xA;&#x9;'sitofp' operation ('tmp_13', MEAN_HLS/mean.cpp:46) (6.34 ns)" projectName="MEAN_HLS" solutionName="solution1" date="2019-04-14T15:28:06.441+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (6.338ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns)." projectName="MEAN_HLS" solutionName="solution1" date="2019-04-14T15:28:06.390+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('img_buf_V_load_2', MEAN_HLS/mean.cpp:46) on array 'img_buf.V', MEAN_HLS/mean.cpp:23 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'img_buf_V'." projectName="MEAN_HLS" solutionName="solution1" date="2019-04-14T15:28:05.191+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated delay (6.34ns) of 'sitofp' operation ('tmp_13', MEAN_HLS/mean.cpp:46) exceeds the target cycle time (target cycle time: 5ns, clock uncertainty: 0.625ns, effective cycle time: 4.38ns)." projectName="MEAN_HLS" solutionName="solution1" date="2019-04-14T15:27:55.577+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'mean_ap_sitofp_6_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="MEAN_HLS" solutionName="solution1" date="2019-04-14T15:30:06.951+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'mean_ap_fadd_7_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;&#xA;create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 345.410 ; gain = 41.961" projectName="MEAN_HLS" solutionName="solution1" date="2019-04-14T15:30:00.692+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

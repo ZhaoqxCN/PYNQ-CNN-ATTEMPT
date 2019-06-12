@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="cnn" xd:componentRef="cnn" xd:initiationInterval="85650346" xd:clockPeriod="5.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="stream_in.data" xd:originalName="stream_in" xd:direction="in" xd:interfaceRef="stream_in" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="stream_in.last" xd:originalName="stream_in" xd:direction="in" xd:interfaceRef="stream_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="stream_out.data" xd:originalName="stream_out" xd:direction="out" xd:interfaceRef="stream_out" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="stream_out.last" xd:originalName="stream_out" xd:direction="out" xd:interfaceRef="stream_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="737962" xd:worst-case="85650345" xd:average-case="10800837"/>
+  <xd:resourceEstimates xd:LUT="14012" xd:FF="13014" xd:BRAM="157" xd:DSP="55"/>
+</xd:acceleratorMap>

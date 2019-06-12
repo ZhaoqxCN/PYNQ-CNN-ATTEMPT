@@ -1,0 +1,518 @@
+
+*** Running vivado
+    with args -log system_mean_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_mean_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_mean_0_0.tcl -notrace
+Command: synth_design -top system_mean_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9592 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 450.910 ; gain = 97.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_mean_0_0' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ip/system_mean_0_0/synth/system_mean_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'mean' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 7'b0000001 
+	Parameter ap_ST_fsm_state2 bound to: 7'b0000010 
+	Parameter ap_ST_fsm_state3 bound to: 7'b0000100 
+	Parameter ap_ST_fsm_state4 bound to: 7'b0001000 
+	Parameter ap_ST_fsm_state5 bound to: 7'b0010000 
+	Parameter ap_ST_fsm_state6 bound to: 7'b0100000 
+	Parameter ap_ST_fsm_state7 bound to: 7'b1000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean.v:262]
+INFO: [Synth 8-6157] synthesizing module 'mean_buf' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean_buf.v:46]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 262144 - type: integer 
+	Parameter AddressWidth bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mean_buf_ram' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean_buf.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 18 - type: integer 
+	Parameter MEM_SIZE bound to: 262144 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean_buf.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mean_buf_ram' (1#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean_buf.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mean_buf' (2#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean_buf.v:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'image_in_data_V_0_data_out_reg' and it is trimmed from '32' to '8' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean.v:1137]
+INFO: [Synth 8-6155] done synthesizing module 'mean' (3#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'system_mean_0_0' (4#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ip/system_mean_0_0/synth/system_mean_0_0.v:58]
+WARNING: [Synth 8-3331] design mean_buf has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 549.883 ; gain = 196.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 549.883 ; gain = 196.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 549.883 ; gain = 196.398
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ip/system_mean_0_0/constraints/mean_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ip/system_mean_0_0/constraints/mean_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/MyPYNQ/PL_CONV/PL_CONV.runs/system_mean_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/MyPYNQ/PL_CONV/PL_CONV.runs/system_mean_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 873.586 ; gain = 1.566
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 873.586 ; gain = 520.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 873.586 ; gain = 520.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/MyPYNQ/PL_CONV/PL_CONV.runs/system_mean_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 873.586 ; gain = 520.102
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'image_in_data_V_0_payload_B_reg' and it is trimmed from '32' to '8' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean.v:921]
+WARNING: [Synth 8-3936] Found unconnected internal register 'image_in_data_V_0_payload_A_reg' and it is trimmed from '32' to '8' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/0592/hdl/verilog/mean.v:915]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_180_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_210_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_238_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 873.586 ; gain = 520.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               19 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 45    
++---RAMs : 
+	            2048K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 25    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mean_buf_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	            2048K Bit         RAMs := 1     
+Module mean 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               19 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 45    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 25    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "exitcond1_fu_180_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_238_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_210_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[31]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[30]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[29]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[28]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[27]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[26]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[25]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[24]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[23]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[22]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[21]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[20]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[19]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[18]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[17]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[16]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[15]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[14]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[13]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[12]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[11]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[10]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[9]
+WARNING: [Synth 8-3331] design mean has unconnected port image_in_TDATA[8]
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[0]' (FD) to 'inst/tmp_3_reg_325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[1]' (FD) to 'inst/tmp_3_reg_325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[2]' (FD) to 'inst/tmp_3_reg_325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[3]' (FD) to 'inst/tmp_3_reg_325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[4]' (FD) to 'inst/tmp_3_reg_325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[5]' (FD) to 'inst/tmp_3_reg_325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[6]' (FD) to 'inst/tmp_3_reg_325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[7]' (FD) to 'inst/tmp_3_reg_325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_3_reg_325_reg[8]' (FD) to 'inst/i_1_cast_reg_312_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__15' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__7' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__16' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__8' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__0' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__17' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__9' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__1' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__18' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__10' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__2' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__19' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__11' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__3' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__20' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__12' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__4' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__21' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__13' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__5' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__22' (FDE) to 'inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_mux_sel__14'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_1_cast_reg_312_reg[10] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 873.586 ; gain = 520.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mean_buf_ram: | ram_reg    | 256 K x 8(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 64     | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_3_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_3_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_3_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_3_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_3_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_3_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_3_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_3_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_5_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_5_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_5_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_5_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_5_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_5_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_5_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_5_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_7_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_7_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_7_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_7_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_7_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_7_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_7_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_4_2/buf_U/mean_buf_ram_U/ram_reg_7_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 873.586 ; gain = 520.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 873.586 ; gain = 520.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mean_buf_ram: | ram_reg    | 256 K x 8(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 64     | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_3_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_3_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_3_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_3_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_3_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_3_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_3_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_3_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_5_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_5_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_5_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_5_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_5_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_5_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_5_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_5_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_7_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_7_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_7_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_7_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_7_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_7_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_7_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/buf_U/mean_buf_ram_U/ram_reg_7_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 894.066 ; gain = 540.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net n_4_231 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_4_285 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_4_249 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_4_287 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_4_248 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_4_284 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_4_230 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_4_286 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 894.066 ; gain = 540.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 894.066 ; gain = 540.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 894.066 ; gain = 540.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 894.066 ; gain = 540.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 894.066 ; gain = 540.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 894.066 ; gain = 540.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    11|
+|2     |LUT1       |     6|
+|3     |LUT2       |    23|
+|4     |LUT3       |   133|
+|5     |LUT4       |    17|
+|6     |LUT5       |    41|
+|7     |LUT6       |    81|
+|8     |RAMB36E1   |    32|
+|9     |RAMB36E1_1 |    32|
+|10    |FDRE       |   247|
+|11    |FDSE       |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------+------+
+|      |Instance             |Module       |Cells |
++------+---------------------+-------------+------+
+|1     |top                  |             |   624|
+|2     |  inst               |mean         |   624|
+|3     |    buf_U            |mean_buf     |   200|
+|4     |      mean_buf_ram_U |mean_buf_ram |   200|
++------+---------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 894.066 ; gain = 540.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 894.066 ; gain = 216.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 894.066 ; gain = 540.582
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+132 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 894.066 ; gain = 552.055
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/MyPYNQ/PL_CONV/PL_CONV.runs/system_mean_0_0_synth_1/system_mean_0_0.dcp' has been generated.

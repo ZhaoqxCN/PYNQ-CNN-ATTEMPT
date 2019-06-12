@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axi_dma_master.h" path="E:\MyPYNQ\HLS\CNN_HLS\axi_dma_master.h"/>
+    <originFiles name="axi_dma_slave.h" path="E:\MyPYNQ\HLS\CNN_HLS\axi_dma_slave.h"/>
+    <originFiles name="cnn.cpp" path="E:\MyPYNQ\HLS\CNN_HLS\cnn.cpp"/>
+    <originFiles name="cnn.h" path="E:\MyPYNQ\HLS\CNN_HLS\cnn.h"/>
+    <originFiles name="config.h" path="E:\MyPYNQ\HLS\CNN_HLS\config.h"/>
+    <originFiles name="convolution.h" path="E:\MyPYNQ\HLS\CNN_HLS\convolution.h"/>
+    <originFiles name="fully_connected.h" path="E:\MyPYNQ\HLS\CNN_HLS\fully_connected.h"/>
+    <originFiles name="pool.h" path="E:\MyPYNQ\HLS\CNN_HLS\pool.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="E:\MyPYNQ\HLS\CNN_HLS\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

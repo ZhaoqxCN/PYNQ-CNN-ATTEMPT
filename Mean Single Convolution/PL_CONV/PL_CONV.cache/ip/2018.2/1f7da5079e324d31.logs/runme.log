@@ -1,0 +1,1352 @@
+
+*** Running vivado
+    with args -log system_mean_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_mean_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_mean_0_0.tcl -notrace
+Command: synth_design -top system_mean_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9960 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 457.320 ; gain = 104.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_mean_0_0' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ip/system_mean_0_0/synth/system_mean_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'mean' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean.v:12]
+INFO: [Synth 8-6157] synthesizing module 'mean_img_buf_V' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_img_buf_V.v:11]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 262144 - type: integer 
+	Parameter AddressWidth bound to: 18 - type: integer 
+	Parameter BufferCount bound to: 2 - type: integer 
+	Parameter MemLatency bound to: 1 - type: integer 
+	Parameter IndexWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mean_img_buf_V_memcore' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_img_buf_V_memcore.v:58]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 262144 - type: integer 
+	Parameter AddressWidth bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mean_img_buf_V_memcore_ram' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_img_buf_V_memcore.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 18 - type: integer 
+	Parameter MEM_SIZE bound to: 262144 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_img_buf_V_memcore.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'mean_img_buf_V_memcore_ram' (1#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_img_buf_V_memcore.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mean_img_buf_V_memcore' (2#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_img_buf_V_memcore.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'mean_img_buf_V' (3#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_img_buf_V.v:11]
+INFO: [Synth 8-6157] synthesizing module 'Loop_1_proc32' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_1_proc32.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state4 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_1_proc32.v:55]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_1_proc32.v:458]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_1_proc32.v:468]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_1_proc32' (4#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_1_proc32.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Loop_2_proc33' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 43'b0000000000000000000000000000000000000000001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 43'b0000000000000000000000000000000000000000010 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 43'b0000000000000000000000000000000000000000100 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 43'b0000000000000000000000000000000000000001000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 43'b0000000000000000000000000000000000000010000 
+	Parameter ap_ST_fsm_pp0_stage4 bound to: 43'b0000000000000000000000000000000000000100000 
+	Parameter ap_ST_fsm_pp0_stage5 bound to: 43'b0000000000000000000000000000000000001000000 
+	Parameter ap_ST_fsm_pp0_stage6 bound to: 43'b0000000000000000000000000000000000010000000 
+	Parameter ap_ST_fsm_pp0_stage7 bound to: 43'b0000000000000000000000000000000000100000000 
+	Parameter ap_ST_fsm_pp0_stage8 bound to: 43'b0000000000000000000000000000000001000000000 
+	Parameter ap_ST_fsm_pp0_stage9 bound to: 43'b0000000000000000000000000000000010000000000 
+	Parameter ap_ST_fsm_pp0_stage10 bound to: 43'b0000000000000000000000000000000100000000000 
+	Parameter ap_ST_fsm_pp0_stage11 bound to: 43'b0000000000000000000000000000001000000000000 
+	Parameter ap_ST_fsm_pp0_stage12 bound to: 43'b0000000000000000000000000000010000000000000 
+	Parameter ap_ST_fsm_pp0_stage13 bound to: 43'b0000000000000000000000000000100000000000000 
+	Parameter ap_ST_fsm_pp0_stage14 bound to: 43'b0000000000000000000000000001000000000000000 
+	Parameter ap_ST_fsm_pp0_stage15 bound to: 43'b0000000000000000000000000010000000000000000 
+	Parameter ap_ST_fsm_pp0_stage16 bound to: 43'b0000000000000000000000000100000000000000000 
+	Parameter ap_ST_fsm_pp0_stage17 bound to: 43'b0000000000000000000000001000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage18 bound to: 43'b0000000000000000000000010000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage19 bound to: 43'b0000000000000000000000100000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage20 bound to: 43'b0000000000000000000001000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage21 bound to: 43'b0000000000000000000010000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage22 bound to: 43'b0000000000000000000100000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage23 bound to: 43'b0000000000000000001000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage24 bound to: 43'b0000000000000000010000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage25 bound to: 43'b0000000000000000100000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage26 bound to: 43'b0000000000000001000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage27 bound to: 43'b0000000000000010000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage28 bound to: 43'b0000000000000100000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage29 bound to: 43'b0000000000001000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage30 bound to: 43'b0000000000010000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage31 bound to: 43'b0000000000100000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage32 bound to: 43'b0000000001000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage33 bound to: 43'b0000000010000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage34 bound to: 43'b0000000100000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage35 bound to: 43'b0000001000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage36 bound to: 43'b0000010000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage37 bound to: 43'b0000100000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage38 bound to: 43'b0001000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage39 bound to: 43'b0010000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp0_stage40 bound to: 43'b0100000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state429 bound to: 43'b1000000000000000000000000000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:101]
+INFO: [Synth 8-6157] synthesizing module 'mean_fadd_32ns_32bkb' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_fadd_32ns_32bkb.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mean_ap_fadd_3_full_dsp_32' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_fadd_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_fadd_3_full_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'mean_ap_fadd_3_full_dsp_32' (22#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'mean_fadd_32ns_32bkb' (23#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_fadd_32ns_32bkb.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mean_fdiv_32ns_32cud' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_fdiv_32ns_32cud.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 16 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mean_ap_fdiv_14_no_dsp_32' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_fdiv_14_no_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 14 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_fdiv_14_no_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'mean_ap_fdiv_14_no_dsp_32' (31#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_fdiv_14_no_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'mean_fdiv_32ns_32cud' (32#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_fdiv_32ns_32cud.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mean_sitofp_32ns_dEe' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_sitofp_32ns_dEe.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mean_ap_sitofp_4_no_dsp_32' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_sitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_sitofp_4_no_dsp_32.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'mean_ap_sitofp_4_no_dsp_32' (39#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/ip/mean_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'mean_sitofp_32ns_dEe' (40#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean_sitofp_32ns_dEe.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6806]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6810]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6852]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6860]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6862]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6864]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6868]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6870]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6872]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6874]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6876]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6878]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6880]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6882]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6884]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6886]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6888]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6890]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6892]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6894]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6896]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6898]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6900]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6904]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6908]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6910]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6912]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6914]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6916]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6918]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6920]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6922]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6924]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6926]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6930]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6932]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6934]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6936]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6938]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6940]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6942]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6944]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6946]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6948]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6950]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6952]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6954]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6956]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6958]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6960]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6962]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6964]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6966]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6968]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6970]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6972]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6974]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6976]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6980]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6982]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6984]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6986]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6988]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6990]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6992]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6994]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6996]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6998]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7002]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7004]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7006]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7008]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7010]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7012]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7014]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7016]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7018]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7022]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7024]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7026]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7028]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7030]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7052]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7188]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7216]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7224]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7226]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7228]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7230]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7232]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7234]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7236]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7238]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7240]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7242]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7244]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7246]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7248]
+INFO: [Common 17-14] Message 'Synth 8-589' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'Loop_2_proc33' (41#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mean' (42#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/mean.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'system_mean_0_0' (43#1) [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ip/system_mean_0_0/synth/system_mean_0_0.v:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized95 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized95 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized95 has unconnected port SINIT
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DATA[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[7]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[5]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized10 has unconnected port B[31]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized97 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized97 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized97 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized13 has unconnected port B[11]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized84 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized84 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized84 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized84 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized84 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 635.313 ; gain = 282.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 635.313 ; gain = 282.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 635.313 ; gain = 282.387
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1804 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ip/system_mean_0_0/constraints/mean_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ip/system_mean_0_0/constraints/mean_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/MyPYNQ/PL_CONV/PL_CONV.runs/system_mean_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/MyPYNQ/PL_CONV/PL_CONV.runs/system_mean_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  FDE => FDRE: 38 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 938.148 ; gain = 4.465
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:40 ; elapsed = 00:02:19 . Memory (MB): peak = 938.148 ; gain = 585.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:40 ; elapsed = 00:02:19 . Memory (MB): peak = 938.148 ; gain = 585.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/MyPYNQ/PL_CONV/PL_CONV.runs/system_mean_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:40 ; elapsed = 00:02:19 . Memory (MB): peak = 938.148 ; gain = 585.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_100_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_i6_fu_112_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'tmp_13_6_reg_5216_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7514]
+INFO: [Synth 8-4471] merging register 'tmp_13_7_reg_5234_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7518]
+INFO: [Synth 8-4471] merging register 'tmp_13_4_mid2_reg_5336_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7670]
+INFO: [Synth 8-4471] merging register 'j_1_cast_reg_5344_pp0_iter2_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7574]
+INFO: [Synth 8-4471] merging register 'j_1_cast_reg_5344_pp0_iter3_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7604]
+INFO: [Synth 8-4471] merging register 'j_1_cast_reg_5344_pp0_iter4_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7622]
+INFO: [Synth 8-4471] merging register 'j_1_cast_reg_5344_pp0_iter5_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7644]
+INFO: [Synth 8-4471] merging register 'j_1_cast_reg_5344_pp0_iter6_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7664]
+INFO: [Synth 8-4471] merging register 'j_1_cast_reg_5344_pp0_iter7_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7684]
+INFO: [Synth 8-4471] merging register 'tmp_mid2_reg_5367_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7602]
+INFO: [Synth 8-4471] merging register 'j_2_cast_reg_5553_pp0_iter1_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7546]
+INFO: [Synth 8-4471] merging register 'j_2_cast_reg_5553_pp0_iter2_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7576]
+INFO: [Synth 8-4471] merging register 'j_2_cast_reg_5553_pp0_iter3_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7606]
+INFO: [Synth 8-4471] merging register 'j_2_cast_reg_5553_pp0_iter4_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7628]
+INFO: [Synth 8-4471] merging register 'j_2_cast_reg_5553_pp0_iter5_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7646]
+INFO: [Synth 8-4471] merging register 'j_2_cast_reg_5553_pp0_iter6_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7666]
+INFO: [Synth 8-4471] merging register 'j_2_cast_reg_5553_pp0_iter7_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7686]
+INFO: [Synth 8-4471] merging register 'tj_6_cast_reg_5588_pp0_iter1_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7548]
+INFO: [Synth 8-4471] merging register 'tj_6_cast_reg_5588_pp0_iter2_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7578]
+INFO: [Synth 8-4471] merging register 'tj_6_cast_reg_5588_pp0_iter3_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7608]
+INFO: [Synth 8-4471] merging register 'tj_6_cast_reg_5588_pp0_iter4_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7630]
+INFO: [Synth 8-4471] merging register 'tj_6_cast_reg_5588_pp0_iter5_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7650]
+INFO: [Synth 8-4471] merging register 'tj_6_cast_reg_5588_pp0_iter6_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7668]
+INFO: [Synth 8-4471] merging register 'tj_6_cast_reg_5588_pp0_iter7_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7688]
+INFO: [Synth 8-4471] merging register 'tj_7_cast_reg_5644_pp0_iter1_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7550]
+INFO: [Synth 8-4471] merging register 'tj_7_cast_reg_5644_pp0_iter2_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7580]
+INFO: [Synth 8-4471] merging register 'tj_7_cast_reg_5644_pp0_iter3_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7610]
+INFO: [Synth 8-4471] merging register 'tj_7_cast_reg_5644_pp0_iter4_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7632]
+INFO: [Synth 8-4471] merging register 'tj_7_cast_reg_5644_pp0_iter5_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7652]
+INFO: [Synth 8-4471] merging register 'tj_7_cast_reg_5644_pp0_iter6_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7672]
+INFO: [Synth 8-4471] merging register 'tj_7_cast_reg_5644_pp0_iter7_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7690]
+INFO: [Synth 8-4471] merging register 'tj_8_cast_reg_5684_pp0_iter1_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7552]
+INFO: [Synth 8-4471] merging register 'tj_8_cast_reg_5684_pp0_iter2_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7582]
+INFO: [Synth 8-4471] merging register 'tj_8_cast_reg_5684_pp0_iter3_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7612]
+INFO: [Synth 8-4471] merging register 'tj_8_cast_reg_5684_pp0_iter4_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7634]
+INFO: [Synth 8-4471] merging register 'tj_8_cast_reg_5684_pp0_iter5_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7654]
+INFO: [Synth 8-4471] merging register 'tj_8_cast_reg_5684_pp0_iter6_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7674]
+INFO: [Synth 8-4471] merging register 'tj_8_cast_reg_5684_pp0_iter7_reg_reg[17:10]' into 'j_1_cast_reg_5344_reg[17:10]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7694]
+INFO: [Synth 8-4471] merging register 'tmp_13_9_mid2_reg_5724_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7726]
+INFO: [Synth 8-4471] merging register 'tmp_13_9_mid2_reg_5724_pp0_iter1_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7538]
+INFO: [Synth 8-4471] merging register 'tmp_13_5_mid2_reg_5773_pp0_iter3_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7604]
+INFO: [Synth 8-4471] merging register 'tmp_13_6_mid2_reg_5782_pp0_iter3_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7614]
+INFO: [Synth 8-4471] merging register 'tmp_13_6_mid2_reg_5782_pp0_iter4_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7618]
+INFO: [Synth 8-4471] merging register 'tmp_13_7_mid2_reg_5801_pp0_iter4_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7636]
+INFO: [Synth 8-4471] merging register 'tmp_13_7_mid2_reg_5801_pp0_iter5_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7640]
+INFO: [Synth 8-4471] merging register 'tmp_13_mid2_reg_6237_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7546]
+INFO: [Synth 8-4471] merging register 'tmp_13_1_mid2_reg_6335_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7560]
+INFO: [Synth 8-4471] merging register 'tmp_13_1_mid2_reg_6335_pp0_iter2_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7564]
+INFO: [Synth 8-4471] merging register 'tmp_13_2_mid2_reg_6559_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7578]
+INFO: [Synth 8-4471] merging register 'tmp_13_8_mid2_reg_7314_pp0_iter6_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7660]
+INFO: [Synth 8-4471] merging register 'tmp_13_10_mid2_reg_7543_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7678]
+INFO: [Synth 8-4471] merging register 'tmp_13_10_mid2_reg_7543_pp0_iter7_reg_reg[8:0]' into 'tmp_13_5_reg_5211_reg[8:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:7680]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5162]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5160]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5158]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5156]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5154]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5152]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5150]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5148]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5146]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5144]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5142]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5140]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5138]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5248]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5246]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5244]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5242]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5240]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5238]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5236]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5234]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5232]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5230]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5228]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:5226]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:6926]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_14_29_reg_6554_pp0_iter3_reg_reg' and it is trimmed from '19' to '18' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:4073]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_14_29_reg_6554_reg' and it is trimmed from '19' to '18' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:4062]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_14_28_reg_6543_pp0_iter3_reg_reg' and it is trimmed from '19' to '18' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:4072]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_14_28_reg_6543_reg' and it is trimmed from '19' to '18' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:4061]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_14_27_reg_6532_reg' and it is trimmed from '19' to '18' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:4060]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_14_26_reg_6521_reg' and it is trimmed from '19' to '18' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:4059]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_13_1_mid2_reg_6335_pp0_iter2_reg_reg' and it is trimmed from '10' to '9' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:4040]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_13_9_mid2_reg_5724_pp0_iter1_reg_reg' and it is trimmed from '10' to '9' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3645]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_mid2_reg_5367_reg' and it is trimmed from '10' to '9' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3905]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_1144_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_1132_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_fu_930_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_1607_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_mid1_fu_1482_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'tj_2_cast_reg_5464_reg[9:0]' into 'tj_2_reg_5451_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:2857]
+INFO: [Synth 8-4471] merging register 'tj_3_cast_reg_5495_reg[9:0]' into 'tj_3_reg_5482_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:2859]
+INFO: [Synth 8-4471] merging register 'tj_1_cast_reg_5417_reg[9:0]' into 'tj_1_reg_5404_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3898]
+INFO: [Synth 8-4471] merging register 'tj_cast_reg_5386_reg[9:0]' into 'tj_reg_5373_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3900]
+INFO: [Synth 8-4471] merging register 'tj_1_reg_5404_pp0_iter1_reg_reg[9:0]' into 'tj_1_cast_reg_5417_pp0_iter1_reg_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3913]
+INFO: [Synth 8-4471] merging register 'tj_1_cast_reg_5417_pp0_iter2_reg_reg[9:0]' into 'tj_1_reg_5404_pp0_iter2_reg_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3912]
+INFO: [Synth 8-4471] merging register 'tj_reg_5373_pp0_iter1_reg_reg[9:0]' into 'tj_cast_reg_5386_pp0_iter1_reg_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3918]
+INFO: [Synth 8-4471] merging register 'tj_cast_reg_5386_pp0_iter2_reg_reg[9:0]' into 'tj_reg_5373_pp0_iter2_reg_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3917]
+INFO: [Synth 8-4471] merging register 'tj_2_reg_5451_pp0_iter1_reg_reg[9:0]' into 'tj_2_cast_reg_5464_pp0_iter1_reg_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3947]
+INFO: [Synth 8-4471] merging register 'tj_2_cast_reg_5464_pp0_iter2_reg_reg[9:0]' into 'tj_2_reg_5451_pp0_iter2_reg_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3946]
+INFO: [Synth 8-4471] merging register 'tj_3_reg_5482_pp0_iter1_reg_reg[9:0]' into 'tj_3_cast_reg_5495_pp0_iter1_reg_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3953]
+INFO: [Synth 8-4471] merging register 'tj_3_cast_reg_5495_pp0_iter2_reg_reg[9:0]' into 'tj_3_reg_5482_pp0_iter2_reg_reg[9:0]' [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3952]
+WARNING: [Synth 8-6014] Unused sequential element tj_2_cast_reg_5464_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element tj_3_cast_reg_5495_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:2859]
+WARNING: [Synth 8-6014] Unused sequential element tj_1_cast_reg_5417_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3898]
+WARNING: [Synth 8-6014] Unused sequential element tj_cast_reg_5386_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3900]
+WARNING: [Synth 8-6014] Unused sequential element tj_1_cast_reg_5417_pp0_iter2_reg_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3912]
+WARNING: [Synth 8-6014] Unused sequential element tj_1_reg_5404_pp0_iter1_reg_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3913]
+WARNING: [Synth 8-6014] Unused sequential element tj_cast_reg_5386_pp0_iter2_reg_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3917]
+WARNING: [Synth 8-6014] Unused sequential element tj_reg_5373_pp0_iter1_reg_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3918]
+WARNING: [Synth 8-6014] Unused sequential element tj_2_cast_reg_5464_pp0_iter2_reg_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3946]
+WARNING: [Synth 8-6014] Unused sequential element tj_2_reg_5451_pp0_iter1_reg_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3947]
+WARNING: [Synth 8-6014] Unused sequential element tj_3_cast_reg_5495_pp0_iter2_reg_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3952]
+WARNING: [Synth 8-6014] Unused sequential element tj_3_reg_5482_pp0_iter1_reg_reg was removed.  [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3953]
+INFO: [Synth 8-5546] ROM "exitcond_fu_1144_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_1132_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_fu_930_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_1607_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_mid1_fu_1482_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_out_V_data_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_out_V_data_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_out_V_last_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_out_V_last_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num_1_39_v_cast_cast_fu_3841_p3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:56 ; elapsed = 00:02:41 . Memory (MB): peak = 938.148 ; gain = 585.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'mean_fadd_32ns_32bkb:/mean_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'mean_fadd_32ns_32bkb:/mean_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'mean_fadd_32ns_32bkb:/mean_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'mean_fadd_32ns_32bkb:/mean_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'mean_fadd_32ns_32bkb:/mean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'mean_fadd_32ns_32bkb:/mean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized0) to 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized53) to 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'inst/Loop_2_proc33_U0/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized53) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'mean_sitofp_32ns_dEe:/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |Loop_2_proc33__GB0 |           1|     38569|
+|2     |Loop_2_proc33__GB1 |           1|      5760|
+|3     |Loop_2_proc33__GB2 |           1|     18080|
+|4     |mean__GC0          |           1|       960|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data11" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_13_1_mid2_reg_6335_reg' and it is trimmed from '10' to '9' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:4030]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_13_9_mid2_reg_5724_reg' and it is trimmed from '10' to '9' bits. [e:/MyPYNQ/PL_CONV/PL_CONV.srcs/sources_1/bd/system/ipshared/d538/hdl/verilog/Loop_2_proc33.v:3495]
+INFO: [Synth 8-5546] ROM "tmp_9_fu_1607_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_fu_930_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_1144_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_1132_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Loop_1_proc32_U0/exitcond_flatten_fu_100_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Loop_1_proc32_U0/exitcond3_i6_fu_112_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[30]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[29]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[28]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[27]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[26]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[25]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[24]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[23]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[22]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[21]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[20]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[19]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[18]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[17]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[16]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[15]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[14]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[13]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[12]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[11]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[10]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[9]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[8]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/din0_buf1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/\din0_buf1_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[30]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[29]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[28]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[27]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[26]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[25]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[24]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[23]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[22]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[21]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[20]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[19]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[18]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[17]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[16]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[15]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[14]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[13]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[12]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[11]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[10]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[9]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[8]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/din0_buf1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/\din0_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/\mean_ap_sitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/\mean_ap_sitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/\mean_ap_sitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/\mean_ap_sitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/mean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U7/\mean_ap_sitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/mean_sitofp_32ns_dEe_U8/\mean_ap_sitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_6_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (din0_buf1_reg[31]) is unused and will be removed from module mean_sitofp_32ns_dEe__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (din0_buf1_reg[31]) is unused and will be removed from module mean_sitofp_32ns_dEe.
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_2/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/MSB_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_2/mean_fdiv_32ns_32cud_U6/mean_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[13].pipe_reg[13][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[14].pipe_reg[14][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/ti_5_reg_5265_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tmp_13_6_reg_5216_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/ti_5_reg_5265_reg[1]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tmp_13_6_reg_5216_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/ti_4_reg_5253_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_9_reg_5176_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/ti_3_reg_5240_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tmp_13_6_reg_5216_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/ti_3_reg_5240_reg[1]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_s_reg_5187_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[9]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_9_reg_5176_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[10]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[11]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[12]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[13]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[14]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[15]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[16]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_5_reg_5211_reg[17]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[9]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_9_reg_5176_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_6_reg_5216_reg[9]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_s_reg_5187_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[10]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/i_reg_5222_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[11]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/i_reg_5222_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[12]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/i_reg_5222_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[13]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/i_reg_5222_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[14]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/i_reg_5222_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[15]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/i_reg_5222_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[16]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/i_reg_5222_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_13_7_reg_5234_reg[17]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/i_reg_5222_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_58_reg_5471_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_2_reg_5451_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_62_reg_5502_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_3_reg_5482_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_78_reg_5696_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_8_reg_5673_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_74_reg_5656_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_7_reg_5633_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_70_reg_5600_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_6_reg_5576_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_66_reg_5565_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/j_2_cast_reg_5553_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_48_reg_5393_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_reg_5373_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_54_reg_5424_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_1_reg_5404_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_58_reg_5471_pp0_iter1_reg_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_2_cast_reg_5464_pp0_iter1_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_62_reg_5502_pp0_iter1_reg_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_3_cast_reg_5495_pp0_iter1_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_66_reg_5565_pp0_iter1_reg_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/j_2_cast_reg_5553_pp0_iter1_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/ti_1_reg_5199_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_9_reg_5176_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[1]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[2]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[3]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[4]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[5]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[6]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[7]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_35_reg_5752_reg[8]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/ti_mid2_32_reg_5736_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tj_7_reg_5633_reg[9]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_7_cast_reg_5644_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tj_8_reg_5673_reg[9]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_8_cast_reg_5684_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_48_reg_5393_pp0_iter1_reg_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_cast_reg_5386_pp0_iter1_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc33_U0i_2_3/tmp_54_reg_5424_pp0_iter1_reg_reg[0]' (FDE) to 'inst/Loop_2_proc33_U0i_2_3/tj_1_cast_reg_5417_pp0_iter1_reg_reg[9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\tmp_13_5_reg_5211_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\j_1_cast_reg_5344_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\j_1_cast_reg_5344_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\j_1_cast_reg_5344_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\j_1_cast_reg_5344_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\j_1_cast_reg_5344_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\j_1_cast_reg_5344_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\j_1_cast_reg_5344_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_3/\j_1_cast_reg_5344_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_2_proc33_U0i_2_1/ap_done_reg_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:23 ; elapsed = 00:05:43 . Memory (MB): peak = 1088.063 ; gain = 735.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_0/img_buf_V_U/gen_buffer[0].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_7_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_3_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_2_0/i_2_1/img_buf_V_U/gen_buffer[1].mean_img_buf_V_memcore_U/mean_img_buf_V_memcore_ram_U/ram_reg_5_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |Loop_2_proc33__GB0 |           1|     43228|
+|2     |Loop_2_proc33__GB1 |           1|      4242|
+|3     |Loop_2_proc33__GB2 |           1|      7250|
+|4     |mean__GC0          |           1|       722|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:10 ; elapsed = 00:06:47 . Memory (MB): peak = 1088.063 ; gain = 735.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:09:31 ; elapsed = 00:12:12 . Memory (MB): peak = 1364.383 ; gain = 1011.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |Loop_2_proc33__GB1 |           1|      4242|
+|2     |mean_GT2           |           1|         2|
+|3     |mean_GT3           |           1|         3|
+|4     |mean_GT4           |           1|         4|
+|5     |mean_GT5           |           1|         4|
+|6     |mean_GT6           |           1|         4|
+|7     |mean_GT7           |           1|         4|
+|8     |mean_GT8           |           1|         4|
+|9     |mean_GT9           |           1|         4|
+|10    |mean_GT10          |           1|         5|
+|11    |mean_GT11          |           1|         5|
+|12    |mean_GT12          |           1|         5|
+|13    |mean_GT13          |           1|         5|
+|14    |mean_GT14          |           1|         5|
+|15    |mean_GT15          |           1|         5|
+|16    |mean_GT16          |           1|         5|
+|17    |mean_GT17          |           1|         5|
+|18    |mean_GT18          |           1|         5|
+|19    |mean_GT19          |           1|         5|
+|20    |mean_GT20          |           1|         5|
+|21    |mean_GT21          |           1|         5|
+|22    |mean_GT22          |           1|         5|
+|23    |mean_GT23          |           1|         5|
+|24    |mean_GT24          |           1|         8|
+|25    |mean_GT25          |           1|        16|
+|26    |mean_GT26          |           1|         2|
+|27    |mean_GT0           |           1|     50918|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:10:08 ; elapsed = 00:12:57 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net n_2_7998 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_2_8001 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_2_8003 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_2_8004 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_2_8007 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_2_8010 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_2_8012 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_2_8013 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:10:14 ; elapsed = 00:13:04 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:10:15 ; elapsed = 00:13:05 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:21 ; elapsed = 00:13:12 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:10:22 ; elapsed = 00:13:12 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:10:28 ; elapsed = 00:13:22 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:10:29 ; elapsed = 00:13:22 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   194|
+|2     |DSP48E1    |     2|
+|3     |DSP48E1_1  |     2|
+|4     |LUT1       |    37|
+|5     |LUT2       |   842|
+|6     |LUT3       |  1371|
+|7     |LUT4       |   434|
+|8     |LUT5       |  3477|
+|9     |LUT6       |  3281|
+|10    |MUXCY      |   928|
+|11    |MUXF7      |    34|
+|12    |RAMB36E1   |    64|
+|13    |RAMB36E1_1 |    64|
+|14    |SRL16E     |   123|
+|15    |XORCY      |   827|
+|16    |FDE        |    38|
+|17    |FDRE       |  8341|
+|18    |FDSE       |    61|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:10:29 ; elapsed = 00:13:22 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:59 ; elapsed = 00:12:22 . Memory (MB): peak = 1566.082 ; gain = 910.320
+Synthesis Optimization Complete : Time (s): cpu = 00:10:30 ; elapsed = 00:13:23 . Memory (MB): peak = 1566.082 ; gain = 1213.156
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2153 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 301 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 263 instances
+  FDE => FDRE: 38 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+557 Infos, 225 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:10:50 ; elapsed = 00:13:47 . Memory (MB): peak = 1566.082 ; gain = 1224.629
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/MyPYNQ/PL_CONV/PL_CONV.runs/system_mean_0_0_synth_1/system_mean_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1566.082 ; gain = 0.000
+write_verilog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1566.082 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1566.082 ; gain = 0.000

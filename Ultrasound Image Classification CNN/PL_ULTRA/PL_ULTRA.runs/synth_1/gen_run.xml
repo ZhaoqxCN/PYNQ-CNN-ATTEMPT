@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1558449722">
+  <File Type="PA-TCL" Name="ultra_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ultra_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="ultra_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ultra_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="ultra_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ultra_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ultra_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ultra_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ultra_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/ultra/ultra.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ultra/hdl/ultra_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ultra_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constr.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_axi_intc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_axi_vdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_axi_smc_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_ultra_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_v_tc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_rst_ps7_0_200M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_rgb2dvi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_color_swap_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra_auto_cc_0"/>
+</GenRun>

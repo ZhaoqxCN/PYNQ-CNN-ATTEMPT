@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ultra.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_ultra_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="AESL_inst_ultra_group">
+      <obj_property name="label">AESL_inst_ultra</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/AXI_DMA_SLAVE_U0_activity">
+         <obj_property name="ElementShortName">AXI_DMA_SLAVE_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">AXI_DMA_SLAVE_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/Conv_S_U0_activity">
+         <obj_property name="ElementShortName">Conv_S_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv_S_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/Pool_16_63_3_0_U0_activity">
+         <obj_property name="ElementShortName">Pool_16_63_3_0_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Pool_16_63_3_0_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/Conv_3_U0_activity">
+         <obj_property name="ElementShortName">Conv_3_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv_3_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/Conv_1_U0_activity">
+         <obj_property name="ElementShortName">Conv_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/Conv_U0_activity">
+         <obj_property name="ElementShortName">Conv_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/Conv_2_U0_activity">
+         <obj_property name="ElementShortName">Conv_2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv_2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/FC_144_128_U0_activity">
+         <obj_property name="ElementShortName">FC_144_128_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">FC_144_128_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/FC_128_8_U0_activity">
+         <obj_property name="ElementShortName">FC_128_8_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">FC_128_8_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/AXI_DMA_MASTER_U0_activity">
+         <obj_property name="ElementShortName">AXI_DMA_MASTER_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">AXI_DMA_MASTER_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AXI_DMA_SLAVE_U0_group">
+         <obj_property name="label">AXI_DMA_SLAVE_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="AXI_DMA_SLAVE_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="AXI_DMA_SLAVE_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AXI_DMA_SLAVE_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_0_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_SLAVE_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv_S_U0_group">
+         <obj_property name="label">Conv_S_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv_S_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_0_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_S_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_S_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_1_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="A_V_4_253_group">
+               <obj_property name="label">A_V_4_253(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/A_V_4_253_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/A_V_4_253_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/A_V_4_253_ce0">
+                  <obj_property name="ElementShortName">A_V_4_253_ce0</obj_property>
+                  <obj_property name="ObjectShortName">A_V_4_253_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/A_V_4_253_we0">
+                  <obj_property name="ElementShortName">A_V_4_253_we0</obj_property>
+                  <obj_property name="ObjectShortName">A_V_4_253_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="A_V_4_254_group">
+               <obj_property name="label">A_V_4_254(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/A_V_4_254_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/A_V_4_254_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/A_V_4_254_ce0">
+                  <obj_property name="ElementShortName">A_V_4_254_ce0</obj_property>
+                  <obj_property name="ObjectShortName">A_V_4_254_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_S_U0/A_V_4_254_we0">
+                  <obj_property name="ElementShortName">A_V_4_254_we0</obj_property>
+                  <obj_property name="ObjectShortName">A_V_4_254_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Pool_16_63_3_0_U0_group">
+         <obj_property name="label">Pool_16_63_3_0_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Pool_16_63_3_0_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_1_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Pool_16_63_3_0_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Pool_16_63_3_0_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_2_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Pool_16_63_3_0_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv_3_U0_group">
+         <obj_property name="label">Conv_3_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv_3_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_2_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_3_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_3_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_3_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_3_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv_1_U0_group">
+         <obj_property name="label">Conv_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_3_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_4_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_1_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv_U0_group">
+         <obj_property name="label">Conv_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_4_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_5_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv_2_U0_group">
+         <obj_property name="label">Conv_2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv_2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_5_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv_2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_6_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/Conv_2_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="FC_144_128_U0_group">
+         <obj_property name="label">FC_144_128_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="FC_144_128_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_6_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="FC_144_128_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="FC_144_128_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_7_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_144_128_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="FC_128_8_U0_group">
+         <obj_property name="label">FC_128_8_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="FC_128_8_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_7_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="FC_128_8_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="FC_128_8_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_out_V_V_group">
+               <obj_property name="label">stream_out_V_V(connect_8_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/stream_out_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/stream_out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/stream_out_V_V_full_n">
+                  <obj_property name="ElementShortName">stream_out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/FC_128_8_U0/stream_out_V_V_write">
+                  <obj_property name="ElementShortName">stream_out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">stream_out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="AXI_DMA_MASTER_U0_group">
+         <obj_property name="label">AXI_DMA_MASTER_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="AXI_DMA_MASTER_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="stream_in_V_V_group">
+               <obj_property name="label">stream_in_V_V(connect_8_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/stream_in_V_V_blk_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/stream_in_V_V_dout">
+                  <obj_property name="ElementShortName">stream_in_V_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/stream_in_V_V_empty_n">
+                  <obj_property name="ElementShortName">stream_in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/stream_in_V_V_read">
+                  <obj_property name="ElementShortName">stream_in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">stream_in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AXI_DMA_MASTER_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_ultra_top/AESL_inst_ultra/AXI_DMA_MASTER_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AXI_DMA_MASTER_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

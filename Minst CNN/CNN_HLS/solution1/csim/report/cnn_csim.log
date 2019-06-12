@@ -1,0 +1,67 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../main.cpp in debug mode
+   Compiling ../../../cnn.cpp in debug mode
+   Generating csim.exe
+status is 1 
+batch_size is 0 
+Ker_DIM is 3 
+In_CH is 1 
+In_DIM is 28 
+Out_CH is 16 
+Out_DIM is 26 
+144 results received 
+status is 2 
+batch_size is 0 
+Ker_DIM is 3 
+In_CH is 16 
+In_DIM is 26 
+Out_CH is 32 
+Out_DIM is 24 
+4608 results received 
+status is 3 
+batch_size is 0 
+Ker_DIM is 1 
+In_CH is 1152 
+In_DIM is 1 
+Out_CH is 128 
+Out_DIM is 1 
+147456 results received 
+status is 4 
+batch_size is 0 
+Ker_DIM is 1 
+In_CH is 128 
+In_DIM is 1 
+Out_CH is 10 
+Out_DIM is 1 
+1280 results received 
+status is 0 
+batch_size is 2 
+Ker_DIM is 0 
+In_CH is 1 
+In_DIM is 28 
+Out_CH is 10 
+Out_DIM is 1 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 0 
+result is 0, last signal is 1 
+20 results received 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

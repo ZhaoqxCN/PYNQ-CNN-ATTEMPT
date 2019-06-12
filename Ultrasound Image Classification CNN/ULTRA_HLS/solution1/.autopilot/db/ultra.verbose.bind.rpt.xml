@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'ultra'" level="0">
+<item name = "Date">Tue Jun 11 19:35:42 2019
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">ULTRA_HLS</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00, 5.716, 0.63</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">712220, 48717583, 435, 48652440, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Conv_S_fu_1006">Conv_S, 431, 48652439, 431, 48652439, none</column>
+<column name="grp_Conv_3_fu_1538">Conv_3, 433, 27235667, 433, 27235667, none</column>
+<column name="grp_Conv_1_fu_1600">Conv_1, 433, 25822919, 433, 25822919, none</column>
+<column name="grp_Conv_fu_1634">Conv, 433, 13407399, 433, 13407399, none</column>
+<column name="grp_Conv_2_fu_1664">Conv_2, 433, 1276359, 433, 1276359, none</column>
+<column name="grp_FC_144_128_s_fu_1690">FC_144_128_s, 433, 2362082, 433, 2362082, none</column>
+<column name="grp_Pool_16_63_3_0_s_fu_1736">Pool_16_63_3_0_s, 433, 32260803, 433, 32260803, none</column>
+<column name="grp_FC_128_8_s_fu_1774">FC_128_8_s, 433, 149234, 433, 149234, none</column>
+<column name="grp_AXI_DMA_MASTER_fu_1816">AXI_DMA_MASTER, 28, 18580, 28, 18580, none</column>
+<column name="grp_AXI_DMA_SLAVE_fu_1825">AXI_DMA_SLAVE, 434, 8323090, 434, 8323090, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
