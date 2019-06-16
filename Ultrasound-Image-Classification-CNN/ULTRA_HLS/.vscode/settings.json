@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "limits": "cpp",
-        "ostream": "cpp",
-        "istream": "cpp",
-        "xstring": "cpp"
-    },
-    "git.ignoreLimitWarning": true
-}

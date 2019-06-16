@@ -1,6 +1,0 @@
-mean_fadd_32ns_32bkb
-mean_fdiv_32ns_32cud
-mean_sitofp_32ns_dEe
-mean_shl_55ns_32neOg
-mean_img_buf_V
-mean

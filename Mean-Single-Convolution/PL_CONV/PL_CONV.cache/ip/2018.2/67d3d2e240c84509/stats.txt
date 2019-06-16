@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Sun Mar 10 10:35:03 UTC 2019
-VLNV: xilinx.com:ip:processing_system7:5.5
-SynthRuntime: 148

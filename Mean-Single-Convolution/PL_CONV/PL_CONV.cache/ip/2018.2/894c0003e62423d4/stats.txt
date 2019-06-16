@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Mon Mar 11 06:18:58 UTC 2019
-VLNV: xilinx.com:ip:axi_crossbar:2.1
-SynthRuntime: 174

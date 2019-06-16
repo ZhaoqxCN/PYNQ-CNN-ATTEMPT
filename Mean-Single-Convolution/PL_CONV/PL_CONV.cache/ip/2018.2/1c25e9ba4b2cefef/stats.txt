@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Thu Feb 28 09:05:57 UTC 2019
-VLNV: xilinx.com:hls:mean:1.0
-SynthRuntime: 76

@@ -1,4 +1,0 @@
-NumberHits:1
-Timestamp: Thu Apr 18 02:27:48 UTC 2019
-VLNV: xilinx.com:hls:cnn:1.0
-SynthRuntime: 541

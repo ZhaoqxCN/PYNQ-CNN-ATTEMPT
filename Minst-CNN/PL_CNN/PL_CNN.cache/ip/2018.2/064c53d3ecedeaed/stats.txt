@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Tue Apr 09 14:06:57 UTC 2019
-VLNV: xilinx.com:ip:axi_dma:7.1
-SynthRuntime: 659
